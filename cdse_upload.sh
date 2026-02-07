@@ -224,7 +224,7 @@ rclone -q copy \
 --s3-use-multipart-uploads=$multipart_flag \
 --metadata \
 --metadata-set metadata-stac=true \
---metadata-set metadata-odata=$metadata_odata_flag \
+--metadata-set metadata-odata=$odata_metadata_flag \
 --metadata-set odp-priority=$priority \
 --metadata-set CDSE-upload-version=$version \
 --metadata-set uploaded=$timestamp \
