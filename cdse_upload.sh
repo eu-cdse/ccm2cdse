@@ -158,6 +158,18 @@ else
         exit 12
 	fi
 fi
+#verify if optional json OData file exists within a .tar product is valid
+odata_json=$(tar tf $local_file | grep '_odata.json')
+if [ -z "$odata_json" ]; then
+	odata_metadata_flag=false
+else
+	tar -xOf $local_file $odata_json | jq . >/dev/null 2>&1
+	if [ $? -ne 0 ]; then
+		echo "ERROR: OData JSON is invalid. Can not parse ${odata_json}!"
+        exit 12
+	fi
+	odata_metadata_flag=true
+fi
 
 #verify if the product exists already in the CDSE OData 
 odata_product_count=$(wget -qO - 'https://catalogue.dataspace.copernicus.eu/odata/v1/Products?$filter=(startswith(Name,%27'$(basename "${local_file%.*}")'%27))' | jq '.value | length')
@@ -195,9 +207,9 @@ file_size=$(du -smb --apparent-size "$local_file" | cut -f1)
 md5_checksum=$(md5sum -b "$local_file" | cut -c-32)
 
 if [ $file_size -lt 5000000000 ]; then
-	multipart_flag='false'
+	multipart_flag=false
 else
-	multipart_flag='true'
+	multipart_flag=true
 fi
 
 #upload product
@@ -211,6 +223,8 @@ rclone -q copy \
 --checksum \
 --s3-use-multipart-uploads=$multipart_flag \
 --metadata \
+--metadata-set metadata-stac=true \
+--metadata-set metadata-odata=$metadata_odata_flag \
 --metadata-set odp-priority=$priority \
 --metadata-set CDSE-upload-version=$version \
 --metadata-set uploaded=$timestamp \
