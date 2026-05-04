@@ -2,8 +2,9 @@
 ###############################
 # release notes:
 # Version 1.00 [20251130] initial release
+# Version 1.01 [20260504] remove -l flag
 ###############################
-version="1.00"
+version="1.01"
 usage()
 {
 cat << EOF
@@ -19,12 +20,10 @@ export RCLONE_CONFIG_CDSE_PROVIDER='Ceph'
 # example of usage
 #
 # Single file upload:
-cdse_upload.sh -b CDSE-YOUR-BUCKET-NAME -l "/tmp/cdse_product.tar"
-# Single upload of not public dataset (to be released at certain date):
-cdse_upload.sh -i -b CDSE-YOUR-BUCKET-NAME -l "/tmp/cdse_product.tar"
+cdse_upload.sh -b CDSE-YOUR-BUCKET-NAME /tmp/cdse_product.tar
 #
 #Batch upload of all tar files residing localy in /home/ubuntu directory in 5 parallel sessions:
-find /home/ubuntu -name "*.tar" | xargs -l -P 5 bash -c 'cdse_upload.sh -b CDSE-YOUR-BUCKET-NAME -l "$0"'
+find /home/ubuntu -name "*.tar" | xargs -l -P 5 bash -c 'cdse_upload.sh -b CDSE-YOUR-BUCKET-NAME "$0"'
 #
 ####### Requirements for .tar file creation for multi-file products 
 # 
@@ -47,7 +46,6 @@ OPTIONS:
    -b	   [REQUIRED] bucket name to upload to specific to a producer e.g. CDSE-YOUR-BUCKET-NAME
    -h      this message
    -i	   [OPTIONAL] flag indicating if a dataset should not be immediately published after ingestion to CDSE. Useful only for data sets to be released at specific date.
-   -l      [REQUIRED] local path (i.e. file system) path to input file or a directory with CDSE product name containing product files (e.g. COGs & STAC JSON metadata) 
    -o      [OPTIONAL] shall input file in the CDSE-YOUR-BUCKET-NAME bucket in the CDSE staging storage be overwritten?
    -p      [OPTIONAL] job priority ranging 0-9. Higher priority indicates that a CDSE product will be ingested faster. Default 3.  
    -r      [OPTIONAL] product name(s) to be replaced/patched by the product to uploaded. 
@@ -96,6 +94,8 @@ while getopts “b:l:p:r:hiovw:” OPTION; do
 			;;
 	esac
 done
+shift $((OPTIND - 1))
+local_file=${1}
 #########################################sanity checks
 #verify if jq, gdal, wget, rclone utilities are installed
 if ! [[ $(which jq) && $(which gdalinfo) && $(which ogrinfo) && $(which wget) && $(which rclone) ]]; then
