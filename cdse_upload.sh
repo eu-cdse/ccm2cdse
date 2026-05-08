@@ -55,7 +55,7 @@ OPTIONS:
 EOF
 }
 invisible='false'
-priority=3
+priority=1
 WorkflowName="cdse_upload"
 while getopts “b:l:p:r:hiovw:” OPTION; do
 	case $OPTION in
