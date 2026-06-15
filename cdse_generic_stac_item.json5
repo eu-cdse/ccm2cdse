@@ -155,11 +155,11 @@
     ],
     "assets": {
         "Product": {
-		"alternate:":"<OBJECT>", /* ADDED BY CDSE */
-		"alternate:name":"S3", /* ADDED BY CDSE */
-		"auth:refs": ["<STRING>","<STRING>"], /* ADDED BY CDSE */
-        	"file:checksum":"<STRING>", /* REQUIRED Provides a way to specify TAR file checksums (i.e. BLAKE3). The hashes are self-identifying hashes as described in the Multihash (https://github.com/multiformats/multihash) specification and must be encoded as hexadecimal (base 16) string with lowercase letters.  */
-        	"file:size":"<NUMBER>", /* REQUIRED The TAR file size, specified in bytes. */
+			"alternate:":"<OBJECT>", /* ADDED BY CDSE */
+			"alternate:name":"S3", /* ADDED BY CDSE */
+			"auth:refs": ["<STRING>","<STRING>"], /* ADDED BY CDSE */
+        	"file:checksum":"<STRING>", /* ADDED BY CDSE Provides a way to specify TAR file checksums (i.e. BLAKE3). The hashes are self-identifying hashes as described in the Multihash (https://github.com/multiformats/multihash) specification and must be encoded as hexadecimal (base 16) string with lowercase letters.  */
+        	"file:size":"<NUMBER>", /* ADDED BY CDSE The TAR file size, specified in bytes. */
         	"href":"s3://CLMS_PRODUCER_BUCKET_PATH/YYYY/MM/DD/PRODUCT_NAME.tar>", /*  YYYY/MM/DD <- year/month/date of a product upload */
         	"roles": [
             		"data",
@@ -171,8 +171,8 @@
         	"type":"application/tar", /* REQUIRED */
         },
         "<DATA_FILE_NAME>": {
-		"alternate:":"<OBJECT>", /* ADDED BY CDSE */
-		"alternate:name":"S3", /* ADDED BY CDSE */
+			"alternate:":"<OBJECT>", /* ADDED BY CDSE */
+			"alternate:name":"S3", /* ADDED BY CDSE */
         	"auth:refs": ["<STRING>","<STRING>"], /* ADDED BY CDSE */
         	"data_type":"<STRING>", /* REQUIRED https://github.com/radiantearth/stac-spec/blob/master/commons/common-metadata.md#data-types */
         	"description":"<STRING>", /* OPTIONAL A description of the Asset providing additional details, such as how it was processed or created. CommonMark 0.29 syntax MAY be used for rich text representation. */
@@ -194,8 +194,8 @@
         	"type":"<STRING>" /* REQUIRED, Media type (https://github.com/radiantearth/stac-spec/blob/master/commons/assets.md#media-types) of the asset. See the common media types in the best practice doc for commonly used asset types. e.g. "image/tiff; application=geotiff; profile=cloud-optimized"  */
         },
         "<METADATA_FILE_NAME>": {
-		"alternate:":"<OBJECT>", /* ADDED BY CDSE */
-		"alternate:name":"S3", /* ADDED BY CDSE */
+			"alternate:":"<OBJECT>", /* ADDED BY CDSE */
+			"alternate:name":"S3", /* ADDED BY CDSE */
         	"auth:refs": ["<STRING>","<STRING>"], /* ADDED BY CDSE */
         	"description":"<STRING>", /* OPTIONAL A description of the Asset providing additional details, such as how it was processed or created. CommonMark 0.29 syntax MAY be used for rich text representation. */
         	"file:checksum":"<STRING>", /* REQUIRED Provides a way to specify file checksums (e.g. BLAKE2, MD5, SHA1, SHA2, SHA3). The hashes are self-identifying hashes as described in the Multihash (https://github.com/multiformats/multihash) specification and must be encoded as hexadecimal (base 16) string with lowercase letters.  */
