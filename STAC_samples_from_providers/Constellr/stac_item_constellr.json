@@ -7,20 +7,16 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/view/v1.0.0/schema.json",
     "https://stac-extensions.github.io/order/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
   ],
-
   "id": "LSTPRECISION_SBA01_20251022T102419Z_D9A277170D_20260513T194106Z",
   "collection": "lstprecision",
-
   "bbox": [
     17.014451,
     46.492257,
     17.445407,
     46.822443
   ],
-
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -84,53 +80,30 @@
       ]
     ]
   },
-
   "properties": {
     "datetime": "2025-10-22T10:24:19.296199Z",
     "created": "2026-05-13T19:42:17.561325Z",
     "updated": "2026-05-18T09:17:04.663339Z",
-
     "platform": "sba01",
     "instruments": [
       "tir",
       "vnir"
     ],
-
     "processing:level": "L2",
     "processing:scenario": "RPR",
-
     "processing:software": {
-      "workflow:id": "e436d7e3-d4bb-4b2e-a182-678cd9105369",
-      "workflow:name": "pipeline-l0-to-lstproduct-f0c41323-420f",
-      "workflow:namespace": "hive-pipelines",
-      "workflow:version": "0.18.40"
+      "name": "lstprecision-processing-workflow",
+      "version": "0.18.40"
     },
-
     "order:id": "73379f68-dfcb-457c-ba75-734a2102c7e9",
     "order:status": "succeeded",
-
-    "delivery:status": "visible",
-
     "eo:cloud_cover": 1.95,
-
     "view:azimuth": 102.65114,
     "view:off_nadir": 25.74707,
     "view:sun_azimuth": 176.76899,
     "view:sun_elevation": 32.07171,
-
-    "proj:code": "EPSG:32633",
-
-    "qc:valid": true,
-    "qc:checked": true,
-    "qc:auto_valid": true,
-    "qc:auto_checked": true,
-    "qc:datetime": "2026-05-18T09:16:46.760472Z",
-    "qc:auto_datetime": "2026-05-13T19:42:54.204622Z",
-    "qc:aoi_cloud_cover": 1.52,
-
-    "hive:acquisition_id": "ccm_lake_balaton_2025-10-22T10-24-17.548298Z"
+    "proj:code": "EPSG:32633"
   },
-
   "links": [
     {
       "rel": "collection",
@@ -154,21 +127,26 @@
     },
     {
       "rel": "derived_from",
+      "type": "application/geo+json",
       "href": "http://stac-api.production.software.internal/collections/hive-l2a/items/HIVE_L2A_SBA01_20251022T102419Z_D9A277170D_20260513T193714Z",
-      "title": "Derived From"
+      "title": "Source L2A product"
     }
   ],
-
   "assets": {
     "lst": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/tir_data/lst.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
-      "title": "Land Surface Temperature (LST)",
+      "roles": [
+        "data"
+      ],
+      "title": "Land Surface Temperature",
+      "description": "Land Surface Temperature raster.",
       "gsd": 30.0,
-
       "proj:code": "EPSG:32633",
-      "proj:shape": [1248, 1116],
+      "proj:shape": [
+        1248,
+        1116
+      ],
       "proj:transform": [
         30.0,
         0.0,
@@ -180,18 +158,18 @@
         0.0,
         1.0
       ],
-
       "bands": [
         {
           "name": "LST",
+          "description": "Land Surface Temperature",
           "unit": "K",
           "nodata": 65535,
           "data_type": "uint16",
           "statistics": {
             "mean": 29495.58250760605,
             "stddev": 291.0177484087399,
-            "maximum": 31642,
             "minimum": 28608,
+            "maximum": 31642,
             "valid_percent": 54.207951360169105
           },
           "raster:scale": 0.01,
@@ -199,128 +177,156 @@
         }
       ]
     },
-
     "aot": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/aot.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
-      "title": "Aerosol Optical Thickness (AOT)",
-      "gsd": 60.0
+      "roles": [
+        "data"
+      ],
+      "title": "Aerosol Optical Thickness",
+      "gsd": 60.0,
+      "bands": [
+        {
+          "name": "AOT",
+          "description": "Aerosol Optical Thickness",
+          "unit": "1"
+        }
+      ]
     },
-
     "tcwv": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/tcwv.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
-      "title": "Total Column Water Vapor (TCWV)",
-      "gsd": 60.0
+      "roles": [
+        "data"
+      ],
+      "title": "Total Column Water Vapor",
+      "gsd": 60.0,
+      "bands": [
+        {
+          "name": "TCWV",
+          "description": "Total Column Water Vapor",
+          "unit": "g cm-2"
+        }
+      ]
     },
-
     "vnir02": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir02.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 2",
       "gsd": 30.0,
-
-      "eo:bands": [
+      "bands": [
         {
-          "name": "blue",
+          "name": "VNIR02",
           "common_name": "blue",
           "center_wavelength": 0.49,
           "full_width_half_max": 0.065
         }
       ]
     },
-
     "vnir03": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir03.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 3",
       "gsd": 30.0
     },
-
     "vnir04": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir04.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 4",
       "gsd": 30.0
     },
-
     "vnir05": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir05.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 5",
       "gsd": 30.0
     },
-
     "vnir06": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir06.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 6",
       "gsd": 30.0
     },
-
     "vnir07": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir07.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 7",
       "gsd": 30.0
     },
-
     "vnir08": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir08.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 8",
       "gsd": 30.0
     },
-
     "vnir09": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir09.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"],
+      "roles": [
+        "data"
+      ],
       "title": "VNIR Band 9",
       "gsd": 30.0
     },
-
     "quicklook": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/lst_composite.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["overview"],
+      "roles": [
+        "overview"
+      ],
       "title": "LST Quicklook"
     },
-
     "rgb_quicklook": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/rgb_composite.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["overview"],
+      "roles": [
+        "overview"
+      ],
       "title": "RGB Quicklook"
     },
-
     "thumbnail": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/lst_thumbnail.jpg",
       "type": "image/jpeg",
-      "roles": ["thumbnail"],
+      "roles": [
+        "thumbnail"
+      ],
       "title": "LST Thumbnail"
     },
-
     "rgb_thumbnail": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/rgb_thumbnail.jpg",
       "type": "image/jpeg",
-      "roles": ["thumbnail"],
+      "roles": [
+        "thumbnail"
+      ],
       "title": "RGB Thumbnail"
     },
-
     "metadata": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/metadata.json",
       "type": "application/json",
-      "roles": ["metadata"],
+      "roles": [
+        "metadata"
+      ],
       "title": "Product Metadata"
     }
   }

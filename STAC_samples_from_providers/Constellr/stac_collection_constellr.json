@@ -1,0 +1,78 @@
+{
+  "id": "lstprecision",
+  "type": "Collection",
+  "links": [
+    {
+      "rel": "items",
+      "type": "application/geo+json",
+      "href": "http://stac-api.production.software.internal/collections/lstprecision/items"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "http://stac-api.production.software.internal/"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "http://stac-api.production.software.internal/"
+    },
+    {
+      "rel": "self",
+      "type": "application/json",
+      "href": "http://stac-api.production.software.internal/collections/lstprecision"
+    },
+    {
+      "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+      "type": "application/schema+json",
+      "title": "Queryables",
+      "href": "http://stac-api.production.software.internal/collections/lstprecision/queryables"
+    }
+  ],
+  "title": "LSTprecision land surface temperature, emissivity and surface reflectance product",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [-170.249771118164, -75.5032653808594, 176.379486083984, 81.1657028198242]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-05-22T12:20:13.798355+00:00",
+          "2026-07-05T21:47:32.215076+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "url": "https://constellr.com",
+      "name": "constellr",
+      "roles": [
+        "processor",
+        "licensor",
+        "producer",
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "mission": [
+      "hive"
+    ],
+    "platform": [
+      "sba01",
+      "sba02"
+    ],
+    "constellation": [
+      "hive"
+    ],
+    "processing:level": [
+      "L2"
+    ]
+  },
+  "description": "The LSTprecision product consists of high-frequency land surface temperature, emissivity, and surface reflectance data at 30m resolution.",
+  "stac_version": "1.1.0"
+}
