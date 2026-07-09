@@ -1,0 +1,215 @@
+{
+    "type": "Feature",
+    "stac_version": "1.1.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+        "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+        "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+    ],
+    "id": "e3379a91-dc13-4fd2-b3f8-5bea7dd8f653",
+    "bbox": [
+        17.31220096027899,
+        46.493703599591974,
+        18.03837461984932,
+        46.928482523537006
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    17.931768826450025,
+                    46.493711946409285
+                ],
+                [
+                    17.932094171578026,
+                    46.493703599591974
+                ],
+                [
+                    17.932431604384583,
+                    46.493919945887285
+                ],
+                [
+                    17.93281739852626,
+                    46.49503506684572
+                ],
+                [
+                    18.03832390716906,
+                    46.84372924794867
+                ],
+                [
+                    18.03837461984932,
+                    46.844627882078704
+                ],
+                [
+                    18.019509670544664,
+                    46.84737748345641
+                ],
+                [
+                    17.97882611203124,
+                    46.852944283306286
+                ],
+                [
+                    17.853784271130664,
+                    46.86985719128869
+                ],
+                [
+                    17.771679235478985,
+                    46.880875825574954
+                ],
+                [
+                    17.524164233048847,
+                    46.91360346300587
+                ],
+                [
+                    17.480758558146,
+                    46.91927753776868
+                ],
+                [
+                    17.441259592772216,
+                    46.924401841249804
+                ],
+                [
+                    17.409586981937,
+                    46.92844798815559
+                ],
+                [
+                    17.407946441632696,
+                    46.928482523537006
+                ],
+                [
+                    17.40756794630891,
+                    46.92736556247623
+                ],
+                [
+                    17.404848504308497,
+                    46.9179733691791
+                ],
+                [
+                    17.31224876928122,
+                    46.58127220337512
+                ],
+                [
+                    17.31220096027899,
+                    46.580148192371354
+                ],
+                [
+                    17.313821508148457,
+                    46.57989041414854
+                ],
+                [
+                    17.344637918860034,
+                    46.57566270639569
+                ],
+                [
+                    17.92788881201537,
+                    46.494261426008535
+                ],
+                [
+                    17.931768826450025,
+                    46.493711946409285
+                ]
+            ]
+        ]
+    },
+    "collection": "kuva-space-hyperfield-1",
+    "properties": {
+        "created": "2025-09-19T10:04:31.890814Z",
+        "datetime": "2025-09-19T10:04:31.890814Z",
+        "start_datetime": "2025-09-19T10:04:31.890814Z",
+        "end_datetime": "2025-09-19T10:04:31.890814Z",
+        "description": "Kuva Space hyperfield-1a L1C hyperspectral scene acquired on 2025-09-19T10:04:31.890814Z. The product contains 22 VIS-NIR bands at 25m ground sampling distance.",
+        "gsd": 25.0,
+        "instruments": [
+            "Hyperfield-1A VIS camera",
+            "Hyperfield-1A NIR camera"
+        ],
+        "platform": "hyperfield-1a",
+        "eo:cloud_cover": 0.0,
+        "processing:facility": "Kuva Space ground segment",
+        "processing:level": "L1C",
+        "product:type": "HSI",
+        "product:timelines": "PT2H",
+        "proj:code": "EPSG:32633",
+        "proj:shape": [
+            1895,
+            2194
+        ],
+        "proj:transform": [
+            25.0,
+            0.0,
+            676831.0816602581,
+            0.0,
+            -25.0,
+            5200431.281753042,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "sat:platform_international_designator": "2024-149CY",
+        "view:azimuth": 206.33935546875,
+        "view:sun_azimuth": 166.53297,
+        "view:incidence_angle": 2.3015711
+    },
+    "links": [
+        {
+            "rel": "collection",
+            "href": "https://stac.dataspace.copernicus.eu/v1/collections/kuva-space-hyperfield-1",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://stac.dataspace.copernicus.eu/v1/collections/kuva-space-hyperfield-1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://stac.dataspace.copernicus.eu/v1/",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "Product": {
+            "href": "s3://CCM-KUVA-SPACE-DEV/2026/06/26/HSI_025m_20250919T100431_H1A_V100.tar",
+            "roles": [
+                "data",
+                "metadata",
+                "archive"
+            ],
+            "title": "TAR product",
+            "type": "application/tar"
+        },
+        "HSI_025m_20250919T100431_H1A_V100.tif": {
+            "data_type": "float32",
+            "file:checksum": "12202d097aa14640d7b77504b239062bb619f28a0ae21333efc02b3f4e1a8d1ff9cb",
+            "file:local_path": "HSI_025m_20250919T100431_H1A_V100/HSI_025m_20250919T100431_H1A_V100.tif",
+            "file:size": 289188403,
+            "nodata": "nan",
+            "raster:scale": 1.0,
+            "raster:offset": 0.0,
+            "roles": [
+                "data"
+            ],
+            "title": "HSI_025m_20250919T100431_H1A_V100",
+            "type": "image/tiff; application=geotiff"
+        },
+        "HSI_025m_20250919T100431_H1A_V100_stac.json": {
+            "file:local_path": "HSI_025m_20250919T100431_H1A_V100_stac.json",
+            "roles": [
+                "metadata"
+            ],
+            "title": "Product metadata",
+            "type": "application/json"
+        }
+    }
+}
