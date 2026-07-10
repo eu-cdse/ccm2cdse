@@ -178,14 +178,14 @@
             "type": "application/json"
         },
         {
-            "rel":"SDI_URL",
-            "href":"<Relevant URL from https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search>",
-            "type":"text/html"
+            "rel": "SDI_URL",
+            "href": "<Relevant URL from https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search>",
+            "type": "text/html"
         }
     ],
     "assets": {
         "Product": {
-            "href": "s3://CCM-KUVA-SPACE-DEV/2026/06/26/HSI_025m_20250919T100431_H1A_V100.tar",
+            "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/10/MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100.tar",
             "roles": [
                 "data",
                 "metadata",
@@ -194,10 +194,10 @@
             "title": "TAR product",
             "type": "application/tar"
         },
-        "HSI_025m_20250919T100431_H1A_V100.tif": {
+        "L1C.tif": {
             "data_type": "float32",
             "file:checksum": "12202d097aa14640d7b77504b239062bb619f28a0ae21333efc02b3f4e1a8d1ff9cb",
-            "file:local_path": "HSI_025m_20250919T100431_H1A_V100/HSI_025m_20250919T100431_H1A_V100.tif",
+            "file:local_path": "MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100/L1C.tif",
             "file:size": 289188403,
             "nodata": "nan",
             "raster:scale": 1.0,
@@ -205,11 +205,11 @@
             "roles": [
                 "data"
             ],
-            "title": "HSI_025m_20250919T100431_H1A_V100",
+            "title": "Cloud Optimized GeoTIFF",
             "type": "image/tiff; application=geotiff"
         },
-        "HSI_025m_20250919T100431_H1A_V100_stac.json": {
-            "file:local_path": "HSI_025m_20250919T100431_H1A_V100_stac.json",
+        "MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100.json": {
+            "file:local_path": "MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100.json",
             "roles": [
                 "metadata"
             ],
