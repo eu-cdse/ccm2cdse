@@ -176,6 +176,11 @@
             "rel": "root",
             "href": "https://stac.dataspace.copernicus.eu/v1/",
             "type": "application/json"
+        },
+        {
+            "rel":"SDI_URL",
+            "href":"<Relevant URL from https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search>",
+            "type":"text/html"
         }
     ],
     "assets": {
