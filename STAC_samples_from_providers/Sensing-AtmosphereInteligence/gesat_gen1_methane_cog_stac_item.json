@@ -11,10 +11,10 @@
 		"https://stac-extensions.github.io/sat/v1.1.0/schema.json",
 		"https://stac-extensions.github.io/view/v1.0.0/schema.json"
 	],
-	"id": "AS1_PRODUCT_L2A_2026-05-01T11-49-04Z_2026-05-01T11-49-09Z_0000000844_01_000001_2026-06-25T09-48-05Z",
+	"id": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200",
 	"bbox": [
 		-7.6161,
-		33.3876,
+		33.3873,
 		-7.4629,
 		33.5850
 	],
@@ -46,11 +46,11 @@
 		]
 	},
 	"properties": {
-		"created": "2026-06-25T09-48-05Z",
-		"datetime": "2026-05-01T11-49-06Z",
+		"created": "2026-06-25T09:48:05Z",
+		"datetime": "2026-05-01T11:49:06Z",
 		"description": "Sensing Methane Concentration Map, expressed in ppmv.",
-		"start_datetime": "2026-05-01T11-49-04Z",
-		"end_datetime": "2026-05-01T11-49-09Z",
+		"start_datetime": "2026-05-01T11:49:04Z",
+		"end_datetime": "2026-05-01T11:49:09Z",
 		"eo:cloud_cover": 0,
 		"gsd": 50,
 		"instruments": [
@@ -97,30 +97,23 @@
 	"links": [
 		{
 			"rel": "collection",
-			"href": "<CDSE_COLLECTION_LINK>",
+			"href": "https://stac.dataspace.copernicus.eu/v1/collections/GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
 			"type": "application/json"
 		},
 		{
 			"rel": "parent",
-			"href": "<CDSE_COLLECTION_LINK>",
+			"href": "https://stac.dataspace.copernicus.eu/v1/collections/GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
 			"type": "application/json"
 		},
 		{
 			"rel": "root",
 			"href": "https://stac.dataspace.copernicus.eu/v1/",
 			"type": "application/json"
-		},
-		{
-			"rel": "SDI_URL",
-			"href": "<TODO>",
-			"type": "text/html"
 		}
 	],
 	"assets": {
 		"Product": {
-			"file:checksum": "1e204da017af0b909ff4431be7a8fb76e9826f12ae75ee66aaa5d26e47c93334f9f3",
-			"file:size": 348160,
-			"href": "s3://CCM-ABSOLUT-SENSING-INGESTION/2026/07/01/.AS1_PRODUCT_L2A_2026-05-01T11-49-04Z_2026-05-01T11-49-09Z_0000000844_01_000001_2026-06-25T09-48-05Ztar>",
+			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.tar",
 			"roles": [
 				"data",
 				"metadata",
@@ -137,9 +130,9 @@
 			],
 			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
 			"data_type": "float32",
-			"file:checksum": "1e20e9fe3ef22068fe2972330606af6d1bad4925af69986234888f0c934d0956ab57",
-			"file:local_path": "AS1_PRODUCT_L2A_2026-05-01T11-49-04Z_2026-05-01T11-49-09Z_0000000844_01_000001_2026-06-25T09-48-05Z/AS1_PRODUCT_L2A_2026-05-01T11-49-04Z_2026-05-01T11-49-09Z_0000000844_01_000001_2026-06-25T09-48-05Z.gif",
-			"file:size": 321614,
+			"file:checksum": "1e20d920a7a20b138d61ecaf46e11982059462ecb14f707d807dd59ef5925ee01c2f",
+			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.tif",
+			"file:size": 270037,
 			"nodata": "nan",
 			"raster:scale": 1,
 			"raster:offset": 0
@@ -150,10 +143,10 @@
 			"roles": [
 				"thumbnail"
 			],
-			"type": "image/gif",
-			"file:checksum": "1e2000967d6172ff49260c3bc75dc128ddeb515b2d8626bca42f04863390f2f241d2",
-			"file:local_path": "AS1_PRODUCT_L2A_2026-05-01T11-49-04Z_2026-05-01T11-49-09Z_0000000844_01_000001_2026-06-25T09-48-05Z/AS1_PRODUCT_L2A_2026-05-01T11-49-04Z_2026-05-01T11-49-09Z_0000000844_01_000001_2026-06-25T09-48-05Z.gif",
-			"file:size": 7300
+			"type": "image/png",
+			"file:checksum": "1e204c31eaf2f3aec2b2c162fb41dd74d926ac494e1d3fb6032341adcc7218116987",
+			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.png",
+			"file:size": 374818
 		}
 	}
 }
