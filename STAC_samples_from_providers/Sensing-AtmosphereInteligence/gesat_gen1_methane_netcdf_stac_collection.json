@@ -62,7 +62,7 @@
   "providers": [
     {
       "url": "https://sensing-ai.eu/methane-emissions/",
-      "name": "Absolut Sensing",
+      "name": "Sensing Atmospheric Intelligence",
       "roles": [
         "producer"
       ]
