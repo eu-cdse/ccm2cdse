@@ -138,7 +138,7 @@
         "eo:cloud_cover": 0.0,
         "processing:facility": "Kuva Space ground segment",
         "processing:level": "L1C",
-        "product:type": "HSI",
+        "product:type": "HSI_SCA_L1",
         "product:timelines": "PT2H",
         "proj:code": "EPSG:32633",
         "proj:shape": [
@@ -176,16 +176,11 @@
             "rel": "root",
             "href": "https://stac.dataspace.copernicus.eu/v1/",
             "type": "application/json"
-        },
-        {
-            "rel": "SDI_URL",
-            "href": "<Relevant URL from https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search>",
-            "type": "text/html"
         }
     ],
     "assets": {
         "Product": {
-            "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/10/MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100.tar",
+            "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/20/HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100.tar",
             "roles": [
                 "data",
                 "metadata",
@@ -197,24 +192,14 @@
         "L1C.tif": {
             "data_type": "float32",
             "file:checksum": "12202d097aa14640d7b77504b239062bb619f28a0ae21333efc02b3f4e1a8d1ff9cb",
-            "file:local_path": "MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100/L1C.tif",
+            "file:local_path": "HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100/L1C.tif",
             "file:size": 289188403,
             "nodata": "nan",
-            "raster:scale": 1.0,
-            "raster:offset": 0.0,
             "roles": [
                 "data"
             ],
             "title": "Cloud Optimized GeoTIFF",
             "type": "image/tiff; application=geotiff"
-        },
-        "MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100.json": {
-            "file:local_path": "MMNN_HSI_REF_L1_20250919T100431_20250919T100431_V100.json",
-            "roles": [
-                "metadata"
-            ],
-            "title": "Product metadata",
-            "type": "application/json"
         }
     }
 }
