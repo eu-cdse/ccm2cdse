@@ -90,7 +90,7 @@
     "processing:scenario": "RPR",
     "processing:software": {
       "name": "lstprecision-processing-workflow",
-      "version": "0.18.40"
+      "version": "v0.18.40"
     },
     "order:id": "73379f68-dfcb-457c-ba75-734a2102c7e9",
     "order:status": "succeeded",
