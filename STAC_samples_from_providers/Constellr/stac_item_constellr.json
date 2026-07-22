@@ -81,9 +81,6 @@
     ]
   },
   "properties": {
-    "datetime": "2025-10-22T10:24:19.296199Z",
-    "created": "2026-05-13T19:42:17.561325Z",
-    "updated": "2026-05-18T09:17:04.663339Z",
     "platform": "sba01",
     "instruments": [
       "tir",
