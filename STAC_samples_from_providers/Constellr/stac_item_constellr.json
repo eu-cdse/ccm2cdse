@@ -103,26 +103,6 @@
   },
   "links": [
     {
-      "rel": "collection",
-      "type": "application/json",
-      "href": "http://stac-api.production.software.internal/collections/lstprecision"
-    },
-    {
-      "rel": "parent",
-      "type": "application/json",
-      "href": "http://stac-api.production.software.internal/collections/lstprecision"
-    },
-    {
-      "rel": "root",
-      "type": "application/json",
-      "href": "http://stac-api.production.software.internal/"
-    },
-    {
-      "rel": "self",
-      "type": "application/geo+json",
-      "href": "http://stac-api.production.software.internal/collections/lstprecision/items/LSTPRECISION_SBA01_20251022T102419Z_D9A277170D_20260513T194106Z"
-    },
-    {
       "rel": "derived_from",
       "type": "application/geo+json",
       "href": "http://stac-api.production.software.internal/collections/hive-l2a/items/HIVE_L2A_SBA01_20251022T102419Z_D9A277170D_20260513T193714Z",
