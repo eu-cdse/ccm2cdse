@@ -110,6 +110,10 @@
     }
   ],
   "assets": {
+    "Product": {
+        	"title":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100.tar", 
+        	"type":"application/tar", 
+        },
     "lst": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/tir_data/lst.tiff",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
@@ -151,38 +155,6 @@
           },
           "raster:scale": 0.01,
           "raster:offset": 0.0
-        }
-      ]
-    },
-    "aot": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/aot.tiff",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ],
-      "title": "Aerosol Optical Thickness",
-      "gsd": 60.0,
-      "bands": [
-        {
-          "name": "AOT",
-          "description": "Aerosol Optical Thickness",
-          "unit": "1"
-        }
-      ]
-    },
-    "tcwv": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/tcwv.tiff",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ],
-      "title": "Total Column Water Vapor",
-      "gsd": 60.0,
-      "bands": [
-        {
-          "name": "TCWV",
-          "description": "Total Column Water Vapor",
-          "unit": "g cm-2"
         }
       ]
     },
