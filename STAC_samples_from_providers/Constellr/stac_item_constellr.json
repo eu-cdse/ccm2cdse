@@ -9,7 +9,7 @@
     "https://stac-extensions.github.io/order/v1.1.0/schema.json",
     "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
   ],
-  "id": "LSTPRECISION_SBA01_20251022T102419Z_D9A277170D_20260513T194106Z",
+  "id": "HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100",
   "collection": "lstprecision",
   "bbox": [
     17.014451,
