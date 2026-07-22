@@ -10,7 +10,7 @@
     "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
   ],
   "id": "HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100",
-  "collection": "lstprecision",
+  "collection": "ccm_thermal_lst_vhr",
   "bbox": [
     17.014451,
     46.492257,
@@ -88,12 +88,11 @@
     ],
     "processing:level": "L2",
     "processing:scenario": "RPR",
+    "processing:version": "v0.18.40",
     "processing:software": {
-      "name": "lstprecision-processing-workflow",
-      "processing:version": "v0.18.40"
+      "name": "lstprecision-processing-workflow"
     },
     "order:id": "73379f68-dfcb-457c-ba75-734a2102c7e9",
-    "order:status": "succeeded",
     "eo:cloud_cover": 1.95,
     "view:azimuth": 102.65114,
     "view:off_nadir": 25.74707,
@@ -111,8 +110,9 @@
   ],
   "assets": {
     "Product": {
-        	"title":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100.tar", 
-        	"type":"application/tar", 
+        	"title":"TAR product", 
+        	"type":"application/tar",
+          "href":"s3://CCM-CONSTELLR-INGESTION/<YYYY/MM/DD/PRODUCT_NAME.tar>" #TO be adjusted
         },
     "lst": {
       "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/tir_data/lst.tiff",
@@ -121,7 +121,7 @@
         "data"
       ],
       "title": "Land Surface Temperature",
-      "description": "Land Surface Temperature raster.",
+      "description": "Land Surface Temperature",
       "gsd": 30.0,
       "proj:code": "EPSG:32633",
       "proj:shape": [
@@ -139,22 +139,25 @@
         0.0,
         1.0
       ],
+      "file:checksum":"<STRING>",
+      "file:local_path":"<PRODUCT_NAME>/../<FILE_NAME>",
+      "file:size":<NUMBER>,      
+      "unit": "K",
+      "nodata": 65535,
+      "data_type": "uint16",
+      "statistics": {
+        "mean": 29495.58250760605,
+        "stddev": 291.0177484087399,
+        "minimum": 28608,
+        "maximum": 31642,
+        "valid_percent": 54.207951360169105
+      },
+      "raster:scale": 0.01,
+      "raster:offset": 0.0,      
       "bands": [
         {
           "name": "LST",
           "description": "Land Surface Temperature",
-          "unit": "K",
-          "nodata": 65535,
-          "data_type": "uint16",
-          "statistics": {
-            "mean": 29495.58250760605,
-            "stddev": 291.0177484087399,
-            "minimum": 28608,
-            "maximum": 31642,
-            "valid_percent": 54.207951360169105
-          },
-          "raster:scale": 0.01,
-          "raster:offset": 0.0
         }
       ]
     },
