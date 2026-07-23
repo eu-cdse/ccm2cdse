@@ -112,8 +112,8 @@
     "Product": {
         	"title":"TAR product", 
         	"type":"application/tar",
-            "href":"s3://CCM-CONSTELLR-INGESTION/<YYYY/MM/DD/PRODUCT_NAME.tar>", #TO be adjusted
-            "file:checksum":"<STRING>",
+            "href":"s3://CCM-CONSTELLR-DEV/2026/07/23/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100.tar>",
+            "file:checksum":"BLAKE3",
             "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100",
             "file:size":19804160
         },
