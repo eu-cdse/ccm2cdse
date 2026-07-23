@@ -12,7 +12,7 @@
   "title": "kuva-space-hyperfield-1",
   "assets": {
     "thumbnail": {
-      "href": "<STRING>",
+      "href": "https://s3.waw3-2.cloudferro.com/swift/v1/stac-png/kuva-space-hyperfield-1-thumbnail.jpg",
       "type": "image/jpeg",
       "roles": [
         "thumbnail"
@@ -20,8 +20,8 @@
       "title": "Thumbnail",
       "proj:code": null,
       "proj:shape": [
-        "<INTEGER>",
-        "<INTEGER>"
+        360,
+        640
       ]
     }
   },
