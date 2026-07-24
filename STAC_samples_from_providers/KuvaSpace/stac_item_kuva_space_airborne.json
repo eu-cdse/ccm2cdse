@@ -1,0 +1,3494 @@
+{
+    "type": "Feature",
+    "stac_version": "1.1.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
+        "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+        "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+    ],
+    "id": "2025_08_18_SYKE_VS620_HELI_20250818T082610_VS620_HELI_20250818T082610",
+    "bbox": [
+        24.351454793176067,
+        60.331566731484685,
+        24.358200750102984,
+        60.333830871705885
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    24.351454793176067,
+                    60.333830871705885
+                ],
+                [
+                    24.358200750102984,
+                    60.333830871705885
+                ],
+                [
+                    24.358200750102984,
+                    60.331566731484685
+                ],
+                [
+                    24.351454793176067,
+                    60.331566731484685
+                ],
+                [
+                    24.351454793176067,
+                    60.333830871705885
+                ]
+            ]
+        ]
+    },
+    "collection": "kuva-space-airborne",
+    "properties": {
+        "created": "2025-08-18T08:26:10Z",
+        "datetime": "2025-08-18T08:26:10Z",
+        "start_datetime": "2025-08-18T08:26:10Z",
+        "end_datetime": "2025-08-18T08:26:10Z",
+        "instruments": [
+            "V-1240 (400-100 nm)",
+            "S-620 (970-2500 nm)"
+        ],
+        "platform": "HySpex Mjolnir VS-620",
+        "processing:facility": "Kuva Space ground segment",
+        "processing:level": "L2A",
+        "product:type": "HSI_SCA_L2",
+        "raster:offset": 0,
+        "raster:scale": 0.0001,
+        "proj:code": "EPSG:32634",
+        "proj:shape": [
+            1171,
+            1806
+        ],
+        "gsd": 0.2,
+        "description": "Airborne hyperspectral image acquired on 2025-08-18T08:26:10Z. The product contains 307 bands.",
+        "proj:transform": [
+            0.2,
+            0.0,
+            685007.9,
+            0.0,
+            -0.2,
+            6693294.1,
+            0.0,
+            0.0,
+            1.0
+        ]
+    },
+    "links": [
+        {
+            "rel": "collection",
+            "href": "https://stac.dataspace.copernicus.eu/v1/collections/kuva-space-airborne",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://stac.dataspace.copernicus.eu/v1/collections/kuva-space-airborne",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://stac.dataspace.copernicus.eu/v1/",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "Product": {
+            "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/24/HSI_SCA_L2_20250818T082610_20250818T082610_V100.tar",
+            "roles": [
+                "data",
+                "metadata",
+                "archive"
+            ],
+            "title": "TAR product",
+            "type": "application/tar"
+        },
+        "1004nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122007f66ca96f78721288388ea6d354cc10208d49ace6391066ce22f31369497ab2",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1004nm.tif",
+            "file:size": 1147446,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1004nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1014nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206f3b164697a0b2a66447780fcde3048d00eaeb4872e267bb115a799163ef96fc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1014nm.tif",
+            "file:size": 1161509,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1014nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1025nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122093c2828c8c8012539cdf5ca3297ed706c9cf746861fdb8c81180358d7795599c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1025nm.tif",
+            "file:size": 1154859,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1025nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1035nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220747ccdc00e4ab6e40546005efa0a94d31901a9610e48e977e43a679aba327932",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1035nm.tif",
+            "file:size": 1152915,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1035nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1045nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206d2a91ed02a2bb70470d8ddeafdb7efce608ea3058dbf95e2885db05fbefe60d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1045nm.tif",
+            "file:size": 1151422,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1045nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1055nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220fb1e2f2a087a1e7759d03b920df054a8047af97055f506db447bc9f7476f5ed6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1055nm.tif",
+            "file:size": 1151401,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1055nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1065nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12205cd93a62f410ce5d6b137bd6dbf0f2381aeca1167ed2299c97145bae69af1bff",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1065nm.tif",
+            "file:size": 1154957,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1065nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1076nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d66d9fa166137bb3f96c8a6e4a89a8335633d5d662c709a07c5805cc871c848c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1076nm.tif",
+            "file:size": 1166768,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1076nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1086nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122040b707a00ccef295fa591e76d769e6163884981d831ddbb547de5f4bd0c24b26",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1086nm.tif",
+            "file:size": 1189784,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1086nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1096nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ec695cb3f94da177fa15435c3cda323fb74ea0c3d5e55a4ae1417a618d17a6d3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1096nm.tif",
+            "file:size": 1193837,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1096nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1106nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204fcd700815d830e874c67bd704fdd8058f7494aefd7ed8065959500d986e387e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1106nm.tif",
+            "file:size": 1242011,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1106nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1117nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220af0c62f48ed17fc555016ac74dc35f2f5aee161c9c3aa61cf6e743cfc1f008cf",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1117nm.tif",
+            "file:size": 1293477,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1117nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1127nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203c11a116e455050fbad21d753bf0018902e2d030ae51bdf6b2b19f68a74e5973",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1127nm.tif",
+            "file:size": 1317261,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1127nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1137nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a3aa28f24b5af15fceea8b9ee4a0070b660167488f866fea45fa32e44b8e5cb4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1137nm.tif",
+            "file:size": 1313497,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1137nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1147nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220252f7071a93e841ed757300afaef14a7be47723e2671465f5ff5a2176dc57a8e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1147nm.tif",
+            "file:size": 1284045,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1147nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1158nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e8a9685e1e02f81ab13b10fb34d40d9f84f80dd323dfbc62eda0989ee23f4cff",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1158nm.tif",
+            "file:size": 1239963,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1158nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1168nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122089ddf1e40b833d119534dd190fd41bf5eb8a15a50dfdd7296765fa51b5d134c8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1168nm.tif",
+            "file:size": 1198690,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1168nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1178nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209b3f69f84668fc51aa95f011172a8e58dd25658076b49c0fb689807c2489536b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1178nm.tif",
+            "file:size": 1160136,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1178nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1188nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207e11e9d14d00cd9089e50669867c100dabe2bf8151e8d8e6c10a0a13036fcf87",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1188nm.tif",
+            "file:size": 1144458,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1188nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1199nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202c61ae3aeabab6b57c64589b1fcdd5c07c9ce5b0e7a1e2bed5877b0253e14a2e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1199nm.tif",
+            "file:size": 1132312,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1199nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1209nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122054d9ac547b2a495cc8ec1b375c02fc91711ebd0a4527248a3a1163a78fff4716",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1209nm.tif",
+            "file:size": 1124837,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1209nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1219nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220af2673c9e4fd856f8d69e692707901baa8091295a2baff0db092f846fde1cf02",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1219nm.tif",
+            "file:size": 1122102,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1219nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1229nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a11eb6ca6ae8a611ffc8d44b64e4aa3d055f0445d409e622313790f58c7afc2a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1229nm.tif",
+            "file:size": 1120016,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1229nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1239nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220dc2a4a5ab5b5ca7ed58c39c0ad394faa500e4ebffb8636cb72aa0f440b4e065f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1239nm.tif",
+            "file:size": 1117487,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1239nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1250nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220000745069296691657833535498706ab0b2ec274c90b4436316a738a169c2109",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1250nm.tif",
+            "file:size": 1116822,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1250nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1260nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d55adb5b4d8b67f6f1f3908c4dd620fcb275a78a21e38b5d39a2c847b8578ee4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1260nm.tif",
+            "file:size": 1119781,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1260nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1270nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122079362bccf19b54ad2e3158593621c4bfba2dcc2a4aef2e853ed0f6ccba2939d2",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1270nm.tif",
+            "file:size": 1122918,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1270nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1280nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a4b216f6fa6d91f48a073d35de042c6e1d23ac7888d3046f697af6de91b5a7ca",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1280nm.tif",
+            "file:size": 1123416,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1280nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1291nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207d90a69e2b145e1edc6182011e553e5178e3b1a235cfb162e3ae1a88cd64e31f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1291nm.tif",
+            "file:size": 1129193,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1291nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1301nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220df393695ecfd1e2c7e40fea00a6fc591c44a198312eab5ee9c4e9d1769de7071",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1301nm.tif",
+            "file:size": 1133182,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1301nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1311nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220eaad3c8e8e1fe753a44db6937ac0c6a6dd192940ea8a3cb33fc17f42866719eb",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1311nm.tif",
+            "file:size": 1153392,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1311nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1321nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a2abdc2ffa249eadaa9e094616628613de3cef219a1dd94fb2b0c302e0056311",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1321nm.tif",
+            "file:size": 1189291,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1321nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1332nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204ff9d793d5c01c2ea119d3b4d5acb13c261fff30e62971c8685809fc9f9dc33f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1332nm.tif",
+            "file:size": 1216120,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1332nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1342nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220825e47b09b3ab92fc5aab517bec45344345339ac1e24a06a6efee9da3b7c58d8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1342nm.tif",
+            "file:size": 1223778,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1342nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1444nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208101c08d9ba140116e2ec1de84569ff40014f75217d3d989fb67cebfa30b3a91",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1444nm.tif",
+            "file:size": 1244660,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1444nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1454nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ad19cb9b73317f4ac2833e456e1c402051305db10233879671a996db8225210b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1454nm.tif",
+            "file:size": 1262292,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1454nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1465nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a48bd760cbc7f65285efff253adf919aa15c8c4945e16ffb375143d0d72b45e7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1465nm.tif",
+            "file:size": 1261672,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1465nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1475nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b2633d3960faa181e9925bf8d677107ac4e272e5d6061fc03d80b209c285218b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1475nm.tif",
+            "file:size": 1251716,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1475nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1485nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220deadae4d616ee4231f16a42e976a43276801cc2d505e704ac71df8f86d34eabb",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1485nm.tif",
+            "file:size": 1215762,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1485nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1495nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122090bc4d95108dde68c63ee8426af0e5f9d3eb8aeda7ffdb050a462b73bdda6030",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1495nm.tif",
+            "file:size": 1149830,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1495nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1506nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e8aefc4b062a7b0f6ffd3243c5aa51717168cbf16927f479550cfc8c35509af7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1506nm.tif",
+            "file:size": 1095164,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1506nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1516nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122010dc710904349a769d064c19c446a9ef7a3df6f49c5e98d53d999b4bae524c8a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1516nm.tif",
+            "file:size": 1089519,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1516nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1526nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d2670bd9e3433c31d528a105551f1144122ab962b7634871041ada9b06dc626f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1526nm.tif",
+            "file:size": 1084033,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1526nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1536nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f78f23397b6df0559c43a438e7d695383850c762ab04c798a8228809575a03c8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1536nm.tif",
+            "file:size": 1086783,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1536nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1546nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202c00dc77a0203cf5734708f708c920fc3761e4541d713ef19fdd569862c02848",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1546nm.tif",
+            "file:size": 1086785,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1546nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1557nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220aed1823d9130a1482124c60476a56527c29bd25a037edc85533b06b7c1d78220",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1557nm.tif",
+            "file:size": 1089318,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1557nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1567nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12200aa522a5c5bd04dda5bd614ec31287f55c7813bf165e1e5dce6d1e7345c0a1b7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1567nm.tif",
+            "file:size": 1092429,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1567nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1577nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e74286f75264431315ebfee356ebbfbe696b8694ff766e0c564c09a0c9d76509",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1577nm.tif",
+            "file:size": 1095299,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1577nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1587nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122008d5464aefe4880a2ecaccf021d5c1031a948a74b79940812bc2d09ff45a51ae",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1587nm.tif",
+            "file:size": 1099131,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1587nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1598nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c4a12f02010c909a6603e5a490c6cf08cb243ab90a4ba2914085753a7e7c4360",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1598nm.tif",
+            "file:size": 1103296,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1598nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1608nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c6c91520c383cceb2481f8fb2ef41e95ea5221c39e060c912480ba93078a9ccc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1608nm.tif",
+            "file:size": 1108126,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1608nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1618nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208ba2743cbdfd6ce77d86e65c88fba8473474dd331e63e578c864a846e479d443",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1618nm.tif",
+            "file:size": 1112967,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1618nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1628nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c5e8d346e1ecc9ead7b4a50aea4b75a6c2fe4d0b30f5b16cd59f6c1db0c38673",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1628nm.tif",
+            "file:size": 1116605,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1628nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1639nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220de79578932d71f84f713a0928e367d8c7227d384d53baf9088d3c461df1c309d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1639nm.tif",
+            "file:size": 1120459,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1639nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1649nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203d79e2451846a55d55351cffe7b84911605d79508b1b1b09d4d7f12eefafda81",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1649nm.tif",
+            "file:size": 1122470,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1649nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1659nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e02cdf7005d382ff7584edf7203ac6b87ea24a8d61e103c89a74d1233bd13195",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1659nm.tif",
+            "file:size": 1123041,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1659nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1669nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e1968fd2e56505f9f35627a52ca200b72b9e4bdd3cd29110ea43f05f1be53a06",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1669nm.tif",
+            "file:size": 1122975,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1669nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1680nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a51e7882d8660ccdfb7417a6466d1ed442debaca4ff6a11805bad88deea93808",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1680nm.tif",
+            "file:size": 1124323,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1680nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1690nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122050a78751d9dcc88673146ba76b7b1a74a9ea4f1901b7ae89d018e56acea86780",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1690nm.tif",
+            "file:size": 1126314,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1690nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1700nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220180ecdcc7e2fa14814feff4c73c0c30b562ac2630c3c04c2fdfb1ad755a364f6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1700nm.tif",
+            "file:size": 1126268,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1700nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1710nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12205d666663675b986ad114fb45960e7ed79a6bafac0c8645f5ffabaca2341e2bf9",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1710nm.tif",
+            "file:size": 1127111,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1710nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1720nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220da3f356796ee3473f052c2d12030751be749510a3e51def662373bc53e48e5fa",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1720nm.tif",
+            "file:size": 1131428,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1720nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1731nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208820218b80093451237dba855d69c69bf8b1887c7cc70edc62aa398d7d6a8d7a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1731nm.tif",
+            "file:size": 1137925,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1731nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1741nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209882d37625350905d2417a8b7a4da62fa5f491b359c00dfae7982c2178c6c270",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1741nm.tif",
+            "file:size": 1140857,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1741nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1751nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a3edb031521a525c0a2baa3db17ab0af958ff35e98fbaffa7b6fcf82c7593857",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1751nm.tif",
+            "file:size": 1147304,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1751nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1761nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220241f1a71c7f13ecc28f7eeea755d285c88d90a6d2a722159aa4c9f6c1ff7c0b9",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1761nm.tif",
+            "file:size": 1154059,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1761nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1772nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e9e50fc768ed40904410389662a5fdbeff4152a3b060439110088c051479255b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1772nm.tif",
+            "file:size": 1188114,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1772nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1782nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122035a4463a2e9e5ef9f2233ef44ffaad7d3131b9bcb8c899e38308938cc8bbe327",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1782nm.tif",
+            "file:size": 1236534,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1782nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1792nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122034342ce719c310d8f7550bc4c7d7ee23972282e41e38dcca15f4bb2b14dbfc20",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1792nm.tif",
+            "file:size": 1259010,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1792nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1802nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b7c4c4c408b5ec5652000a3a49ab56054bd4c892f7e17ccbcde7568aec980382",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1802nm.tif",
+            "file:size": 1256857,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1802nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1966nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122053cbf6eb6059dbe0695fc4a3284fe0d5052694e39b681c0739b6e6573e121343",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1966nm.tif",
+            "file:size": 1206555,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1966nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1976nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b1ef16729fbe4ea227f29d3afa81f6fe4a27bc6e7429df540e9a7edf17c56991",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1976nm.tif",
+            "file:size": 1215950,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1976nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1987nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e79dd92e6a6d21837e4bb6a2c50438370379a35c2cb9e7e00b9825e12407e292",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1987nm.tif",
+            "file:size": 1262403,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1987nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "1997nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c28f943c27354e5de2f2c8089bae454f3dea607af77583c49015d2adcf860e80",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/1997nm.tif",
+            "file:size": 1314195,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 1997nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2007nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e1f7cd2e5bd262e115deaf6d9b31b08726c13c9e733e5175fb651bc72ff2e3aa",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2007nm.tif",
+            "file:size": 1342861,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2007nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2017nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c2af176dfd09458166a9edcffa232a4f2c4d0c0127f833a581fb1eda1e275c4e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2017nm.tif",
+            "file:size": 1329857,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2017nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2027nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206964a4b68157b6c9ee175cf6935566464f29b36084526182822c52b405fef30c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2027nm.tif",
+            "file:size": 1273561,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2027nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2038nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220007fbbc4721b9304cbad896e4068f41f43fa2dabd0b6cc9f759820befedad9c4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2038nm.tif",
+            "file:size": 1205405,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2038nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2048nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122078fa5288fa64c93601de033917e726a881b8db1ed54b6349cee90b1dc51d3105",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2048nm.tif",
+            "file:size": 1190614,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2048nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2058nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122074cad3e13f3de839f8b03020c015aa885e3377a830b4a9afeffe39cf58a15643",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2058nm.tif",
+            "file:size": 1219929,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2058nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2068nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220bd1bfc052843004aced9d389222f6e16300485e37de01f525067a731e3cf66c8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2068nm.tif",
+            "file:size": 1216328,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2068nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2079nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122036b10c1bdc71c7bdea570f3f348473b1ecbccaf90fb3cd2980e1a0382d9e239d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2079nm.tif",
+            "file:size": 1195579,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2079nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2089nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208bd228c4280af9b1df7d96cfa1a975fdc06fb589fc2e2a115e5adb8acade6dcb",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2089nm.tif",
+            "file:size": 1173746,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2089nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2099nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203c3cfde6211577f1686c0b09c6cb79beea36af5b4150e4cea972019fb276d5b9",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2099nm.tif",
+            "file:size": 1162759,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2099nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2109nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a80b5dd6eed5b75e2e78e63ab1edd0e3565a5f13fc061ebf4e15a60534f5ca02",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2109nm.tif",
+            "file:size": 1160937,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2109nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2120nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d0ebaa93a4769583097e363c08f2fe42ab5dfeafddd879f94d34e8b1d3c25103",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2120nm.tif",
+            "file:size": 1162032,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2120nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2130nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ad9ae6c7124455c866833ea8e5e27778d36724fccbcdc46bbfe9cbb0a5d7ab1c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2130nm.tif",
+            "file:size": 1164513,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2130nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2140nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d019096f874f9fbbc1e4779483fcece225091eb7368f520ea8aac464974acbdf",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2140nm.tif",
+            "file:size": 1168965,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2140nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2150nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207611fea0e12decd400981b6228017cf2f2f7d51f46eb900231052c509f0cb68f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2150nm.tif",
+            "file:size": 1175738,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2150nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2161nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208042d88ffadff54c975353188371e2c1caaf7a0c4a5e297e0d902ba36a7c9cd5",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2161nm.tif",
+            "file:size": 1183770,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2161nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2171nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220fb3531f97e7859b6d03145b02f250fb012179b083f7768f0b42fc852af6db309",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2171nm.tif",
+            "file:size": 1189817,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2171nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2181nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209c46d927005e6815e8fc17d36455f9b77efea6670141902c96667b3d9a068fab",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2181nm.tif",
+            "file:size": 1194831,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2181nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2191nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e25695ffc478cc0f07579bd78ab1cddefe97545217e380459b19b1c1ebb1a966",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2191nm.tif",
+            "file:size": 1199554,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2191nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2201nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220fec9fcb02b6ea9370a6973c125a697dc07610ce912cec8cb6556ab82217df00d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2201nm.tif",
+            "file:size": 1203311,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2201nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2212nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220539337aafa1b83ddc50cf46d0a6c4d6d30565bcc6ab5375e9266ea4e80888e61",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2212nm.tif",
+            "file:size": 1205547,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2212nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2222nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b80dc97bd8fe2738fb79d75a8c0e8295deea43b58742e658257d625e31775e7d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2222nm.tif",
+            "file:size": 1207319,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2222nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2232nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122003633d7ca241527b5870c8e9bb6ca831f0dc2b340b696bdb41b3752c4c6ba78b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2232nm.tif",
+            "file:size": 1210298,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2232nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2242nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202b170fac97adf57eb621195b98ccae863611409bb7b572bb77786b50b6e29034",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2242nm.tif",
+            "file:size": 1215665,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2242nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2253nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122051320e177c6de4e51edc760bcacbe0543053f59104cf79ac9e887cd17f2d0415",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2253nm.tif",
+            "file:size": 1222277,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2253nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2263nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122056d9584a2ac8fc00fe19b7c37806f3fc5a46bdd679f81eac4a4fb00188364bb5",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2263nm.tif",
+            "file:size": 1230210,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2263nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2273nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a4400f4b9dfb6e2f411c7edbda07af5caefea1c5f391cf5f1d1d51f916fe9098",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2273nm.tif",
+            "file:size": 1239244,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2273nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2283nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a564cfa87cb090541fbb3ea0a82eb0620b1d3a67d57d689677f0bb0e7ace61ab",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2283nm.tif",
+            "file:size": 1247290,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2283nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2294nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220fed49863254b127f159948daacf53da193b7aba96b0a0b351691e0a56c0b56c8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2294nm.tif",
+            "file:size": 1254525,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2294nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2304nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122036b194320d30db955e2d07640d80d339b00dd0ec9bc152c9ca71548ed52b53fc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2304nm.tif",
+            "file:size": 1258299,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2304nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2314nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220988d78d50c8c7c58c2694a4e4a3eaf2f18960e5138a14e0782c08f5fd668f15e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2314nm.tif",
+            "file:size": 1260134,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2314nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2324nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12200bc07319315a6cd205f7120cf8bee6d406356d32ac18905b0ddf7cb04544b4be",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2324nm.tif",
+            "file:size": 1264896,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2324nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2335nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12200ff00e3b64ea72d67006ff6240b0744ed54da271aeb9bd821c332a425068b1d0",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2335nm.tif",
+            "file:size": 1274908,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2335nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2345nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204bb3e8e4aabdc37b1127fbc8bf8281ea201871a982bfa68019072947b0da2e19",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2345nm.tif",
+            "file:size": 1287857,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2345nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2355nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204206ed352093d4aa083b731613c1b2303a6937b1374636ca5018d7ed4203102d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2355nm.tif",
+            "file:size": 1303497,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2355nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2365nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ebeef7d3312a1a4120bba7f7cf4a5cfb422274473642237b388306e1df4577b5",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2365nm.tif",
+            "file:size": 1322706,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2365nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2375nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220dde43e9c35c7176551b9de6c790d00e065ffc45879651f13cda581b09eea321b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2375nm.tif",
+            "file:size": 1338063,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2375nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2386nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220331420b0a6deacdb45e46d9b1a40995330527c9ecde70d65d14258079fa41049",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2386nm.tif",
+            "file:size": 1357718,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2386nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2396nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e2284f6e0fc9e17f1aa733d19b66fee749d0a97cfd4374e9f89e2a5a52c3a4d8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2396nm.tif",
+            "file:size": 1377800,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2396nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2406nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209c380ae78d45f1927d0a297e0dc19a4fa80394e632f99ace282a4796016b5659",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2406nm.tif",
+            "file:size": 1396294,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2406nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2416nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220644ff938c5c317181a2dec19da136a958d596a671c61c9d53b7c2d9d2231da5c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2416nm.tif",
+            "file:size": 1415154,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2416nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2427nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e89ff69c6631f38d2904ca7a939713f031a97a1952c6b4ec5657850c4fd5d1cb",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2427nm.tif",
+            "file:size": 1430815,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2427nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2437nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e08e22a86024f0c31dbe6d25c9ff2ffbd57f97c20002ab9dc59e9280b8e90b4c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2437nm.tif",
+            "file:size": 1472882,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2437nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "2447nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203db82065b81dd7a576a9b71cbf64c951245e5a353d71746b424a21d3b28c0dd6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/2447nm.tif",
+            "file:size": 1531102,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 2447nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "411nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220bac4df87663bc2755ac6240dc15f85ca312eb7445f3b10f3c703bc16c95b99ed",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/411nm.tif",
+            "file:size": 1220701,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 411nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "413nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d9221be9fc1d757d69975c5e18076ee30c5d49ccd0927ce0e74599303d5166b3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/413nm.tif",
+            "file:size": 1200125,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 413nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "416nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201bc1b0ddab43a15bcd7b7793f894cd9d2ad58bc4bf209ffd5bed4755b79946a8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/416nm.tif",
+            "file:size": 1187348,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 416nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "419nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203ee17c9be8948b36ee60f4d087cbe6ee9fa08a56e97139fd1ea9295f36bbe3c9",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/419nm.tif",
+            "file:size": 1185753,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 419nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "422nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220bd6a47beee2521df4d4f95d48d46fdcee492d3bd123a56438149a7b934e612cc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/422nm.tif",
+            "file:size": 1195700,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 422nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "425nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203074c64f2b6eec26dd347f45b3ab7f47323dc59425c6b7421a97d2bd4fd03dc2",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/425nm.tif",
+            "file:size": 1192962,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 425nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "428nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220131acd399d08f01c3617571a0c2176066fbd90caa17f6a984b826b98608fae88",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/428nm.tif",
+            "file:size": 1193844,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 428nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "431nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12200616f6c882dbef5652b7f40ffc3f2bb215381fd096d3db1e6cdb2bef26b94aac",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/431nm.tif",
+            "file:size": 1193452,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 431nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "434nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122017f3c1f2a975a444851143ddac47754fca29b1ccadb65474f4ebc73a87acd99a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/434nm.tif",
+            "file:size": 1189186,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 434nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "437nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f0be2d7428fe3489aa1109f0ed5552a0cef5fcf2b077794c7086063113657448",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/437nm.tif",
+            "file:size": 1185422,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 437nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "440nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ca09b85176e1a27e021948a21bcb8c950a8cc084b40700f3bfcc170b21ee5eb1",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/440nm.tif",
+            "file:size": 1183352,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 440nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "443nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a24342ff72ac81db58546c97fe0b9d156ebfc8396ce0f883f52b8535b24cc8b3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/443nm.tif",
+            "file:size": 1183286,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 443nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "445nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122085e47fac7da40686fce404442f9b1b940940a0987a756b701d03faa72c026903",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/445nm.tif",
+            "file:size": 1181750,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 445nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "448nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201dfc9af2920255bcdcec427df1fb79bfee9bcb835a0c11e1075bbf9c9a8d09d4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/448nm.tif",
+            "file:size": 1180675,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 448nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "451nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b5967e2ce31269937423c3784c67bd2dfb64314a65a24b7e863f25441eb53b95",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/451nm.tif",
+            "file:size": 1180375,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 451nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "454nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e2af88bcb7f42c1e6c754bded074100dceb954ea640745cfb04feaf58a939959",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/454nm.tif",
+            "file:size": 1180764,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 454nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "457nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220cb954119850c2ff0ca96e23380a3b0fcf0c9bc8e4a823dafcb75db3e50c0f234",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/457nm.tif",
+            "file:size": 1183146,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 457nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "460nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a93a65dcd173026f8ab2e09b1eddcda71a8ed77e4069e944ed2c27f9f5fef4e7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/460nm.tif",
+            "file:size": 1184389,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 460nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "463nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122097cef8c50082fc3a0954d01c6f8b66e5b6d8e4062c803f0480126447866e5a49",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/463nm.tif",
+            "file:size": 1183203,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 463nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "466nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208be5ad28f28f3345b929fbfbcb825c0fd55a69fbef6f8760ce89ba20e541be7a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/466nm.tif",
+            "file:size": 1181500,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 466nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "469nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220559b8a7ca9d7cea5204af0f83640fa15cfe81ca3e2ec2daf9064a023a49dbb41",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/469nm.tif",
+            "file:size": 1178947,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 469nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "472nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ef000bf85cb19a8a6a741e6a710c54dc3dd2eefb6a533bcd85046baf200e6091",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/472nm.tif",
+            "file:size": 1179697,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 472nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "475nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206d5060c0855c3bd5faaa6f256039553dc39966908813c520528274ffcd361ebd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/475nm.tif",
+            "file:size": 1182042,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 475nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "477nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201078e18ebbede5c96b89171eccb588598dfc7a75436f59a759f2cbc42a1a0cab",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/477nm.tif",
+            "file:size": 1184496,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 477nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "480nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207a6572b9438dec685a43d6b84a816fcd681d6ebcc7a6eaa349acb7f838c8467f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/480nm.tif",
+            "file:size": 1186380,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 480nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "483nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220210441f2290e63befcf1a72278ee4b03825c12ebb7f4dab117a8da73d3590e8b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/483nm.tif",
+            "file:size": 1187696,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 483nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "486nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209dd0a54188f702ae728318daf680f3e0b6e68d6fff92ee6a145394e0d8087fb8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/486nm.tif",
+            "file:size": 1186708,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 486nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "489nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208358e66d441912b6eda9b1b13fc8a262c8e20cc89a00cc3a4ea5b9cb790b5052",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/489nm.tif",
+            "file:size": 1184750,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 489nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "492nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12200c1c325a305e8e9faf91647836fde9a22e6182c5e1271100d9f5f6414054fc3e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/492nm.tif",
+            "file:size": 1185665,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 492nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "495nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e7d1339a30bff1391e5ef0a8f36e600452dbffbfca8b3697d619bf9b6dbb0e1c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/495nm.tif",
+            "file:size": 1189079,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 495nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "498nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122091663ef6df7ebd3a5d4f252f6cfd2281ceddd0555d2ff3eb4719849121101561",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/498nm.tif",
+            "file:size": 1193384,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 498nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "501nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220691ad612b60ef2bc4470f14b9a36f898ad5550dedc31019236f41134c53b173c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/501nm.tif",
+            "file:size": 1197719,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 501nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "504nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12205797ae8df6cd09f2fbfed6c56cc174c460db6fb904622e6f3f15dda919782589",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/504nm.tif",
+            "file:size": 1202100,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 504nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "507nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208a74644a7136c3b0693e8f3b1c84412f99780dc23433d8b2d27e6197954e9c1a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/507nm.tif",
+            "file:size": 1205913,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 507nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "509nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220af39fd5bd281b7cc2a651890bef4bbbf9769a4dca79f20c508c85f240d3647f2",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/509nm.tif",
+            "file:size": 1211570,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 509nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "512nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122089b679592dfcaa2351a29c815ad1895d701f8bccc49bfbb39785a4f263abb664",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/512nm.tif",
+            "file:size": 1218543,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 512nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "515nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a40f08a8c7dc36e4b5e0ec1bd6980eed2b2fc0338ec8390d76665dde54129d87",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/515nm.tif",
+            "file:size": 1224280,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 515nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "518nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220526dc432ac746eca3442ceb645e8cdea4181d17e3dc7a4552701d7baf06fbd38",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/518nm.tif",
+            "file:size": 1227086,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 518nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "521nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e8ac2053f2da33201b2d1caa49f99324492f6ac58ed6305a8aa7180ffabb4166",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/521nm.tif",
+            "file:size": 1229786,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 521nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "524nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220066ab29bf9cbc675bfd1e98f637588fce80e9ede07e8374cccb5631e3d157a55",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/524nm.tif",
+            "file:size": 1234103,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 524nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "527nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220556ab09179c736eed062415981f0cbdacf20f2fd29c970e53750619767588e9c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/527nm.tif",
+            "file:size": 1241260,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 527nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "530nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220744c299f4e856e688d13f82f133469a0627c8fb04cdfc5270dc0a1fbf3b9e0ad",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/530nm.tif",
+            "file:size": 1249602,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 530nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "533nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122001ca22ee3d87ed96952b9d3b6685cb759e03b73775fd460054cf10e829158990",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/533nm.tif",
+            "file:size": 1258704,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 533nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "536nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208eb04265777e263f0c37092f9a84f560e6f7a0c408f8f7269486555997eeef69",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/536nm.tif",
+            "file:size": 1265359,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 536nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "539nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220aa7972818d5b8a4f13df6c5fff7e447b59238ce5f09b1f8cfed22aea79c04c67",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/539nm.tif",
+            "file:size": 1271599,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 539nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "541nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122073e7288d3132538aeb8dd7f9f2f9d1a050c50ff83767d723bf653cf256bd9518",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/541nm.tif",
+            "file:size": 1277654,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 541nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "544nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220fdaa2aec1a19297791b47b506f06076d43ffca2d51ae08eed5b4458ab0a7f45e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/544nm.tif",
+            "file:size": 1281706,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 544nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "547nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220800f33d7b9e45e4a3214d242ec0e23f18ad1bf7e7ca74c79b09e800994889abf",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/547nm.tif",
+            "file:size": 1283688,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 547nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "550nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122043e06196019c72fd60f4b812009eca5470a1a410a18417bbff0753f77b761f98",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/550nm.tif",
+            "file:size": 1285901,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 550nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "553nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a983c6a362f6e8e3b985d10a32d0366542c147824e3366da152324a739547eca",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/553nm.tif",
+            "file:size": 1288509,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 553nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "556nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220795f1e1826f1a82c6820014118020459b5c5f98a99571122937144196b9a8eca",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/556nm.tif",
+            "file:size": 1291039,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 556nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "559nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208389514d3f5f390ad3e60c55640766a534317f8fde62009d34be8f441e191071",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/559nm.tif",
+            "file:size": 1291284,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 559nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "562nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a1c6d6f1a882d93c92b6e480c37df28542710595af839f157e500062b54cadbd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/562nm.tif",
+            "file:size": 1289295,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 562nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "565nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f18ea16cd5ab218a99bd93dbb7cc83a46270e1dbdbcb5519cc6a80999255e4c6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/565nm.tif",
+            "file:size": 1286262,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 565nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "568nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122034d27d48c41c87fc0d8bbaee5f149580880a211eb38c70f64e16d3222df53685",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/568nm.tif",
+            "file:size": 1283546,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 568nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "570nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220dec79bb39a05ba32c4ace5335ddfea8adf82303d08036c07948272a226546c87",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/570nm.tif",
+            "file:size": 1279904,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 570nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "573nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f36262eb3502a02d0e8fd7e57ab9dc047b27d6ae2400045fb70b248d016f0ba4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/573nm.tif",
+            "file:size": 1276828,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 573nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "576nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a38f626d433219c17703d1e1b86f06ef489740ecdeecd6eaca6140c09a336141",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/576nm.tif",
+            "file:size": 1272023,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 576nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "579nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f3f58e13f8203959a3fbfdf995279b9fc9ddad42afae32e276e03e90e5354e55",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/579nm.tif",
+            "file:size": 1266794,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 579nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "582nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d38053c863655ccbd539470398805a3104cb6449643ac653a3228ce3bd135fcd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/582nm.tif",
+            "file:size": 1262015,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 582nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "585nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122071ef53df7567434cf3553354d2f90eab8975efd827d4f5f540406021ef32c3a7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/585nm.tif",
+            "file:size": 1259395,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 585nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "588nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220efd048dbff705a222fc9840341d0e55df85014deb35ea0660252f53ce5be58a5",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/588nm.tif",
+            "file:size": 1255799,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 588nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "591nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220349e6e99690d71d88cb51069005978b79340663f04690b201511a06dd62bb216",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/591nm.tif",
+            "file:size": 1251658,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 591nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "594nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122076d8ac077378445280f73fad8e1bb5b19d3a9518e319f55fe3b76182780a2229",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/594nm.tif",
+            "file:size": 1245336,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 594nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "597nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f31994ad9cea7eaa04d70743f1762a35c191532d2a27568498dee24bca7da95b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/597nm.tif",
+            "file:size": 1240218,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 597nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "600nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a483697b705bc9660bb11c5eaf0baaab34e906783bdcea4629176ef8359be74e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/600nm.tif",
+            "file:size": 1235426,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 600nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "602nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d563f6daef2a396289a11684e74b9f6381b359f413e7656c1592d31a758ddfac",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/602nm.tif",
+            "file:size": 1232049,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 602nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "605nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207a72aecb39a75b2145b15fe45680179f61b551c0c2a7224b651a3fc95b4ca67f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/605nm.tif",
+            "file:size": 1228431,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 605nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "608nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220cf36719f75d3f5fa8187064325804bf5603df756ca5b5725a558761442fe0c4c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/608nm.tif",
+            "file:size": 1225324,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 608nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "611nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ccdb8244aeb2da1b7d454ffdb442c1ff2b6445cc196e539e7c12b9e9ce9edb38",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/611nm.tif",
+            "file:size": 1222361,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 611nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "614nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203e112d0a7980c0ba391d647df89a9f456ee0bc0d346ccf027473bddcd7cc6d6e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/614nm.tif",
+            "file:size": 1218433,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 614nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "617nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c5f520ed8a249e06c6bdf309ce4193ceca899980592ebb99d1dc0b35f973575c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/617nm.tif",
+            "file:size": 1214873,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 617nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "620nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f152b3b2690afcec01fee597462f1384a66cb4b0b29ac8e3266a3926d83f0ab8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/620nm.tif",
+            "file:size": 1211748,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 620nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "623nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e78f71a75928435e235ae526caca5f6534da578db5cf8b438aeeffe800a50a1e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/623nm.tif",
+            "file:size": 1209327,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 623nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "626nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e9408e851208bc72f626188a01bd3247227e71ef10d5f68338c33be02daec2e3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/626nm.tif",
+            "file:size": 1207588,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 626nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "629nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122059dacb8f983b7d7948686cc88d29a5202f7a72b4341cfd0149b6a3ba306d5759",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/629nm.tif",
+            "file:size": 1206499,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 629nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "632nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209b10f98efe537745fe9c54aa5b2e6238ff6ac1d0bb214a18b2e0512c71ecbd85",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/632nm.tif",
+            "file:size": 1205829,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 632nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "634nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201a0784024f529a6790b56163a15836182ab056aa2d2618547601893b1d074795",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/634nm.tif",
+            "file:size": 1205041,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 634nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "637nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e729b8a55b47fee646de07609dd5321d4db38caa9ece1010364eb5714107d77a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/637nm.tif",
+            "file:size": 1205796,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 637nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "640nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220fc8b281034ced1e11f8640e93f925a542f2e1420b8780869ad5fb33c80c1eacf",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/640nm.tif",
+            "file:size": 1209301,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 640nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "643nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f9e95b4d6ba3987e60785b690f3caecedb2546565f8c991e87da1296e7cc013f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/643nm.tif",
+            "file:size": 1212817,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 643nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "646nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122033e83553a671b7c03b1892939d7b88e324c2da98a3b06979ead5de11ef3f60dd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/646nm.tif",
+            "file:size": 1215674,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 646nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "649nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202a211db72286c62200b02ab99bc71376d24314314d4283a75a73d5d1e194b658",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/649nm.tif",
+            "file:size": 1217023,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 649nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "652nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220855f5cbcb4dbc73f731250016257d5d028fd384d56376b967a6e5615ce020e1d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/652nm.tif",
+            "file:size": 1216106,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 652nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "655nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ba20478c84311ee83cd90f36c906be9e0fc937c51de79393e8c147d47d3ffc5b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/655nm.tif",
+            "file:size": 1214948,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 655nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "658nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206432b2177b3f6ad06cd13cd8a14a06d9b88f586820a7394f5860c356645e4c54",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/658nm.tif",
+            "file:size": 1212666,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 658nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "661nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122009aec2b2a1a433a7b24211c2ab311b1ece8eec1135ed39c1720baf4ef27e177f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/661nm.tif",
+            "file:size": 1208192,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 661nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "664nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203aba75cc846800e631aad16bdbbde8fbd81f01d1c23dda865b4e2c9c2aa4375a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/664nm.tif",
+            "file:size": 1202393,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 664nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "666nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220039484091987229ca57dc8a03511c785f8721a05dbe004118bb53fb6553c5650",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/666nm.tif",
+            "file:size": 1195913,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 666nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "669nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d1c72cceaf756df1f64e8462aecf5c0622ca549f35ed087e2d818547d64e9ab7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/669nm.tif",
+            "file:size": 1189701,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 669nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "672nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d95dfab5edaf34870a6cc34daf2114b2c7048df7bf02822fee67a6e4b9ef9abe",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/672nm.tif",
+            "file:size": 1185582,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 672nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "675nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201cb1223a532df1b645af87c616112f54dc699c3b1b32f201105c3143365418e9",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/675nm.tif",
+            "file:size": 1183586,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 675nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "678nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122079708406c94e2e378dd0d54d8044cf2b40c1b84d4255a8f3c48b716101beaebc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/678nm.tif",
+            "file:size": 1182836,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 678nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "681nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122031d719333473232e5566b47ac638741cd5b33a42f40434d61c28459ceee4f819",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/681nm.tif",
+            "file:size": 1185943,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 681nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "684nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122059d32245fe338044c2aa7e3dda8352d7d277e5599fc7ae7cd542a1f6b42b57e4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/684nm.tif",
+            "file:size": 1194933,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 684nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "687nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e5134f827ce5a68315052156c279fa86d90064d35fe820dba3f6a8cfdcc4ce69",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/687nm.tif",
+            "file:size": 1209797,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 687nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "690nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206be47d4777d00b1a4d95e789cf67745fdfc8df9ebbc42ff3ff97547c26abdff6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/690nm.tif",
+            "file:size": 1225407,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 690nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "693nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ed71b6eb77eea5fd4b313d7c43d8bcf07e00b572e4dea46c3ea7c0b2d821a6f5",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/693nm.tif",
+            "file:size": 1239629,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 693nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "696nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209d72849c1699015abf252688877a73c1f31ce91f885aaa3f4f6988736c0163fd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/696nm.tif",
+            "file:size": 1253368,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 696nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "698nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122059608d4790ae73a575274a298c0d8851afee9651dc512e0d58b7dec57fa2eee7",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/698nm.tif",
+            "file:size": 1264488,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 698nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "701nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201a7fa930b58c7e331de80739070253b976fc07c2c83880129f1d87fbf398f3d1",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/701nm.tif",
+            "file:size": 1274694,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 701nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "704nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201577457828a653e3adb8700c5012eba57596a3ba0a84b9226838bb313e9c5fd6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/704nm.tif",
+            "file:size": 1283818,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 704nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "707nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220dd629f49505c7c14c98fee27b383368f15ba174f907a8ffa04a608a25b342dd5",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/707nm.tif",
+            "file:size": 1290252,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 707nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "710nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12200112f5977ae9f48df72fefebe75d4afde5300fafb2f0330ff5cbd80d02ce6c80",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/710nm.tif",
+            "file:size": 1294555,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 710nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "713nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204d89c1f1c9ce6db52e1e5a845bc85ac315e6dd405bf657bf93b980d3d2e3afce",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/713nm.tif",
+            "file:size": 1295818,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 713nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "716nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122064f7b504babd7c4f72ca0c2dfdd7a4a173f9f3f19f17f94944c4b3270bb9fb27",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/716nm.tif",
+            "file:size": 1293383,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 716nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "719nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122053b37dd7ef7f7886b598c7801bafa87e1d297c383f83201024d1ac7f4c9ebe0c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/719nm.tif",
+            "file:size": 1289653,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 719nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "722nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220015694f1380a02575bf79e08d1e8971d17121b0cf500f0b3a9f7517ab05622c1",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/722nm.tif",
+            "file:size": 1283822,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 722nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "725nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220de7fdd39a8649e71267d1c3e78d34f0738dba98eeac11c150178351a987e1d52",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/725nm.tif",
+            "file:size": 1278075,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 725nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "727nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220853c3baf9b7f27a6921bb6f87fbc23b5ac2743cfa21d168f799fd25beb2e09f2",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/727nm.tif",
+            "file:size": 1271794,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 727nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "730nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a5c7cd08fa265501ee202aa6df72d46a5432f5e72bb6e7477cd6987cb5063ca0",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/730nm.tif",
+            "file:size": 1262508,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 730nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "733nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b9824b038b0893424deac68dab3e745984ad3f06eec720f9e3b6b7ce6ff4fd05",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/733nm.tif",
+            "file:size": 1252832,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 733nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "736nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220399d3f26c5a8c0c534d56997bd4c5d6cdd72dba561ab0f5b1e9a45a2d4963da0",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/736nm.tif",
+            "file:size": 1245340,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 736nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "739nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201aeba70c880a833725db36c4566d872913edc482ed8a75b93915156b6d0aaafc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/739nm.tif",
+            "file:size": 1241451,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 739nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "742nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122069398eebd6568138fe35a9d0b4b63d54ae38d8b5cc792b0c48aec856cf1fc5c4",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/742nm.tif",
+            "file:size": 1240589,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 742nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "745nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b2aadbd1b19ff1dca7cdd289c1dc2ca147eecc03187a0d9767a078049fa2e962",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/745nm.tif",
+            "file:size": 1240141,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 745nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "748nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b030c16cd24ff8c109b50831bf4e7331aed599d7fafb74b64e1678e351fb4fe6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/748nm.tif",
+            "file:size": 1241982,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 748nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "751nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12205f8d81be5eaf42ecb0b3bc2a42295c6f9c32447f11e7b999442d6af4b07e7f10",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/751nm.tif",
+            "file:size": 1242017,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 751nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "754nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203c3ed02f19a0243c57a8d9b407b703420e90ba0ec8a19e93763ca1acee635da0",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/754nm.tif",
+            "file:size": 1242959,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 754nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "757nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b859099df94096c2da50a82c66e9ef1b770f283cab5a7c41eccb5cd020487c39",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/757nm.tif",
+            "file:size": 1250722,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 757nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "759nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b5f592af6296d3668257d2c18047a677560006aa966390a2f3f4bdff2047dd9c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/759nm.tif",
+            "file:size": 1264736,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 759nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "762nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122012c87304dafbb9e16cbff115c03628fb1cf991889c3d3886154621efc3b50b07",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/762nm.tif",
+            "file:size": 1271993,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 762nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "765nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220635ead37ed3c48496589da20e58da24689f3946abdfc8c3d32ac151c66be7bad",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/765nm.tif",
+            "file:size": 1266720,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 765nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "768nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a716c8e750bb9fb4bdf19167b3cd7eb8746c0f606a55b68b5e3ae7985047c82d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/768nm.tif",
+            "file:size": 1254259,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 768nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "771nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202b73a1e88f5a6b7d0860882b0e67d14e449a1512183c2b4af5183e9d66afc331",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/771nm.tif",
+            "file:size": 1247257,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 771nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "774nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220dfdd1a0d858669d7d950f6de3b379dd32a196e5e97cc6a17f75bb817b9e1df1b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/774nm.tif",
+            "file:size": 1248135,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 774nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "777nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206ff5f058d06bd0fb4e4375f243f7e36ec005a23f80ebb346e713aa6c43a90929",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/777nm.tif",
+            "file:size": 1249895,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 777nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "780nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206fffb3f10ff4d8911e32bd19e7734c0e5627ac36efe5ea34be21a22e6edbe5d8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/780nm.tif",
+            "file:size": 1250954,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 780nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "783nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220126bc14bd67b139942c286d9e7cd6c0b0e2727129302754c3da88aec7674c801",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/783nm.tif",
+            "file:size": 1253984,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 783nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "786nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220cad178a54a54f1b797098aa8c4aab2b61acb4e7305c7e1a027c99c1722b2c395",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/786nm.tif",
+            "file:size": 1257176,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 786nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "789nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c1863f60cff04d65d16f747cf5a51d6b943a9d72cef94c7665f773b6d1bbb4b2",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/789nm.tif",
+            "file:size": 1260898,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 789nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "791nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201bcb829dbfcab9c9e1175d8f62235e57ca22421d4546fe477fa6ce857b4aca9d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/791nm.tif",
+            "file:size": 1264131,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 791nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "794nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a0bac15eef289f470091601c42fede115293632c36456845f890cbc412a3359f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/794nm.tif",
+            "file:size": 1266290,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 794nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "797nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f21a9d05ebd18796b2e1abc55f8f97786e6e33711165d68d9c3cb35a33c91ce1",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/797nm.tif",
+            "file:size": 1267700,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 797nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "800nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220179210d1c51c3d889841babeb8b7ef9eda527f19c3763ff6a4381615a4592f16",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/800nm.tif",
+            "file:size": 1269327,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 800nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "803nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206fe015b02714f6cfa085930809b089f610b1c33ee99191e24b2e3c9e56332061",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/803nm.tif",
+            "file:size": 1270499,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 803nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "806nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a38c6ee6ef68e1ee2aa8ed06e5ce8e965769c01138da0d845c2d211186b07009",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/806nm.tif",
+            "file:size": 1272288,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 806nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "809nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209ffc7b88e0884443e571a1800c8ba4f0acb82602525ef82469f497fddc212656",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/809nm.tif",
+            "file:size": 1274648,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 809nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "812nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f4cb6a338cd170e082e02e22d55470a146585b82fa16ee9ec8a8442b950e4957",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/812nm.tif",
+            "file:size": 1278569,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 812nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "815nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203d3e0bbd7060e42405b7848400e7615ee147a1f6b916199cbe293668c545ead0",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/815nm.tif",
+            "file:size": 1282691,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 815nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "818nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206600e91668438fc497bc987ca457c57ce205e221fb817829af675140a24cb008",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/818nm.tif",
+            "file:size": 1284381,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 818nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "821nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220553bee12247ae2760469b4acc22d107143e32410d404b17aa9f1e7ca0e11ab3a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/821nm.tif",
+            "file:size": 1282498,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 821nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "823nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207944df6b96fbf7acf464e46a77ce7e7b24b8af812eba523b36d4debb48552a5d",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/823nm.tif",
+            "file:size": 1277694,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 823nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "826nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220db308ce92677949c287f64c334b21ed461a736e3cdd1219eec23054bf8191365",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/826nm.tif",
+            "file:size": 1271860,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 826nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "829nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220109643e98a705233caf34a5f07134bd1d945beb97c34cc51611676481520bd3a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/829nm.tif",
+            "file:size": 1266313,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 829nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "832nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12201c4ec32f2df5e15b41efd3f543f3a04f34b2e192d55a0b20ddcc0c5ab075a9b6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/832nm.tif",
+            "file:size": 1262359,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 832nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "835nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122066ca9db9b6db04dc7aa5d322a445fe24ac7ec99d2c24205464674ee3b848d115",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/835nm.tif",
+            "file:size": 1261503,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 835nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "838nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206a2ae284c45e8261d8be5c0e91fe68f3d402ecb4cb8d9a07e802ee1e31014bcf",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/838nm.tif",
+            "file:size": 1262749,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 838nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "841nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122075db18e7583d42ebb90f769c5f16744e843a2e774b337d5ed13a83fa50d9a227",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/841nm.tif",
+            "file:size": 1265476,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 841nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "844nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12205ccc1eb46c6fa1781233db19c95899a879bbf95a874b059f6d44c01723d48c18",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/844nm.tif",
+            "file:size": 1266941,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 844nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "847nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207635b1a295e346ab20d048192004228109257ecf5d00b914bf8e904650cfd30e",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/847nm.tif",
+            "file:size": 1269030,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 847nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "850nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ed673e585b5d675b521d3ea383ad00870b8eeab407996bcfe29f9a106a4eb0dc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/850nm.tif",
+            "file:size": 1271160,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 850nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "852nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220faae5e45888c9252db7e2592f29ec4e1eaa6781e8f1a7712512efb6328156760",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/852nm.tif",
+            "file:size": 1274034,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 852nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "855nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220777433ed35dbdd022856ef043e8054c8c3ec5ae8f21f91a1048dd159965f3a91",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/855nm.tif",
+            "file:size": 1275695,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 855nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "858nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220c6ef2c3d19748f2b476df5c32c93bbf2711f8256ae3292d0874c8e1df53c4578",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/858nm.tif",
+            "file:size": 1275867,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 858nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "861nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b45295d9d8be1d73d4694411e36155545204afb5a516d0136fe31c8b5583ddae",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/861nm.tif",
+            "file:size": 1276949,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 861nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "864nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220300351ac772a32617dbc0ca9eeefd151375083724156e8ba4929f8c3f94091d8",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/864nm.tif",
+            "file:size": 1281402,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 864nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "867nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122096b23e23e726473f1608329a77f6a632ed5be8d64e9189828e49e75098b7d9d3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/867nm.tif",
+            "file:size": 1284344,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 867nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "870nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12209dde9a5dbce670c4b7382d5c18e716f7b2e4f87caefc656ad324c02a4422d0ee",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/870nm.tif",
+            "file:size": 1284328,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 870nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "873nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e3243dc8abc0e0d25eb5769bd2690ee58c076dad14dcb324cc693779f87b8689",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/873nm.tif",
+            "file:size": 1283338,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 873nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "876nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122079a4a139eff28e495b059c7858e637a89016938bad098950c99cf8d99536f056",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/876nm.tif",
+            "file:size": 1284227,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 876nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "879nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220de9d3619e9459915578ad4e7f86382f076cb87822a50c5537188e431c575acef",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/879nm.tif",
+            "file:size": 1286686,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 879nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "882nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122016545aed19e1bc0847b6f6690e6bcd82346aeb1a19c313c64aa7145f7254ce50",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/882nm.tif",
+            "file:size": 1289884,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 882nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "884nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12205d934c1d5f63e31f64710735aec7b39573e7a26b74e858c92fa798f190f09b66",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/884nm.tif",
+            "file:size": 1292582,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 884nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "887nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206769b376df15535353e2efed100d3101116375e11cdd2542455f05b3a97e6d59",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/887nm.tif",
+            "file:size": 1295210,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 887nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "890nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122022c6f8061b77c1b148f810fc0ddbb68304c34b1ea0c60a4740d0d9c498bede07",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/890nm.tif",
+            "file:size": 1298768,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 890nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "893nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220de1500ebe6145bf4f4ff720b60a2a56c479bb1f6a1632ab3dac66b2451fc1f2c",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/893nm.tif",
+            "file:size": 1309086,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 893nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "896nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220e117acfc26df638a6f06ce0131869e08b8ca8eea6017fc08704612826f7d2e55",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/896nm.tif",
+            "file:size": 1326957,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 896nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "899nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12203f26ab4fe4738fe785f89470cd9718c6c6e85db8549a4a5c3854fd794b0345c3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/899nm.tif",
+            "file:size": 1339325,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 899nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "902nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220d00957886ed70022ec357cbc9c38349c0258a999b80253c65110c256edef5c0f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/902nm.tif",
+            "file:size": 1342158,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 902nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "905nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204fa0ab7779250217b2b55829800e8f9c37d3dd535acd2c47258a9c588b2a9d0b",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/905nm.tif",
+            "file:size": 1340558,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 905nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "908nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220aaca933d425a142abd25c95b95425fbaf31e6898e919d90703be2649f5b9259f",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/908nm.tif",
+            "file:size": 1342464,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 908nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "911nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12208bbcf5fd072b8ec093a1fb802c7d71d98dcb26e26ef5f83c4a77e4c7ee0c8cd3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/911nm.tif",
+            "file:size": 1349767,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 911nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "914nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122020e089c535bcb4cfd46cabae36e55792f6b423c01a66245b56d383fcef54f521",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/914nm.tif",
+            "file:size": 1355675,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 914nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "916nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122022381aa29f340d8ef34468cb7270cc6ed766b107b4233ad29d1538d6f2eb9174",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/916nm.tif",
+            "file:size": 1358201,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 916nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "919nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202a36e1f1064cc90fbe192d6751780184401a8ec3176f07411fd93bcd2e4cdfa3",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/919nm.tif",
+            "file:size": 1360393,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 919nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "922nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a69a9862d9b70359ecb396306ec9233f1ed9bf9176c280215c5f7268f9a5a6fd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/922nm.tif",
+            "file:size": 1367725,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 922nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "925nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220258c16ef68e68fb06597c8ad3697fa0426220f5b03af152ffb6c3b7e69a45be1",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/925nm.tif",
+            "file:size": 1381704,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 925nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "928nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12202434af723ffa3cef339dfb3857801335667061620ce6cc5eb75918123fca9e22",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/928nm.tif",
+            "file:size": 1412408,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 928nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "931nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12204ca508c40dbebfbf34a34d664be972987b0f77ca797ef35d3de607fd9bb84296",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/931nm.tif",
+            "file:size": 1451124,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 931nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "934nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220a0d0e5f9ad845ac5e1a988c085cda5c3f77bc435ab0d6f6bea3177c42db9a4ed",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/934nm.tif",
+            "file:size": 1473632,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 934nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "937nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122025adcdd7454f26b4e55ec0a3575d49612bf1e815b1aec15cc3c4678a8a37fcdc",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/937nm.tif",
+            "file:size": 1476460,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 937nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "940nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12206301bb26faced7a5ae0492a5f631ad673e595988d73645f6092a79063381edb6",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/940nm.tif",
+            "file:size": 1477861,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 940nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "943nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220b66bb53f0c47de1d5d791566e60a4eeca9680716731cce917ad120f4e9c75dcd",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/943nm.tif",
+            "file:size": 1456004,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 943nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "946nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220db248ddf303f2e483d8c5a6fc584e9f59c219a86340203451fe1b7fec040fb68",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/946nm.tif",
+            "file:size": 1454648,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 946nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "948nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "122004f86209080815b9191d9a0c124ef4dfe376d8d0eb07b9bb215ebb23b83c4802",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/948nm.tif",
+            "file:size": 1469577,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 948nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "973nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220ba6fd35af2eca87c91cedbf87b367d585588a8e61efa71d985e1f27a58f3de66",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/973nm.tif",
+            "file:size": 1200300,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 973nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "984nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "12207d25d59f97228625713eb71238fbfc2306e94091a13ee967370fccdb333c7e72",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/984nm.tif",
+            "file:size": 1170257,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 984nm",
+            "type": "image/tiff; application=geotiff"
+        },
+        "994nm.tif": {
+            "data_type": "int16",
+            "file:checksum": "1220f851fde31b02e0b9abaf2db0815bab5dafa6eb551119f26722d75e21339de89a",
+            "file:local_path": "HSI_SCA_L2_20250818T082610_20250818T082610_V100/994nm.tif",
+            "file:size": 1150022,
+            "roles": [
+                "data"
+            ],
+            "title": "Cloud Optimized GeoTIFF - 994nm",
+            "type": "image/tiff; application=geotiff"
+        }
+    }
+}
