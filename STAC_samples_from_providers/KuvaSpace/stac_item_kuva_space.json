@@ -4,19 +4,16 @@
     "stac_extensions": [
         "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
         "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/classification/v2.0.0/schema.json",
         "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
         "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
         "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
         "https://stac-extensions.github.io/product/v1.0.0/schema.json",
         "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
         "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
         "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
         "https://stac-extensions.github.io/view/v1.0.0/schema.json"
     ],
-    "id": "e3379a91-dc13-4fd2-b3f8-5bea7dd8f653",
+    "id": "HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100",
     "bbox": [
         17.31220096027899,
         46.493703599591974,
@@ -122,14 +119,14 @@
             ]
         ]
     },
-    "collection": "kuva-space-hyperfield-1",
+    "collection": "ccm_optical_ref_vhr",
     "properties": {
         "created": "2025-09-19T10:04:31.890814Z",
         "datetime": "2025-09-19T10:04:31.890814Z",
         "start_datetime": "2025-09-19T10:04:31.890814Z",
         "end_datetime": "2025-09-19T10:04:31.890814Z",
-        "description": "Kuva Space hyperfield-1a L1C hyperspectral scene acquired on 2025-09-19T10:04:31.890814Z. The product contains 22 VIS-NIR bands at 25m ground sampling distance.",
-        "gsd": 25.0,
+        "description": "Kuva Space hyperfield-1a L1C scene acquired on 2025-09-19T10:04:31.890814Z. The product contains 22 VIS-NIR bands at 25m ground sampling distance.",
+        "gsd": 25,
         "instruments": [
             "Hyperfield-1A VIS camera",
             "Hyperfield-1A NIR camera"
@@ -137,7 +134,7 @@
         "platform": "hyperfield-1a",
         "eo:cloud_cover": 0.0,
         "processing:facility": "Kuva Space ground segment",
-        "processing:level": "L1C",
+        "processing:level": "L1",
         "product:type": "HSI_SCA_L1",
         "product:timelines": "PT2H",
         "proj:code": "EPSG:32633",
@@ -161,45 +158,33 @@
         "view:sun_azimuth": 166.53297,
         "view:incidence_angle": 2.3015711
     },
-    "links": [
-        {
-            "rel": "collection",
-            "href": "https://stac.dataspace.copernicus.eu/v1/collections/kuva-space-hyperfield-1",
-            "type": "application/json"
-        },
-        {
-            "rel": "parent",
-            "href": "https://stac.dataspace.copernicus.eu/v1/collections/kuva-space-hyperfield-1",
-            "type": "application/json"
-        },
-        {
-            "rel": "root",
-            "href": "https://stac.dataspace.copernicus.eu/v1/",
-            "type": "application/json"
-        }
-    ],
     "assets": {
         "Product": {
             "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/20/HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100.tar",
             "roles": [
                 "data",
-                "metadata",
                 "archive"
             ],
             "title": "TAR product",
             "type": "application/tar"
         },
-        "L1C.tif": {
+        "l1c": {
             "data_type": "float32",
             "file:checksum": "12202d097aa14640d7b77504b239062bb619f28a0ae21333efc02b3f4e1a8d1ff9cb",
             "file:local_path": "HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100/L1C.tif",
             "file:size": 289188403,
             "nodata": "nan",
+            "bands": [
+            {
+              "name": "l1c",
+              "description": "TOA reflectance"
+            }
+            ],
             "roles": [
                 "data"
             ],
-            "title": "Cloud Optimized GeoTIFF",
-            "type": "image/tiff; application=geotiff"
+            "title": "Top Of Atmosphere (TOA) reflectance",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         }
     }
 }
