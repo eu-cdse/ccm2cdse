@@ -11,7 +11,7 @@
   ],
   "id": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100",
   "geometry": {
-    "type": "MultiPolygon",
+    "type": "Polygon",
     "coordinates": [
       [
         [
@@ -47,11 +47,11 @@
   ],
   "properties": {
     "description": "OroraTech Level-2 Land Surface Temperature expressed in Kelvin.",
-    "eo:cloud_cover": 0.2367,
+    "eo:cloud_cover": 0.23,
     "processing:facility": "OroraTech",
     "processing:level": "L2",
     "processing:version": "v0.1.0",
-    "product:type": "CCM_ORORATECH_LST",
+    "product:type": "IR1_LST_L2",
     "product:timeliness": "P7D",
     "product:timeliness_category": "NTC",
     "proj:code": "EPSG:4326",
@@ -59,7 +59,7 @@
     "start_datetime": "2025-03-15T01:33:23.369000Z",
     "end_datetime": "2025-03-15T01:34:21.935000Z",
     "created": "2026-07-27T12:02:19.473938Z",
-    "gsd": 200.0,
+    "gsd": 200,
     "instruments": [
       "F002-IR1",
       "SAFIRE"
@@ -83,7 +83,6 @@
       "title": "Land Surface Temperature [K]",
       "nodata": "nan",
       "data_type": "float32",
-      "raster:spatial_resolution": 200.0,
       "bands": [
         {
           "name": "lst",
@@ -152,5 +151,5 @@
       ]
     }
   },
-  "collection": "ccm-thermal"
+  "collection": "ccm-thermal-lst-vhr"
 }
