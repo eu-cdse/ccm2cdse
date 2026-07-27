@@ -2,14 +2,14 @@
   "type": "Feature",
   "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
     "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
-  "id": "F002_LST_NTC_L2_20250315T013323_20260618T152725_V100",
+  "id": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100",
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
@@ -51,15 +51,14 @@
     "processing:facility": "OroraTech",
     "processing:level": "L2",
     "processing:version": "v0.1.0",
-    "product:type": "LST_NTC_L2",
+    "product:type": "CCM_ORORATECH_LST",
     "product:timeliness": "P7D",
     "product:timeliness_category": "NTC",
     "proj:code": "EPSG:4326",
     "view:azimuth": 248.109,
-    "view:incidence_angle":?,
     "start_datetime": "2025-03-15T01:33:23.369000Z",
     "end_datetime": "2025-03-15T01:34:21.935000Z",
-    "created": "2026-06-25T11:34:34.208357Z",
+    "created": "2026-07-27T12:02:19.473938Z",
     "gsd": 200.0,
     "instruments": [
       "F002-IR1",
@@ -113,7 +112,7 @@
       ],
       "file:checksum": "3c006f6cb23ff42ea33e2d36628c151523e4177525b607d5cbbc0a269986cc55",
       "file:size": 7349349,
-      "file:local_path": "F002_LST_NTC_L2_20250315T013323_20260618T152725_V100/F002_LST_NTC_L2_20250315T013323_20260618T152725_V100.tif",
+      "file:local_path": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100/F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.tif",
       "roles": [
         "data"
       ]
@@ -121,6 +120,7 @@
     "thumbnail": {
       "type": "image/png",
       "title": "Quicklook",
+      "created": "2026-06-18T13:29:52Z",
       "proj:code": "EPSG:4326",
       "proj:shape": [
         331,
@@ -136,14 +136,14 @@
       ],
       "file:checksum": "7384cc7c376964513658609a7276c0007e99bc62840d03d61c059329cb5da0cf",
       "file:size": 202346,
-      "file:local_path": "F002_LST_NTC_L2_20250315T013323_20260618T152725_V100.png",
+      "file:local_path": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.png",
       "roles": [
         "thumbnail",
         "overview"
       ]
     },
     "Product": {
-      "href": "s3://CCM-ORORATECH-INGESTION/YYYY/MM/DD/F002_LST_NTC_L2_20250315T013323_20260618T152725_V100.tar",
+      "href": "s3://CCM-ORORATECH-INGESTION/2026/07/27/F002_IR1_LST_L2_20250315T013323_20250315T013422_V100.tar",
       "type": "application/tar",
       "title": "TAR product",
       "roles": [
