@@ -1,0 +1,152 @@
+{
+	"type": "Feature",
+	"stac_version": "1.1.0",
+	"stac_extensions": [
+		"https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+		"https://stac-extensions.github.io/file/v2.1.0/schema.json",
+		"https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+		"https://stac-extensions.github.io/product/v1.0.0/schema.json",
+		"https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+		"https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+		"https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+		"https://stac-extensions.github.io/view/v1.0.0/schema.json"
+	],
+	"id": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200",
+	"bbox": [
+		-7.6161,
+		33.3873,
+		-7.4629,
+		33.5850
+	],
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			[
+				[
+					-7.6161,
+					33.4070
+				],
+				[
+					-7.5088,
+					33.3873
+				],
+				[
+					-7.4629,
+					33.5653
+				],
+				[
+					-7.5702,
+					33.5850
+				],
+				[
+					-7.6161,
+					33.4070
+				]
+			]
+		]
+	},
+	"properties": {
+		"created": "2026-06-25T09:48:05Z",
+		"datetime": "2026-05-01T11:49:06Z",
+		"description": "Sensing Methane Concentration Map, expressed in ppmv.",
+		"start_datetime": "2026-05-01T11:49:04Z",
+		"end_datetime": "2026-05-01T11:49:09Z",
+		"eo:cloud_cover": 0,
+		"gsd": 50,
+		"instruments": [
+			"SWIR Fizeau interferometer"
+		],
+		"platform": "GESAT GEN1",
+		"processing:facility": "Sensing Data Processing Center",
+		"processing:level": "L2",
+		"processing:lineage": "Calibrated SWIR observations, processed using the methane retrieval chain, including radiometric correction, geometric registration, DEM-aware spectral cube assembly, spectral phase correction and effect-guided differential absorption inversion for CH4 retrieval.",
+		"processing:software": {
+			"workflow:id": "W-DPC-20260625-bf1a3b"
+		},
+		"processing:version": "2.0.0",
+		"product:type": "Methane concentration map",
+		"product:timeliness": "PT24H",
+		"product:timeliness_category": "STD",
+		"proj:code": "EPSG:4326",
+		"proj:shape": [
+			400,
+			200
+		],
+		"proj:transform": [
+			-0.00053668131488743,
+			0.0001146789474880597,
+			-7.508817204023791,
+			0.00009830485919412656,
+			0.0004450721505982092,
+			33.38736097564795,
+			0.0,
+			0.0,
+			1.0
+		],
+		"sat:absolute_orbit": 1,
+		"sat:orbit_cycle": 1,
+		"sat:orbit_state": "descending",
+		"sat:platform_international_designator": "2025-009D",
+		"sat:relative_orbit": 1,
+		"view:azimuth": 315.0539701282169,
+		"view:incidence_angle": 6.004296216274966,
+		"view:sun_azimuth": 152.14545002191971,
+		"view:sun_elevation": 69.90618891720169
+	},
+	"collection": "GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
+	"links": [
+		{
+			"rel": "collection",
+			"href": "https://stac.dataspace.copernicus.eu/v1/collections/GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
+			"type": "application/json"
+		},
+		{
+			"rel": "parent",
+			"href": "https://stac.dataspace.copernicus.eu/v1/collections/GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
+			"type": "application/json"
+		},
+		{
+			"rel": "root",
+			"href": "https://stac.dataspace.copernicus.eu/v1/",
+			"type": "application/json"
+		}
+	],
+	"assets": {
+		"Product": {
+			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.tar",
+			"roles": [
+				"data",
+				"metadata",
+				"archive"
+			],
+			"title": "TAR product",
+			"type": "application/tar"
+		},
+		"methane_map": {
+			"title": "Methane Map",
+			"description": "Methane Concentration Map, values expressed in ppmv",
+			"roles": [
+				"data"
+			],
+			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
+			"data_type": "float32",
+			"file:checksum": "1e20d920a7a20b138d61ecaf46e11982059462ecb14f707d807dd59ef5925ee01c2f",
+			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.tif",
+			"file:size": 270037,
+			"nodata": "nan",
+			"raster:scale": 1,
+			"raster:offset": 0
+		},
+		"quicklook": {
+			"title": "Quicklook",
+			"description": "Quicklook providing a visual preview of the methane product for this acquisition.",
+			"roles": [
+				"thumbnail"
+			],
+			"type": "image/png",
+			"file:checksum": "1e204c31eaf2f3aec2b2c162fb41dd74d926ac494e1d3fb6032341adcc7218116987",
+			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.png",
+			"file:size": 374818
+		}
+	}
+}

@@ -1,0 +1,88 @@
+{
+  "id": "GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
+	"stac_version": "1.1.0",
+  "type": "Collection",
+  "links": [
+    {
+      "rel": "license",
+      "href": "https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf",
+      "type": "application/pdf",
+      "title": "Legal notice on the use of Copernicus Contributing Missions data"
+    }
+  ],
+  "title": "GESAT Gen1 Methane Concentration Maps (Cog)",
+  "assets": {
+    "thumbnail": {
+      "href": "<TODO>/gesat-gen1-methane-concentration-thumbnail.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "proj:code": null,
+      "proj:shape": [
+        400,
+        200
+      ]
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -55,
+          180,
+          75
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-14T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "keywords": [
+    "GESAT",
+    "GESAT Gen1",
+    "methane",
+    "CH4",
+    "methane concentration",
+    "greenhouse gases",
+    "atmospheric composition",
+    "Copernicus Contributing Missions",
+    "CCM",
+    "COG"
+  ],
+  "providers": [
+    {
+      "url": "https://sensing-ai.eu/methane-emissions/",
+      "name": "Sensing Atmospheric Intelligence",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://commission.europa.eu/",
+      "name": "European Commission",
+      "roles": [
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://cloudferro.com/",
+      "name": "CloudFerro",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "description": "Atmospheric methane concentration maps derived from GESAT Gen1 satellite observations distributed through the Copernicus Contributing Mission (CCM) catalogue. The collection provides georeferenced raster products for identifying, analysing, and monitoring methane emission sources within the GESAT Gen1 mission coverage.",
+  "sci:doi": "10.5194/egusphere-2026-1269",
+  "sci:citation": "Pignol, F., Dorgan, S., Jais, P., Romand, F., Hein, G., Cassé, V., Armante, R., Meilhac, N., & Crevoisier, C. (2026). GESat GEN1: In-orbit performance review of a compact SWIR Fizeau interferometer for facility-scale methane detection and quantification. EGUsphere, 2026, 1–28. https://doi.org/10.5194/egusphere-2026-1269"
+}
