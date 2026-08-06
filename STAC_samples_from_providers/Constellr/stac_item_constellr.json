@@ -112,174 +112,960 @@
     "Product": {
         	"title":"TAR product", 
         	"type":"application/tar",
-          "href":"s3://CCM-CONSTELLR-INGESTION/<YYYY/MM/DD/PRODUCT_NAME.tar>" #TO be adjusted
+            "href":"s3://CCM-CONSTELLR-DEV/2026/07/23/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100.tar>",
+            "file:checksum":"BLAKE3",
+            "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100",
+            "file:size":19804160
         },
     "lst": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/tir_data/lst.tiff",
+      "gsd": 30,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ],
-      "title": "Land Surface Temperature",
-      "description": "Land Surface Temperature",
-      "gsd": 30.0,
-      "proj:code": "EPSG:32633",
-      "proj:shape": [
-        1248,
-        1116
-      ],
-      "proj:transform": [
-        30.0,
-        0.0,
-        653820.0,
-        0.0,
-        -30.0,
-        5188200.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "file:checksum":"<STRING>",
-      "file:local_path":"<PRODUCT_NAME>/../<FILE_NAME>",
-      "file:size":<NUMBER>,      
-      "unit": "K",
-      "nodata": 65535,
-      "data_type": "uint16",
-      "statistics": {
-        "mean": 29495.58250760605,
-        "stddev": 291.0177484087399,
-        "minimum": 28608,
-        "maximum": 31642,
-        "valid_percent": 54.207951360169105
-      },
-      "raster:scale": 0.01,
-      "raster:offset": 0.0,      
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_lst.tif",
+      "file:size":1468416,
       "bands": [
         {
           "name": "LST",
-          "description": "Land Surface Temperature",
+          "unit": "K",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 29618.651894377,
+            "stddev": 324.983452961694,
+            "maximum": 31517,
+            "minimum": 28604,
+            "valid_percent": 54.2217820261596
+          },
+          "raster:scale": 0.01,
+          "raster:offset": 0
         }
-      ]
+      ],
+      "roles": [
+        "data"
+      ],
+      "title": "Land Surface Temperature (LST)",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1258, 1118],
+      "proj:transform": [30, 0, 653820, 0, -30, 5188500, 0, 0, 1]
     },
     "vnir02": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir02.tiff",
+      "gsd": 10,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir02.tif",
+      "file:size":1679360,
+      "bands": [
+        {
+          "name": "blue",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 1468.7392838581,
+            "stddev": 438.902279809875,
+            "maximum": 11000,
+            "minimum": 1000,
+            "valid_percent": 54.2349989682411
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:common_name": "blue",
+          "eo:center_wavelength": 0.49,
+          "eo:full_width_half_max": 0.065
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 2",
-      "gsd": 30.0,
-      "bands": [
-        {
-          "name": "VNIR02",
-          "common_name": "blue",
-          "center_wavelength": 0.49,
-          "full_width_half_max": 0.065
-        }
-      ]
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
     },
     "vnir03": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir03.tiff",
+      "gsd": 10,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir03.tif",
+      "file:size":1766400,
+      "bands": [
+        {
+          "name": "green",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 1720.15520132077,
+            "stddev": 473.058589622862,
+            "maximum": 11000,
+            "minimum": 1000,
+            "valid_percent": 54.2349989682411
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:common_name": "green",
+          "eo:center_wavelength": 0.56,
+          "eo:full_width_half_max": 0.035
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 3",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
     },
     "vnir04": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir04.tiff",
+      "gsd": 10,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir04.tif",
+      "file:size":1827840,
+      "bands": [
+        {
+          "name": "red",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 1674.00296996503,
+            "stddev": 493.664987557745,
+            "maximum": 11000,
+            "minimum": 1000,
+            "valid_percent": 54.2349989682411
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:common_name": "red",
+          "eo:center_wavelength": 0.665,
+          "eo:full_width_half_max": 0.03
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 4",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
     },
     "vnir05": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir05.tiff",
+      "gsd": 20,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir05.tif",
+      "file:size":1878016,
+      "bands": [
+        {
+          "name": "rededge070",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 2028.79807809971,
+            "stddev": 470.666884773454,
+            "maximum": 9720,
+            "minimum": 1000,
+            "valid_percent": 54.2301956802641
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:common_name": "rededge",
+          "eo:center_wavelength": 0.705,
+          "eo:full_width_half_max": 0.015
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 5",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
     },
     "vnir06": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir06.tiff",
+      "gsd": 20,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir06.tif",
+      "file:size":2024448,
+      "bands": [
+        {
+          "name": "rededge074",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 2899.57046633,
+            "stddev": 896.229067586323,
+            "maximum": 11000,
+            "minimum": 1000,
+            "valid_percent": 54.2338929479832
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:center_wavelength": 0.74,
+          "eo:full_width_half_max": 0.015
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 6",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
     },
     "vnir07": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir07.tiff",
+      "gsd": 20,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir07.tif",
+      "file:size":2043904,
+      "bands": [
+        {
+          "name": "rededge078",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 3103.15260591377,
+            "stddev": 1009.18710064301,
+            "maximum": 11000,
+            "minimum": 1000,
+            "valid_percent": 54.2338929479832
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:common_name": "rededge078",
+          "eo:center_wavelength": 0.783,
+          "eo:full_width_half_max": 0.02
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 7",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
     },
     "vnir08": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir08.tiff",
+      "gsd": 10,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir08.tif",
+      "file:size":2034688,
+      "bands": [
+        {
+          "name": "nir",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 3264.86632025572,
+            "stddev": 1019.27980608983,
+            "maximum": 11000,
+            "minimum": 1037,
+            "valid_percent": 54.2349989682411
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:common_name": "nir",
+          "eo:center_wavelength": 0.842,
+          "eo:full_width_half_max": 0.115
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 8",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
     },
     "vnir09": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/vnir_data/vnir09.tiff",
+      "gsd": 20,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir09.tif",
+      "file:size":2022400,
+      "bands": [
+        {
+          "name": "nir086",
+          "unit": "1",
+          "nodata": 65535,
+          "data_type": "uint16",
+          "statistics": {
+            "mean": 3372.78303911303,
+            "stddev": 1190.58148837311,
+            "maximum": 11000,
+            "minimum": 1000,
+            "valid_percent": 54.2338929479832
+          },
+          "raster:scale": 0.0001,
+          "raster:offset": -0.1,
+          "eo:center_wavelength": 0.865,
+          "eo:full_width_half_max": 0.02
+        }
+      ],
       "roles": [
         "data"
       ],
       "title": "VNIR Band 9",
-      "gsd": 30.0
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
+    },
+    "metadata": {
+      "type": "application/json",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_stac.json",
+      "file:size":10240,
+      "roles": [
+        "metadata"
+      ],
+      "title": "Product Metadata"
     },
     "quicklook": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/lst_composite.tiff",
+      "gsd": 30,
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"<HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_rgb_thumbnail.jpg",
+      "file:size":13312,
+      "bands": [
+        {
+          "name": "red",
+          "unit": "1",
+          "nodata": 0,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 203.498044188361,
+            "stddev": 75.9368050929883,
+            "maximum": 255,
+            "minimum": 22,
+            "valid_percent": 54.2217820261596
+          },
+          "raster:scale": 1,
+          "raster:offset": 0,
+          "eo:common_name": "red"
+        },
+        {
+          "name": "green",
+          "unit": "1",
+          "nodata": 0,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 150.13038438288,
+            "stddev": 67.4213972740055,
+            "maximum": 254,
+            "minimum": 10,
+            "valid_percent": 54.2217820261596
+          },
+          "raster:scale": 1,
+          "raster:offset": 0,
+          "eo:common_name": "green"
+        },
+        {
+          "name": "blue",
+          "unit": "1",
+          "nodata": 0,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 65.8482452770067,
+            "stddev": 58.6073169133923,
+            "maximum": 237,
+            "minimum": 6,
+            "valid_percent": 54.2217820261596
+          },
+          "raster:scale": 1,
+          "raster:offset": 0,
+          "eo:common_name": "blue"
+        }
+      ],
       "roles": [
         "overview"
       ],
-      "title": "LST Quicklook"
-    },
-    "rgb_quicklook": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/rgb_composite.tiff",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "overview"
-      ],
-      "title": "RGB Quicklook"
+      "title": "LST Quicklook",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1258, 1118],
+      "proj:transform": [30, 0, 653820, 0, -30, 5188500, 0, 0, 1]
     },
     "thumbnail": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/lst_thumbnail.jpg",
       "type": "image/jpeg",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_lst_thumbnail.jpg",
+      "file:size":14336,
       "roles": [
         "thumbnail"
       ],
       "title": "LST Thumbnail"
     },
-    "rgb_thumbnail": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/rgb_thumbnail.jpg",
-      "type": "image/jpeg",
-      "roles": [
-        "thumbnail"
+    "vnir02_qa": {
+      "gsd": 10,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir02_qa.tif",
+      "file:size":98304,
+      
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457650010317589,
+            "stddev": 0.498203250063566,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
       ],
-      "title": "RGB Thumbnail"
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 2 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
     },
-    "metadata": {
-      "href": "s3://lst-products-datastore-213979744349/lstprecision/sba01/20251022T102419Z/d9a277170d/20260513T194106Z/metadata.json",
-      "type": "application/json",
-      "roles": [
-        "metadata"
+    "vnir03_qa": {
+      "gsd": 10,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir03_qa.tif",
+      "file:size":98304,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457650010317589,
+            "stddev": 0.498203250063566,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
       ],
-      "title": "Product Metadata"
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 3 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
+    },
+    "vnir04_qa": {
+      "gsd": 10,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir04_qa.tif",
+      "file:size":98304,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457650010317589,
+            "stddev": 0.498203250063566,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 4 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
+    },
+    "vnir05_qa": {
+      "gsd": 20,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir05_qa.tif",
+      "file:size":97280,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457698043197359,
+            "stddev": 0.498207330787763,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 5 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
+    },
+    "vnir06_qa": {
+      "gsd": 20,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir06_qa.tif",
+      "file:size":97280,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457661070520168,
+            "stddev": 0.498204190117367,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 6 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
+    },
+    "vnir07_qa": {
+      "gsd": 20,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir07_qa.tif",
+      "file:size":97280,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457661070520168,
+            "stddev": 0.498204190117367,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 7 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
+    },
+    "vnir08_qa": {
+      "gsd": 10,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir08_qa.tif",
+      "file:size":98304,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457650010317589,
+            "stddev": 0.498203250063566,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 8 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [3774, 3354],
+      "proj:transform": [10, 0, 653820, 0, -10, 5188500, 0, 0, 1]
+    },
+    "vnir09_qa": {
+      "gsd": 20,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_vnir09_qa.tif",
+      "file:size":97280,
+      "bands": [
+        {
+          "name": "blackfill_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.457661070520168,
+            "stddev": 0.498204190117367,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "saturated_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "untested_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0,
+            "stddev": 0,
+            "maximum": 0,
+            "minimum": 0,
+            "valid_percent": 100
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "mask"
+      ],
+      "title": "VNIR Band 9 Quality Assurance",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1887, 1677],
+      "proj:transform": [20, 0, 653820, 0, -20, 5188500, 0, 0, 1]
+    },
+    "scl_mask_30m": {
+      "gsd": 30,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "file:checksum":"BLAKE3",
+      "file:local_path":"HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100/HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100_scl_mask_30m.tif",
+      "file:size":166912,
+      "bands": [
+        {
+          "name": "cloud_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.0662310234823366,
+            "stddev": 0.394273928023411,
+            "maximum": 3,
+            "minimum": 0,
+            "valid_percent": 54.3380326554061
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "castshadow_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.000001308499752693,
+            "stddev": 0.00114389599200362,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 54.3380326554061
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "landwater_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.129395235219551,
+            "stddev": 0.335636869729814,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 52.2756682811402
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        },
+        {
+          "name": "static_landwater_mask",
+          "unit": "1",
+          "nodata": 255,
+          "data_type": "uint8",
+          "statistics": {
+            "mean": 0.12444486897992,
+            "stddev": 0.330088387503242,
+            "maximum": 1,
+            "minimum": 0,
+            "valid_percent": 54.3380326554061
+          },
+          "raster:scale": 1,
+          "raster:offset": 0
+        }
+      ],
+      "roles": [
+        "data"
+      ],
+      "title": "Scene Classification Layer (SCL) Mask 30m resolution",
+      "proj:code": "EPSG:32633",
+      "proj:shape": [1258, 1118],
+      "proj:transform": [30, 0, 653820, 0, -30, 5188500, 0, 0, 1]
     }
   }
 }
