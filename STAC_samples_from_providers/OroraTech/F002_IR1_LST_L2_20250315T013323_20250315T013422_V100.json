@@ -58,7 +58,6 @@
     "view:azimuth": 248.109,
     "start_datetime": "2025-03-15T01:33:23.369000Z",
     "end_datetime": "2025-03-15T01:34:21.935000Z",
-    "created": "2026-07-27T12:02:19.473938Z",
     "gsd": 200,
     "instruments": [
       "F002-IR1",
@@ -89,7 +88,6 @@
           "description": "Land Surface Temperature [K]"
         }
       ],
-      "created": "2026-06-18T13:29:52Z",
       "proj:code": "EPSG:4326",
       "proj:bbox": [
         -2.335486888885498,
