@@ -44,9 +44,8 @@
             ]
         ]
     },
-    "collection": "kuva-space-airborne",
+    "collection": "ccm-hyperspectral-ref-vhr",
     "properties": {
-        "created": "2025-08-18T08:26:10Z",
         "datetime": "2025-08-18T08:26:10Z",
         "start_datetime": "2025-08-18T08:26:10Z",
         "end_datetime": "2025-08-18T08:26:10Z",
@@ -60,6 +59,7 @@
         "product:type": "HSI_SCA_L2",
         "raster:offset": 0,
         "raster:scale": 0.0001,
+        "nodata": ?,
         "proj:code": "EPSG:32634",
         "proj:shape": [
             1171,
