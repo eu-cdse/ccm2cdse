@@ -13,7 +13,7 @@
    "https://stac-extensions.github.io/sat/v1.2.0/schema.json"
  ],
 "id": "HIVE_TIR_RPR_L2_20251022T102416_20251022T102422_V100",
-"collection": "ccm_thermal_lst_hr",
+"collection": "ccm-thermal-lst-hr",
 "bbox": [17.014451, 46.492257, 17.445407, 46.822443],
 "geometry": {
    "type": "Polygon",
@@ -79,14 +79,16 @@
    ]
  },
 "properties": {
+   "start_datetime": "2025-10-22T10:24:16Z",
    "datetime": "2025-10-22T10:24:16Z",
+   "end_datetime": "2025-10-22T10:24:16Z",
    "platform": "sba01",
    "sat:platform_international_designator": "2025-009BQ",
    "gsd": 10,
    "product:type": "TIR_RPR_L2",
    "instruments": ["tir", "vnir"],
    "processing:level": "L2",
-   "constellr:scenario": "RPR",
+   "product:timeliness_category": "RPR",
    "processing:version": "v0.18.40",
    "processing:software": {
      "lstprecision-processing-workflow": "v0.18.40"
