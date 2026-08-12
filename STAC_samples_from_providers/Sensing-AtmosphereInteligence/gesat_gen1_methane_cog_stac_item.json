@@ -11,7 +11,7 @@
 		"https://stac-extensions.github.io/sat/v1.1.0/schema.json",
 		"https://stac-extensions.github.io/view/v1.0.0/schema.json"
 	],
-	"id": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200",
+	"id": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100",
 	"bbox": [
 		-7.6161,
 		33.3873,
@@ -46,9 +46,8 @@
 		]
 	},
 	"properties": {
-		"created": "2026-06-25T09:48:05Z",
 		"datetime": "2026-05-01T11:49:06Z",
-		"description": "Sensing Methane Concentration Map, expressed in ppmv.",
+		"description": "Sensing Methane Concentration Map, expressed in ppmv",
 		"start_datetime": "2026-05-01T11:49:04Z",
 		"end_datetime": "2026-05-01T11:49:09Z",
 		"eo:cloud_cover": 0,
@@ -64,7 +63,7 @@
 			"workflow:id": "W-DPC-20260625-bf1a3b"
 		},
 		"processing:version": "2.0.0",
-		"product:type": "Methane concentration map",
+		"product:type": "SWI_CH4_L2",
 		"product:timeliness": "PT24H",
 		"product:timeliness_category": "STD",
 		"proj:code": "EPSG:4326",
@@ -93,27 +92,10 @@
 		"view:sun_azimuth": 152.14545002191971,
 		"view:sun_elevation": 69.90618891720169
 	},
-	"collection": "GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
-	"links": [
-		{
-			"rel": "collection",
-			"href": "https://stac.dataspace.copernicus.eu/v1/collections/GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
-			"type": "application/json"
-		},
-		{
-			"rel": "parent",
-			"href": "https://stac.dataspace.copernicus.eu/v1/collections/GESAT_GEN1_METHANE_CONCENTRATION_MAPS_COG",
-			"type": "application/json"
-		},
-		{
-			"rel": "root",
-			"href": "https://stac.dataspace.copernicus.eu/v1/",
-			"type": "application/json"
-		}
-	],
+	"collection": "ccm-atmospheric-ch4-mr",
 	"assets": {
 		"Product": {
-			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.tar",
+			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tar",
 			"roles": [
 				"data",
 				"metadata",
@@ -122,22 +104,22 @@
 			"title": "TAR product",
 			"type": "application/tar"
 		},
-		"methane_map": {
-			"title": "Methane Map",
-			"description": "Methane Concentration Map, values expressed in ppmv",
+		"ch4": {
+			"title": "Methane conenctration [ppmv]",
+			"description": "Methane concentration values expressed in ppmv",
 			"roles": [
 				"data"
 			],
 			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
 			"data_type": "float32",
 			"file:checksum": "1e20d920a7a20b138d61ecaf46e11982059462ecb14f707d807dd59ef5925ee01c2f",
-			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.tif",
+			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tif",
 			"file:size": 270037,
 			"nodata": "nan",
 			"raster:scale": 1,
 			"raster:offset": 0
 		},
-		"quicklook": {
+		"thumbnail": {
 			"title": "Quicklook",
 			"description": "Quicklook providing a visual preview of the methane product for this acquisition.",
 			"roles": [
@@ -145,7 +127,7 @@
 			],
 			"type": "image/png",
 			"file:checksum": "1e204c31eaf2f3aec2b2c162fb41dd74d926ac494e1d3fb6032341adcc7218116987",
-			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V200.png",
+			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.png",
 			"file:size": 374818
 		}
 	}
