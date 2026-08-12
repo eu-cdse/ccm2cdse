@@ -11,7 +11,7 @@
 		"https://stac-extensions.github.io/sat/v1.1.0/schema.json",
 		"https://stac-extensions.github.io/view/v1.0.0/schema.json"
 	],
-	"id": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100",
+	"id": "GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100",
 	"bbox": [
 		-7.6161,
 		33.3873,
@@ -95,7 +95,7 @@
 	"collection": "ccm-atmospheric-ch4-mr",
 	"assets": {
 		"Product": {
-			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tar",
+			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tar",
 			"roles": [
 				"data",
 				"metadata",
@@ -113,7 +113,7 @@
 			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
 			"data_type": "float32",
 			"file:checksum": "1e20d920a7a20b138d61ecaf46e11982059462ecb14f707d807dd59ef5925ee01c2f",
-			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100/AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tif",
+			"file:local_path": "GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100/GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tif",
 			"file:size": 270037,
 			"nodata": "nan",
 			"raster:scale": 1,
@@ -127,7 +127,7 @@
 			],
 			"type": "image/png",
 			"file:checksum": "1e204c31eaf2f3aec2b2c162fb41dd74d926ac494e1d3fb6032341adcc7218116987",
-			"file:local_path": "AS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.png",
+			"file:local_path": "GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.png",
 			"file:size": 374818
 		}
 	}
