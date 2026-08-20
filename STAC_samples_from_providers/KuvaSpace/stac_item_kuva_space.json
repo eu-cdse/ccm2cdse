@@ -157,6 +157,7 @@
         "view:sun_azimuth": 166.53297,
         "view:incidence_angle": 2.3015711
     },
+    "links": [],
     "assets": {
         "Product": {
             "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/20/HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100.tar",
@@ -184,6 +185,16 @@
             ],
             "title": "Top Of Atmosphere (TOA) reflectance",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "rgb_thumbnail": {
+            "file:local_path": "HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100/rgb_thumbnail.jpg",
+            "file:checksum": "122079b4296e1dabcde6b23cc904520c35f2ca4456214cc677317a138f9ee9184cb7",
+            "file:size": 56596,
+            "type": "image/jpeg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "RGB Thumbnail"
         }
     }
 }
