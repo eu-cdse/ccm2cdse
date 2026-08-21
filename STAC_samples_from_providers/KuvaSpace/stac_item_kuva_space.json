@@ -119,7 +119,7 @@
             ]
         ]
     },
-    "collection": "ccm_hyperspectral_ref_hr",
+    "collection": "ccm-hyperspectral-ref-hr",
     "properties": {
         "datetime": "2025-09-19T10:04:31.890814Z",
         "start_datetime": "2025-09-19T10:04:31.890814Z",
