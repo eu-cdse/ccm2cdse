@@ -44,7 +44,7 @@
             ]
         ]
     },
-    "collection": "ccm-hyperspectral-ref-vhr",
+    "collection": "ccm_hyperspectral_ref_vhr",
     "properties": {
         "datetime": "2025-08-18T08:26:10Z",
         "start_datetime": "2025-08-18T08:26:10Z",
