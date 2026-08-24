@@ -47,7 +47,7 @@
   ],
   "properties": {
     "description": "OroraTech Level-2 Land Surface Temperature expressed in Kelvin.",
-    "eo:cloud_cover": 0.23,
+    "eo:cloud_cover": 23.0,
     "processing:facility": "OroraTech",
     "processing:level": "L2",
     "processing:version": "v0.1.0",
@@ -80,8 +80,8 @@
     "lst": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "title": "Land Surface Temperature [K]",
-      "nodata": "nan",
-      "data_type": "float32",
+      "nodata": 0,
+      "data_type": "uint16",
       "bands": [
         {
           "name": "lst",
