@@ -111,6 +111,17 @@
 			"file:size": 344442,
 			"nodata": "nan"
 		},
+		"ch4_netcdf": {
+			"title": "Methane map (netcdf)",
+			"description": "Methane concentration with auxiliary datas",
+			"roles": [
+				"data"
+			],
+			"type": "application/netcdf",
+			"file:checksum": "1e20c6e5cf5082b30755204cfb0971abaacbe4e84b55596d3ad05890abb7498be6a8",
+			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.nc",
+			"file:size": 7438967
+		},
 		"thumbnail": {
 			"title": "Quicklook",
 			"description": "Quicklook providing a visual preview of the methane product for this acquisition.",
