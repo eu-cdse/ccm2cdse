@@ -7,7 +7,6 @@
 		"https://stac-extensions.github.io/processing/v1.2.0/schema.json",
 		"https://stac-extensions.github.io/product/v1.0.0/schema.json",
 		"https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-		"https://stac-extensions.github.io/raster/v2.0.0/schema.json",
 		"https://stac-extensions.github.io/sat/v1.1.0/schema.json",
 		"https://stac-extensions.github.io/view/v1.0.0/schema.json"
 	],
@@ -82,11 +81,7 @@
 			0.0,
 			1.0
 		],
-		"sat:absolute_orbit": 1,
-		"sat:orbit_cycle": 1,
-		"sat:orbit_state": "descending",
 		"sat:platform_international_designator": "2025-009D",
-		"sat:relative_orbit": 1,
 		"view:azimuth": 306.4501030319841,
 		"view:incidence_angle": 10.202140390825349,
 		"view:sun_azimuth": 155.84005979742975,
@@ -98,14 +93,13 @@
 			"href": "s3://CCM-SENSING-INGESTION/2026/08/24/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tar",
 			"roles": [
 				"data",
-				"metadata",
 				"archive"
 			],
 			"title": "TAR product",
 			"type": "application/tar"
 		},
 		"ch4": {
-			"title": "Methane conenctration [ppmv]",
+			"title": "Methane map [ppmv]",
 			"description": "Methane concentration values expressed in ppmv",
 			"roles": [
 				"data"
@@ -115,9 +109,7 @@
 			"file:checksum": "1e2038415240e76a05970197abdbd1b3d857e4fab7471c14ef2a3223eba141759db1",
 			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tif",
 			"file:size": 344442,
-			"nodata": "nan",
-			"raster:scale": 1,
-			"raster:offset": 0
+			"nodata": "nan"
 		},
 		"thumbnail": {
 			"title": "Quicklook",
