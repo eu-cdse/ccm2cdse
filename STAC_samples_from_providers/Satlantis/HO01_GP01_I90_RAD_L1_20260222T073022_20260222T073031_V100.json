@@ -1,0 +1,530 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json"
+  ],
+  "id": "HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          102.65734876113991,
+          13.911306564908537
+        ],
+        [
+          102.84553841749238,
+          13.911306564908537
+        ],
+        [
+          102.84553841749238,
+          14.063287481516916
+        ],
+        [
+          102.65734876113991,
+          14.063287481516916
+        ],
+        [
+          102.65734876113991,
+          13.911306564908537
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    102.65734876113991,
+    13.911306564908537,
+    102.84553841749238,
+    14.063287481516916
+  ],
+  "properties": {
+    "datetime": "2026-02-22T07:30:22Z",
+    "created": "2026-03-18T13:46:57Z",
+    "start_datetime": "2026-02-22T07:30:22Z",
+    "end_datetime": "2026-02-22T07:30:31Z",
+    "processing:level": "L1",
+    "processing:datetime": "2026-03-18T13:46:57Z",
+    "processing:version": "111",
+    "processing:facility": "Satlantis HQ",
+    "platform": "HORACIO",
+    "instruments": [
+      "iSIM90"
+    ],
+    "product:type": "I90_RAD_L1",
+    "product:timeliness": "PT72H",
+    "product:timeliness_category": "NTC",
+    "swath": 18.53,
+    "view:sun_elevation": 50.1111010817,
+    "view:sun_azimuth": 234.58431507295018,
+    "view:incidence_angle": 13.91588366001187,
+    "view:azimuth": 293.34126529532443,
+    "gsd": 2.0903241689998464,
+    "proj:code": "EPSG:32648",
+    "sat:absolute_orbit":11546,
+    "sat:orbit_state":"descending",
+    "sat:platform_international_designator":"24043A"
+  },
+  "assets": {
+    "Product": {
+      "href": "s3://BUCKET-NAME/<YYYY/MM/DD/PRODUCT_NAME.tar>",
+      "title": "TAR product",
+      "type": "application/tar",
+      "roles": [
+        "data",
+        "metadata",
+        "archive"
+      ],
+      "vnir01": [
+        {
+          "href": "HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR_band_01.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "PAN product",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR_band_01.tif",
+          "gsd": 2.0903241689998464,
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "blue",
+          "eo:center_wavelength": 0.492,
+          "eo:full_width_half_max": 0.066,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "BLUE",
+            "description": "Blue"
+          }
+          ]
+        }
+      ],
+      "vnir02": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "PAN product",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": "<TODO: PAN gsd not provided>",
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "green",
+          "eo:center_wavelength": 0.559,
+          "eo:full_width_half_max": 0.036,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "GREEN",
+            "description": "Green"
+          }
+          ]
+        }
+      ],
+      "vnir03": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "PAN product",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": "<TODO: PAN gsd not provided>",
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "red",
+          "eo:center_wavelength": 0.665,
+          "eo:full_width_half_max": 0.03,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "RED",
+            "description": "Red"
+          }
+          ]
+        }
+      ],
+      "vnir04": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "NIR",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": "<TODO: PAN gsd not provided>",
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "nir",
+          "eo:center_wavelength": 0.833,
+          "eo:full_width_half_max": 0.106,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "NIR",
+            "description": "Near Infrared"
+          }
+          ]
+        }
+      ],
+      "pan": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "PAN",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.818269133095036,
+          "proj:shape": [
+            2226,
+            2678
+          ],
+          "proj:transform": [
+            7.818269133095036,
+            0.0,
+            246678.074300179,
+            0.0,
+            -7.818269133095036,
+            1556178.3039603634,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "pan",
+          "eo:center_wavelength": 0.675,
+          "eo:full_width_half_max": 0.45,
+          "raster:scale": 0.00059549946763821,
+          "raster:offset": 12.88561469641557,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "PAN",
+            "description": "Panchromatic"
+          }
+          ]
+        }
+      ],
+      "swir01": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SWIR01",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.818269133095036,
+          "proj:shape": [
+            2226,
+            2678
+          ],
+          "proj:transform": [
+            7.818269133095036,
+            0.0,
+            246678.074300179,
+            0.0,
+            -7.818269133095036,
+            1556178.3039603634,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "SWIR01",
+          "eo:center_wavelength": 0.75,
+          "eo:full_width_half_max": 0.05,
+          "raster:scale": 0.030774588903683894,
+          "raster:offset": -4.402567533863487,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "SWIR01",
+            "description": "O2"
+          }
+          ]
+        }
+      ],
+      "swir02": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SWIR02",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.818269133095036,
+          "proj:shape": [
+            2226,
+            2678
+          ],
+          "proj:transform": [
+            7.818269133095036,
+            0.0,
+            246678.074300179,
+            0.0,
+            -7.818269133095036,
+            1556178.3039603634,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "H2O",
+          "eo:center_wavelength": 0.9475,
+          "eo:full_width_half_max": 0.035,
+          "raster:scale": 0.030774588903683894,
+          "raster:offset": -4.402567533863487,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "SWIR02",
+            "description": "H2O"
+          }
+          ]
+        }
+      ],
+      "swir03": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SWIR03",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.818269133095036,
+          "proj:shape": [
+            2226,
+            2678
+          ],
+          "proj:transform": [
+            7.818269133095036,
+            0.0,
+            246678.074300179,
+            0.0,
+            -7.818269133095036,
+            1556178.3039603634,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "Continuum",
+          "eo:center_wavelength": 1.57,
+          "eo:full_width_half_max": 0.038,
+          "raster:scale": 0.030774588903683894,
+          "raster:offset": -4.402567533863487,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "SWIR03",
+            "description": "Continuum"
+          }
+          ]
+        }
+      ],
+      "swir04": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SWIR04",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.818269133095036,
+          "proj:shape": [
+            2226,
+            2678
+          ],
+          "proj:transform": [
+            7.818269133095036,
+            0.0,
+            246678.074300179,
+            0.0,
+            -7.818269133095036,
+            1556178.3039603634,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "CO2",
+          "eo:center_wavelength": 1.577,
+          "eo:full_width_half_max": 0.028,
+          "raster:scale": 0.030774588903683894,
+          "raster:offset": -4.402567533863487,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "SWIR04",
+            "description": "CO2"
+          }
+          ]
+        }
+      ],
+      "swir05": [
+        {
+          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "SWIR05",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.818269133095036,
+          "proj:shape": [
+            2226,
+            2678
+          ],
+          "proj:transform": [
+            7.818269133095036,
+            0.0,
+            246678.074300179,
+            0.0,
+            -7.818269133095036,
+            1556178.3039603634,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "CH4",
+          "eo:center_wavelength": 1.66,
+          "eo:full_width_half_max": 0.04,
+          "raster:scale": 0.030774588903683894,
+          "raster:offset": -4.402567533863487,
+          "nodata": 65535.0,
+          "bands": [
+          {
+            "name": "SWIR05",
+            "description": "CH4"
+          }
+          ]
+        }
+      ]
+    },
+    "metadata": {
+      "href": "20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml",
+      "type": "application/xml",
+      "title": "Product metadata",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 7418,
+      "file:checksum": "122061d50255ed102ee7702bcb9779c09fdef9a8b2b0dcb85cbe20e0aa894c766332",
+      "file:local_path": "20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml"
+    },
+    "preview": {
+      "href": "preview.png",
+      "type": "image/png",
+      "title": "Preview image",
+      "roles": [
+        "thumbnail"
+      ],
+      "file:size": 388299,
+      "file:checksum": "12204eb4f2e076425f532e96a178ed305ecb97c7fa9f0457f327ac673f8cf06c39ad",
+      "file:local_path": "preview.png"
+    }
+  },
+  "collection": "GENERIC_SAMPLES_HORACIO_L2A"
+}
