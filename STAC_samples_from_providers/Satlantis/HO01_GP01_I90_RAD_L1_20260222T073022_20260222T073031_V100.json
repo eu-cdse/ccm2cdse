@@ -11,7 +11,7 @@
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.1.0/schema.json"
   ],
-  "id": "HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100",
+  "id": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -61,12 +61,11 @@
     "product:type": "I90_RAD_L1",
     "product:timeliness": "PT72H",
     "product:timeliness_category": "NTC",
-    "swath": 18.53,
     "view:sun_elevation": 50.1111010817,
     "view:sun_azimuth": 234.58431507295018,
     "view:incidence_angle": 13.91588366001187,
     "view:azimuth": 293.34126529532443,
-    "gsd": 2.0903241689998464,
+    "gsd": 2.09,
     "proj:code": "EPSG:32648",
     "sat:absolute_orbit":11546,
     "sat:orbit_state":"descending",
@@ -82,19 +81,18 @@
         "metadata",
         "archive"
       ],
-      "vnir01": [
+      "vnir01_492nm": [
         {
-          "href": "HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR_band_01.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "PAN product",
+          "title": "Radiance at the top of atmosphere at 492 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/HO01_GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR_band_01.tif",
-          "gsd": 2.0903241689998464,
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR01.tif",
+          "gsd": 2.09,
           "proj:shape": [
             8139,
             9806
@@ -115,28 +113,27 @@
           "eo:full_width_half_max": 0.066,
           "raster:scale": 0.006254762379924836,
           "raster:offset": 4.933484618709143,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "BLUE",
-            "description": "Blue"
+            "name": "vnir01_492nm",
+            "description": "Radiance at the top of atmosphere at 492 nm"
           }
           ]
         }
       ],
-      "vnir02": [
+      "vnir02_559nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "PAN product",
+          "title": "Radiance at the top of atmosphere at 559 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": "<TODO: PAN gsd not provided>",
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_VNIR02.tif",
+          "gsd": <TO BE PROVIDED>,
           "proj:shape": [
             8139,
             9806
@@ -157,28 +154,27 @@
           "eo:full_width_half_max": 0.036,
           "raster:scale": 0.006254762379924836,
           "raster:offset": 4.933484618709143,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "GREEN",
-            "description": "Green"
+            "name": "vnir02_559nm",
+            "description": "Radiance at the top of atmosphere at 559 nm"
           }
           ]
         }
       ],
-      "vnir03": [
+      "vnir03_665nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "PAN product",
+          "title": "Radiance at the top of atmosphere at 665 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": "<TODO: PAN gsd not provided>",
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_VNIR03.tif",
+          "gsd": <TO BE PROVIDED>,
           "proj:shape": [
             8139,
             9806
@@ -199,28 +195,27 @@
           "eo:full_width_half_max": 0.03,
           "raster:scale": 0.006254762379924836,
           "raster:offset": 4.933484618709143,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "RED",
-            "description": "Red"
+            "name": "vnir03_665nm",
+            "description": "Radiance at the top of atmosphere at 665 nm"
           }
           ]
         }
       ],
-      "vnir04": [
+      "vnir04_833nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "NIR",
+          "title": "Radiance at the top of atmosphere at 675 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": "<TODO: PAN gsd not provided>",
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_VNIR04.tif",
+          "gsd": <TO BE PROVIDED>,
           "proj:shape": [
             8139,
             9806
@@ -241,28 +236,27 @@
           "eo:full_width_half_max": 0.106,
           "raster:scale": 0.006254762379924836,
           "raster:offset": 4.933484618709143,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "NIR",
-            "description": "Near Infrared"
+            "name": "vnir04_833nm",
+            "description": "Radiance at the top of atmosphere at 833 nm"
           }
           ]
         }
       ],
       "pan": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "PAN",
+          "title": "Panchromatic radiance at the top of atmosphere at 675 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": 7.818269133095036,
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "gsd": 7.81,
           "proj:shape": [
             2226,
             2678
@@ -283,18 +277,17 @@
           "eo:full_width_half_max": 0.45,
           "raster:scale": 0.00059549946763821,
           "raster:offset": 12.88561469641557,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "PAN",
-            "description": "Panchromatic"
+            "name": "pan",
+            "description": "Panchromatic radiance at the top of atmosphere at 675 nm"
           }
           ]
         }
       ],
       "swir01": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
           "title": "SWIR01",
           "roles": [
@@ -303,8 +296,8 @@
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": 7.818269133095036,
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_SWIR01.tif",
+          "gsd": 7.81,
           "proj:shape": [
             2226,
             2678
@@ -320,33 +313,32 @@
             0.0,
             1.0
           ],
-          "eo:common_name": "SWIR01",
+          "eo:common_name": "rededge075",
           "eo:center_wavelength": 0.75,
           "eo:full_width_half_max": 0.05,
           "raster:scale": 0.030774588903683894,
           "raster:offset": -4.402567533863487,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "SWIR01",
-            "description": "O2"
+            "name": "swir01_750",
+            "description": "Radiance at the top of atmosphere at 750 nm"
           }
           ]
         }
       ],
-      "swir02": [
+      "swir02_947nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "SWIR02",
+          "title": "Radiance at the top of atmosphere at 947 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": 7.818269133095036,
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_SWIR02.tif",
+          "gsd": 7.81,
           "proj:shape": [
             2226,
             2678
@@ -362,7 +354,7 @@
             0.0,
             1.0
           ],
-          "eo:common_name": "H2O",
+          "eo:common_name": "nir09",
           "eo:center_wavelength": 0.9475,
           "eo:full_width_half_max": 0.035,
           "raster:scale": 0.030774588903683894,
@@ -370,25 +362,24 @@
           "nodata": 65535.0,
           "bands": [
           {
-            "name": "SWIR02",
-            "description": "H2O"
+            "name": "swir02_947nm",
+            "description": "Radiance at the top of atmosphere at 947 nm"
           }
           ]
         }
       ],
-      "swir03": [
+      "swir03_1570nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "SWIR03",
+          "title": "Radiance at the top of atmosphere at 1570 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": 7.818269133095036,
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_SWIR03.tif",
+          "gsd": 7.81,
           "proj:shape": [
             2226,
             2678
@@ -404,32 +395,31 @@
             0.0,
             1.0
           ],
-          "eo:common_name": "Continuum",
+          "eo:common_name": "swir16",
           "eo:center_wavelength": 1.57,
           "eo:full_width_half_max": 0.038,
           "raster:scale": 0.030774588903683894,
           "raster:offset": -4.402567533863487,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "SWIR03",
-            "description": "Continuum"
+            "name": "swir03_1570nm",
+            "description": "Radiance at the top of atmosphere at 1570 nm"
           }
           ]
         }
       ],
-      "swir04": [
+      "swir04_1577nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "SWIR04",
+          "title": "Radiance at the top of atmosphere at 1577 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_SWIR04.tif",
           "gsd": 7.818269133095036,
           "proj:shape": [
             2226,
@@ -446,33 +436,32 @@
             0.0,
             1.0
           ],
-          "eo:common_name": "CO2",
+          "eo:common_name": "swir16",
           "eo:center_wavelength": 1.577,
           "eo:full_width_half_max": 0.028,
           "raster:scale": 0.030774588903683894,
           "raster:offset": -4.402567533863487,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "SWIR04",
-            "description": "CO2"
+            "name": "swir04_1577nm",
+            "description": "Radiance at the top of atmosphere at 1577 nm"
           }
           ]
         }
       ],
-      "swir05": [
+      "swir05_1660nm": [
         {
-          "href": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
           "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-          "title": "SWIR05",
+          "title": "Radiance at the top of atmosphere at 1660 nm",
           "roles": [
             "data"
           ],
           "data_type": "uint16",
           "file:size": 101576148,
           "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-          "file:local_path": "20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_PAN.tif",
-          "gsd": 7.818269133095036,
+          "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260207T155902_20260207T155905_0000005993_GEISATP_2A_111_20260210T133227_SWIR05.tif",
+          "gsd": 7.81,
           "proj:shape": [
             2226,
             2678
@@ -488,34 +477,52 @@
             0.0,
             1.0
           ],
-          "eo:common_name": "CH4",
+          "eo:common_name": "swir16",
           "eo:center_wavelength": 1.66,
           "eo:full_width_half_max": 0.04,
           "raster:scale": 0.030774588903683894,
           "raster:offset": -4.402567533863487,
-          "nodata": 65535.0,
+          "nodata": 65535,
           "bands": [
           {
-            "name": "SWIR05",
-            "description": "CH4"
+            "name": "swir05_1660nm",
+            "description": "Radiance at the top of atmosphere at 1660 nm"
           }
           ]
         }
       ]
     },
-    "metadata": {
-      "href": "20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml",
+    "metadata_pan": {
       "type": "application/xml",
-      "title": "Product metadata",
+      "title": "Metadata for the panchromatic band",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": <TO BE PROVIDED>,
+      "file:checksum": "<TO BE PROVIDED>",
+      "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_PAN.xml"
+    },
+    "metadata_vnir": {
+      "type": "application/xml",
+      "title": "Metadata for the VNIR bands",
       "roles": [
         "metadata"
       ],
       "file:size": 7418,
       "file:checksum": "122061d50255ed102ee7702bcb9779c09fdef9a8b2b0dcb85cbe20e0aa894c766332",
-      "file:local_path": "20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml"
+      "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml"
     },
-    "preview": {
-      "href": "preview.png",
+    "metadata_swir": {
+      "type": "application/xml",
+      "title": "Metadata for the VNIR bands",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": <TO BE PROVIDED>,
+      "file:checksum": "<TO BE PROVIDED>",
+      "file:local_path": "GP01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_SWIR.xml"
+    },
+    "thumbnail": {
       "type": "image/png",
       "title": "Preview image",
       "roles": [
@@ -526,5 +533,5 @@
       "file:local_path": "preview.png"
     }
   },
-  "collection": "GENERIC_SAMPLES_HORACIO_L2A"
+  "collection": "ccm-atmospheric-rad-hr"
 }
