@@ -9,7 +9,7 @@
         "https://stac-extensions.github.io/processing/v1.2.0/schema.json", /* REQUIRED */
         "https://stac-extensions.github.io/product/v1.0.0/schema.json", /* REQUIRED */
         "https://stac-extensions.github.io/projection/v2.0.0/schema.json", /* REQUIRED */
-        "https://stac-extensions.github.io/raster/v2.0.0/schema.json", /* REQUIRED */
+        "https://stac-extensions.github.io/raster/v2.0.0/schema.json", /* REQUIRED IF APPLICABLE */
         "https://stac-extensions.github.io/sar/v1.2.0/schema.json", /* REQUIRED IF APPLICABLE */
         "https://stac-extensions.github.io/sat/v1.1.0/schema.json", /* REQUIRED IF APPLICABLE */
         "https://stac-extensions.github.io/view/v1.0.0/schema.json" /* OPTIONAL */
@@ -131,7 +131,7 @@
         	"file:checksum":"<STRING>", /* REQUIRED Provides a way to specify file checksums (e.g. BLAKE2, MD5, SHA1, SHA2, SHA3). The hashes are self-identifying hashes as described in the Multihash https://github.com/multiformats/multihash specification and must be encoded as hexadecimal string with lowercase letters.  */
         	"file:local_path":"<PRODUCT_NAME>/../<FILE_NAME>", /* REQUIRED https://github.com/stac-extensions/file?tab=readme-ov-file#local-path */
         	"file:size":"<NUMBER>", /* REQUIRED The file size, specified in bytes. */
-        	"nodata":"<NUMBER>", /* REQUIRED IF APPLICABLE https://github.com/radiantearth/stac-spec/blob/master/commons/common-metadata.md#no-data */
+        	"nodata":"<NUMBER OR nan>", /* REQUIRED IF APPLICABLE https://github.com/radiantearth/stac-spec/blob/master/commons/common-metadata.md#no-data */
         	"raster:scale":"<NUMBER>", /* REQUIRED IF APPLICABLE Multiplicator factor of the pixel value to transform into the value (i.e. translate digital number to reflectance) */
         	"raster:offset":"<NUMBER>", /* REQUIRED IF APPLICABLE Number to be added to the pixel value (after scaling) to transform into the value (i.e. translate digital number to reflectance).  */
         	"roles": [
@@ -151,6 +151,21 @@
             ],
         	"title":"Product metadata", /* REQUIRED The displayed title for clients and users. */
         	"type":"application/xml"  /* REQUIRED, Media type (https://github.com/radiantearth/stac-spec/blob/master/commons/assets.md#media-types) of the asset. See the common media types in the best practice doc for commonly used asset types. */
-        }
+        },
+		"thumbnail": {
+			  "roles": [
+					"thumbnail",
+					"overview"
+			  ],
+			  "file:size": <NUMBER>,
+			  "proj:shape": [<NUMBER>, <NUMBER>],
+			  "file:checksum": "<STRING>", /* REQUIRED Provides a way to specify file checksums (e.g. BLAKE2, MD5, SHA1, SHA2, SHA3). The hashes are self-identifying hashes as described in the Multihash (https://github.com/multiformats/multihash) specification and must be encoded as hexadecimal (base 16) string with lowercase letters.  */
+			  "file:local_path": "<THUMBNAIL_FILE>", /* REQUIRED IF APPLICABLE. name of the tumbnail in the .tar archive */,
+			  "type": "image/jpeg",
+			  "title": "Thumbnail",
+			  "data_type": "uint8",
+			  "proj:code": null,
+    		}
+		}
     }
 }
