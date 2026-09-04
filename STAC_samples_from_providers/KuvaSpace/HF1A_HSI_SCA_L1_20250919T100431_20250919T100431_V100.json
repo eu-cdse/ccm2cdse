@@ -2,8 +2,6 @@
     "type": "Feature",
     "stac_version": "1.1.0",
     "stac_extensions": [
-        "https://stac-extensions.github.io/alternate-assets/v1.2.0/schema.json",
-        "https://stac-extensions.github.io/authentication/v1.1.0/schema.json",
         "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
         "https://stac-extensions.github.io/file/v2.1.0/schema.json",
         "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
@@ -157,7 +155,6 @@
         "view:sun_azimuth": 166.53297,
         "view:incidence_angle": 2.3015711
     },
-    "links": [],
     "assets": {
         "Product": {
             "href": "s3://CCM-KUVA-SPACE-DEV/2026/07/20/HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100.tar",
@@ -186,15 +183,15 @@
             "title": "Top Of Atmosphere (TOA) reflectance",
             "type": "image/tiff; application=geotiff; profile=cloud-optimized"
         },
-        "rgb_thumbnail": {
-            "file:local_path": "HF1A_HSI_SCA_L1_20250919T100431_20250919T100431_V100/rgb_thumbnail.jpg",
+        "thumbnail": {
             "file:checksum": "122079b4296e1dabcde6b23cc904520c35f2ca4456214cc677317a138f9ee9184cb7",
             "file:size": 56596,
+            "file:local_path": "rgb_thumbnail.jpg"
             "type": "image/jpeg",
             "roles": [
                 "thumbnail"
             ],
-            "title": "RGB Thumbnail"
+            "title": "Thumbnail"
         }
     }
 }
