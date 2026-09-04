@@ -1,0 +1,271 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json"
+  ],
+  "id": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          102.65734876113991,
+          13.911306564908537
+        ],
+        [
+          102.84553841749238,
+          13.911306564908537
+        ],
+        [
+          102.84553841749238,
+          14.063287481516916
+        ],
+        [
+          102.65734876113991,
+          14.063287481516916
+        ],
+        [
+          102.65734876113991,
+          13.911306564908537
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    102.65734876113991,
+    13.911306564908537,
+    102.84553841749238,
+    14.063287481516916
+  ],
+  "properties": {
+    "datetime": "2026-02-22T07:30:22Z",
+    "created": "2026-03-18T13:46:57Z",
+    "start_datetime": "2026-02-22T07:30:22Z",
+    "end_datetime": "2026-02-22T07:30:31Z",
+    "processing:level": "L1",
+    "processing:datetime": "2026-03-18T13:46:57Z",
+    "processing:version": "111",
+    "processing:facility": "Satlantis HQ",
+    "platform": "HORACIO",
+    "instruments": [
+      "iSIM90"
+    ],
+    "product:type": "I90_RAD_L1",
+    "product:timeliness": "PT72H",
+    "product:timeliness_category": "NTC",
+    "view:sun_elevation": 50.1111010817,
+    "view:sun_azimuth": 234.58431507295018,
+    "view:incidence_angle": 13.91588366001187,
+    "view:azimuth": 293.34126529532443,
+    "gsd": 2.09,
+    "proj:code": "EPSG:32648",
+    "sat:absolute_orbit":11546,
+    "sat:orbit_state":"descending",
+    "sat:platform_international_designator":"24043A"
+  },
+  "assets": {
+    "Product": {
+      "href": "s3://CCM-SATLANTIS-DEV/2026/02/22/HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100.tar",
+      "title": "TAR product",
+      "type": "application/tar",
+      "roles": [
+        "data",
+        "metadata",
+        "archive"
+      ],
+      "vnir01_492nm": [
+        {
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Radiance at the top of atmosphere at 492 nm",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR01.tif",
+          "gsd": 2.09,
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "blue",
+          "eo:center_wavelength": 0.492,
+          "eo:full_width_half_max": 0.066,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535,
+          "bands": [
+          {
+            "name": "vnir01_492nm",
+            "description": "Radiance at the top of atmosphere at 492 nm"
+          }
+          ]
+        }
+      ],
+      "vnir02_559nm": [
+        {
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Radiance at the top of atmosphere at 559 nm",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR02.tif",
+          "gsd": 2.09,
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "green",
+          "eo:center_wavelength": 0.559,
+          "eo:full_width_half_max": 0.036,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535,
+          "bands": [
+          {
+            "name": "vnir02_559nm",
+            "description": "Radiance at the top of atmosphere at 559 nm"
+          }
+          ]
+        }
+      ],
+      "vnir03_665nm": [
+        {
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Radiance at the top of atmosphere at 665 nm",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR03.tif",
+          "gsd": 2.09,
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "red",
+          "eo:center_wavelength": 0.665,
+          "eo:full_width_half_max": 0.03,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535,
+          "bands": [
+          {
+            "name": "vnir03_665nm",
+            "description": "Radiance at the top of atmosphere at 665 nm"
+          }
+          ]
+        }
+      ],
+      "vnir04_833nm": [
+        {
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "title": "Radiance at the top of atmosphere at 675 nm",
+          "roles": [
+            "data"
+          ],
+          "data_type": "uint16",
+          "file:size": 101576148,
+          "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
+          "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR04.tif",
+          "gsd": 2.09,
+          "proj:shape": [
+            8139,
+            9806
+          ],
+          "proj:transform": [
+            2.0903241689998464,
+            0.0,
+            246853.6892482386,
+            0.0,
+            -2.0903241689998464,
+            1555984.9614356717,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "eo:common_name": "nir",
+          "eo:center_wavelength": 0.833,
+          "eo:full_width_half_max": 0.106,
+          "raster:scale": 0.006254762379924836,
+          "raster:offset": 4.933484618709143,
+          "nodata": 65535,
+          "bands": [
+          {
+            "name": "vnir04_833nm",
+            "description": "Radiance at the top of atmosphere at 833 nm"
+          }
+          ]
+        }
+      ]
+    },
+    "metadata_vnir": {
+      "type": "application/xml",
+      "title": "Metadata for the VNIR bands",
+      "roles": [
+        "metadata"
+      ],
+      "file:size": 7418,
+      "file:checksum": "122061d50255ed102ee7702bcb9779c09fdef9a8b2b0dcb85cbe20e0aa894c766332",
+      "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml"
+    },
+    "thumbnail": {
+      "type": "image/png",
+      "title": "Preview image",
+      "roles": [
+        "thumbnail"
+      ],
+      "file:size": 388299,
+      "file:checksum": "12204eb4f2e076425f532e96a178ed305ecb97c7fa9f0457f327ac673f8cf06c39ad",
+      "file:local_path": "preview.png"
+    }
+  },
+  "collection": "ccm-atmospheric-rad-hr"
+}
