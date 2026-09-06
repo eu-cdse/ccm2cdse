@@ -7,49 +7,48 @@
 		"https://stac-extensions.github.io/processing/v1.2.0/schema.json",
 		"https://stac-extensions.github.io/product/v1.0.0/schema.json",
 		"https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-		"https://stac-extensions.github.io/raster/v2.0.0/schema.json",
 		"https://stac-extensions.github.io/sat/v1.1.0/schema.json",
 		"https://stac-extensions.github.io/view/v1.0.0/schema.json"
 	],
-	"id": "GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100",
+	"id": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100",
 	"bbox": [
-		-7.6161,
-		33.3873,
-		-7.4629,
-		33.5850
+		54.1142759,
+		38.4106102,
+		54.280874,
+		38.6090182
 	],
 	"geometry": {
 		"type": "Polygon",
 		"coordinates": [
 			[
 				[
-					-7.6161,
-					33.4070
+					54.1142759,
+					38.4316531
 				],
 				[
-					-7.5088,
-					33.3873
+					54.2294212,
+					38.4106102
 				],
 				[
-					-7.4629,
-					33.5653
+					54.280874,
+					38.5879753
 				],
 				[
-					-7.5702,
-					33.5850
+					54.1657287,
+					38.6090182
 				],
 				[
-					-7.6161,
-					33.4070
+					54.1142759,
+					38.4316531
 				]
 			]
 		]
 	},
 	"properties": {
-		"datetime": "2026-05-01T11:49:06Z",
+		"datetime": "2026-08-05T07:51:04.993127Z",
 		"description": "Sensing Methane Concentration Map, expressed in ppmv",
-		"start_datetime": "2026-05-01T11:49:04Z",
-		"end_datetime": "2026-05-01T11:49:09Z",
+		"start_datetime": "2026-08-05T07:51:02Z",
+		"end_datetime": "2026-08-05T07:51:07Z",
 		"eo:cloud_cover": 0,
 		"gsd": 50,
 		"instruments": [
@@ -60,9 +59,9 @@
 		"processing:level": "L2",
 		"processing:lineage": "Calibrated SWIR observations, processed using the methane retrieval chain, including radiometric correction, geometric registration, DEM-aware spectral cube assembly, spectral phase correction and effect-guided differential absorption inversion for CH4 retrieval.",
 		"processing:software": {
-			"workflow:id": "W-DPC-20260625-bf1a3b"
+			"workflow:id": "W-DPC-20260805-85f9ca"
 		},
-		"processing:version": "2.0.0",
+		"processing:version": "2.2.2",
 		"product:type": "SWI_CH4_L2",
 		"product:timeliness": "PT24H",
 		"product:timeliness_category": "STD",
@@ -72,52 +71,56 @@
 			200
 		],
 		"proj:transform": [
-			-0.00053668131488743,
-			0.0001146789474880597,
-			-7.508817204023791,
-			0.00009830485919412656,
-			0.0004450721505982092,
-			33.38736097564795,
+			-0.0005757262685855488,
+			0.0001286319979955538,
+			54.229421201117766,
+			0.00010521461711900538,
+			0.00044341280889293935,
+			38.41061015892704,
 			0.0,
 			0.0,
 			1.0
 		],
-		"sat:absolute_orbit": 1,
-		"sat:orbit_cycle": 1,
-		"sat:orbit_state": "descending",
 		"sat:platform_international_designator": "2025-009D",
-		"sat:relative_orbit": 1,
-		"view:azimuth": 315.0539701282169,
-		"view:incidence_angle": 6.004296216274966,
-		"view:sun_azimuth": 152.14545002191971,
-		"view:sun_elevation": 69.90618891720169
+		"view:azimuth": 306.4501030319841,
+		"view:incidence_angle": 10.202140390825349,
+		"view:sun_azimuth": 155.84005979742975,
+		"view:sun_elevation": 67.03068217350932
 	},
 	"collection": "ccm-atmospheric-ch4-mr",
 	"assets": {
 		"Product": {
-			"href": "s3://CCM-SENSING-INGESTION/2026/07/15/GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tar",
+			"href": "s3://CCM-SENSING-INGESTION/2026/08/24/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tar",
 			"roles": [
 				"data",
-				"metadata",
 				"archive"
 			],
 			"title": "TAR product",
 			"type": "application/tar"
 		},
 		"ch4": {
-			"title": "Methane conenctration [ppmv]",
+			"title": "Methane map [ppmv]",
 			"description": "Methane concentration values expressed in ppmv",
 			"roles": [
 				"data"
 			],
 			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
 			"data_type": "float32",
-			"file:checksum": "1e20d920a7a20b138d61ecaf46e11982059462ecb14f707d807dd59ef5925ee01c2f",
-			"file:local_path": "GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100/GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.tif",
-			"file:size": 270037,
-			"nodata": "nan",
-			"raster:scale": 1,
-			"raster:offset": 0
+			"file:checksum": "1e2038415240e76a05970197abdbd1b3d857e4fab7471c14ef2a3223eba141759db1",
+			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tif",
+			"file:size": 344442,
+			"nodata": "nan"
+		},
+		"ch4_netcdf": {
+			"title": "Methane map (netcdf)",
+			"description": "Methane concentration with auxiliary datas",
+			"roles": [
+				"data"
+			],
+			"type": "application/netcdf",
+			"file:checksum": "1e20c6e5cf5082b30755204cfb0971abaacbe4e84b55596d3ad05890abb7498be6a8",
+			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.nc",
+			"file:size": 7438967
 		},
 		"thumbnail": {
 			"title": "Quicklook",
@@ -126,9 +129,9 @@
 				"thumbnail"
 			],
 			"type": "image/png",
-			"file:checksum": "1e204c31eaf2f3aec2b2c162fb41dd74d926ac494e1d3fb6032341adcc7218116987",
-			"file:local_path": "GS01_SWI_CH4_L2_20260501T114904_20260501T114909_V100.png",
-			"file:size": 374818
+			"file:checksum": "1e2087fe271e10aa46fbd07b12af679d16207cbc9c19aef8bc5fed2278509786e2e4",
+			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.png",
+			"file:size": 147108
 		}
 	}
 }
