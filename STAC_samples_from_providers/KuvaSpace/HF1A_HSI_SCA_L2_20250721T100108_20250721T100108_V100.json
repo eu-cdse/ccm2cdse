@@ -1,0 +1,189 @@
+{
+    "type": "Feature",
+    "stac_version": "1.1.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+        "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+    ],
+    "id": "HF1A_HSI_SCA_L2_20250721T100108_20250721T100108_V100",
+    "bbox": [
+        17.3453043243821,
+        46.61099944032255,
+        18.072908160415604,
+        47.04216393800996
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    17.97122003553483,
+                    46.61103334700713
+                ],
+                [
+                    17.972524176121226,
+                    46.61099944032255
+                ],
+                [
+                    17.972899430193014,
+                    46.61188968615174
+                ],
+                [
+                    17.973299311632566,
+                    46.61322929246038
+                ],
+                [
+                    18.072464206211116,
+                    46.95665295619692
+                ],
+                [
+                    18.07288241350618,
+                    46.958216671025696
+                ],
+                [
+                    18.072908160415604,
+                    46.95866596460631
+                ],
+                [
+                    18.07259292241916,
+                    46.95889942513496
+                ],
+                [
+                    18.05433358904829,
+                    46.9614133524256
+                ],
+                [
+                    18.048137353225734,
+                    46.96225360349412
+                ],
+                [
+                    17.436572644348345,
+                    47.04215693891294
+                ],
+                [
+                    17.436243846605766,
+                    47.04216393800996
+                ],
+                [
+                    17.435063031392907,
+                    47.037914412417216
+                ],
+                [
+                    17.429921272747734,
+                    47.01890021207551
+                ],
+                [
+                    17.422375125210024,
+                    46.99026238364357
+                ],
+                [
+                    17.34816643709009,
+                    46.70675048644042
+                ],
+                [
+                    17.347771400672684,
+                    46.70518365423864
+                ],
+                [
+                    17.345372484764972,
+                    46.69510823819179
+                ],
+                [
+                    17.3453043243821,
+                    46.69353469120185
+                ],
+                [
+                    17.34920518026309,
+                    46.69300464468892
+                ],
+                [
+                    17.97122003553483,
+                    46.61103334700713
+                ]
+            ]
+        ]
+    },
+    "collection": "ccm-hyperspectral-ref-hr",
+    "properties": {
+        "datetime": "2025-07-21T10:01:08.470834Z",
+        "start_datetime": "2025-07-21T10:01:08.470834Z",
+        "end_datetime": "2025-07-21T10:01:08.470834Z",
+        "description": "Kuva Space hyperfield-1a L2A scene acquired on 2025-07-21T10:01:08.470834Z. The product contains 22 VIS-NIR bands at 25m ground sampling distance.",
+        "gsd": 25,
+        "instruments": [
+            "Hyperfield-1A VIS camera",
+            "Hyperfield-1A NIR camera"
+        ],
+        "platform": "hyperfield-1a",
+        "eo:cloud_cover": 0.5343692,
+        "processing:facility": "Kuva Space ground segment",
+        "processing:level": "L2",
+        "product:type": "HSI_SCA_L2",
+        "product:timelines": "PT2H",
+        "proj:code": "EPSG:32633",
+        "proj:shape": [
+            1875,
+            2194
+        ],
+        "proj:transform": [
+            25.0,
+            0.0,
+            678967.1759247482,
+            0.0,
+            -25.0,
+            5213055.032341715,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "sat:platform_international_designator": "2024-149CY",
+        "view:azimuth": 122.37313842773438,
+        "view:sun_azimuth": 152.66943,
+        "view:incidence_angle": 4.51055
+    },
+    "assets": {
+        "Product": {
+            "href": "s3://CCM-KUVA-SPACE-DEV/2026/09/07/HF1A_HSI_SCA_L2_20250721T100108_20250721T100108_V100.tar",
+            "roles": [
+                "data",
+                "archive"
+            ],
+            "title": "TAR product",
+            "type": "application/tar"
+        },
+        "l2a": {
+            "data_type": "float32",
+            "file:checksum": "1220f8b90f5c6098e6abf8f010c2e0fb5cbdaf6c648dda65b88a70266e14747ab830",
+            "file:local_path": "HF1A_HSI_SCA_L2_20250721T100108_20250721T100108_V100/L2A.tif",
+            "file:size": 194241521,
+            "nodata": "nan",
+            "bands": [
+                {
+                    "name": "l2a",
+                    "description": "BOA reflectance"
+                }
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Bottom Of Atmosphere (BOA) reflectance",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "file:local_path": "rgb_thumbnail.jpg",
+            "file:checksum": "1220565c861fdbe7536ac3a883d011e931c1b823eb89c1c964b6ad1da4d009380635",
+            "file:size": 43016,
+            "type": "image/jpeg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail"
+        }
+    }
+}
