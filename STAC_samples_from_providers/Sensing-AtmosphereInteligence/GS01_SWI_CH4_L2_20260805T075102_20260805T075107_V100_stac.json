@@ -65,22 +65,6 @@
 		"product:type": "SWI_CH4_L2",
 		"product:timeliness": "PT24H",
 		"product:timeliness_category": "STD",
-		"proj:code": "EPSG:4326",
-		"proj:shape": [
-			400,
-			200
-		],
-		"proj:transform": [
-			-0.0005757262685855488,
-			0.0001286319979955538,
-			54.229421201117766,
-			0.00010521461711900538,
-			0.00044341280889293935,
-			38.41061015892704,
-			0.0,
-			0.0,
-			1.0
-		],
 		"sat:platform_international_designator": "2025-009D",
 		"view:azimuth": 306.4501030319841,
 		"view:incidence_angle": 10.202140390825349,
@@ -90,7 +74,7 @@
 	"collection": "ccm-atmospheric-ch4-mr",
 	"assets": {
 		"Product": {
-			"href": "s3://CCM-SENSING-INGESTION/2026/08/24/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tar",
+			"href": "s3://CCM-SENSING-INGESTION/2026/09/16/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tar",
 			"roles": [
 				"data",
 				"archive"
@@ -106,9 +90,9 @@
 			],
 			"type": "image/tiff; application=geotiff; profile=cloud-optimized",
 			"data_type": "float32",
-			"file:checksum": "1e2038415240e76a05970197abdbd1b3d857e4fab7471c14ef2a3223eba141759db1",
+			"file:checksum": "1e20f9a878cdc95dad60a6b7f77642e19d456b3c9fd4cf16cb195e2adba67d81526c",
 			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.tif",
-			"file:size": 344442,
+			"file:size": 341933,
 			"nodata": "nan",
 			"proj:code": "EPSG:4326",
 			"proj:shape": [
@@ -130,18 +114,18 @@
 		"ch4_netcdf": {
 			"title": "Methane concentration layer [ppmv] NetCDF format",
 			"description": "Methane concentration product with auxiliary datasets",
-			"proj:code": null,
-			"proj:shape": [
-				400,
-				200
-			],
 			"roles": [
 				"data"
 			],
 			"type": "application/netcdf",
 			"file:checksum": "1e20c6e5cf5082b30755204cfb0971abaacbe4e84b55596d3ad05890abb7498be6a8",
 			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100/GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.nc",
-			"file:size": 7438967
+			"file:size": 7438967,
+			"proj:shape": [
+				400,
+				200
+			],
+			"proj:code": null
 		},
 		"thumbnail": {
 			"title": "Thumbnail",
@@ -151,7 +135,8 @@
 			],
 			"type": "image/png",
 			"file:checksum": "1e2087fe271e10aa46fbd07b12af679d16207cbc9c19aef8bc5fed2278509786e2e4",
-			"file:size": 147108,			
+			"file:local_path": "GS01_SWI_CH4_L2_20260805T075102_20260805T075107_V100.png",
+			"file:size": 147108
 		}
 	}
 }
