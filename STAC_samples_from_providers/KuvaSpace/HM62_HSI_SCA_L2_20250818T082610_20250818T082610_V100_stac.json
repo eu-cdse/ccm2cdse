@@ -87,6 +87,39 @@
             "title": "TAR product",
             "type": "application/tar"
         },
+        "syke_waterquality": {
+            "description": "In-situ data collected from a station or at a specific location",
+            "file:checksum": "122016fe78333c0bb731b18e912a4634f91c4cd32a9832f1fe776e0b0f1d6738a3d3",
+            "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/syke_waterquality.csv",
+            "file:size": 671,
+            "roles": [
+                "metadata"
+            ],
+            "title": "syke_waterquality",
+            "type": "text/csv"
+        },
+        "ena\u0308ja\u0308rvi_11": {
+            "description": "In-situ data collected from a station or at a specific location",
+            "file:checksum": "122033a1830fc5193782f91403eb7f72d410f3c27ad11ac5f3fa85814e2295410e49",
+            "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/Ena\u0308ja\u0308rvi_11.csv",
+            "file:size": 950,
+            "roles": [
+                "metadata"
+            ],
+            "title": "Ena\u0308ja\u0308rvi_11",
+            "type": "text/csv"
+        },
+        "ena\u0308ja\u0308rvi_rompsinma\u0308k_5": {
+            "description": "In-situ data collected from a station or at a specific location",
+            "file:checksum": "1220a401e59aea05e0e179efecabc4a8f203740ed872b0fa380212bbdb75a23f70dc",
+            "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/Ena\u0308ja\u0308rvi_Rompsinma\u0308k_5.csv",
+            "file:size": 1207,
+            "roles": [
+                "metadata"
+            ],
+            "title": "Ena\u0308ja\u0308rvi_Rompsinma\u0308k_5",
+            "type": "text/csv"
+        },
         "b1_411nm": {
             "data_type": "int16",
             "file:checksum": "1220922a18f37356319be57f3ee4e7b6341a55ad479768080142dc894878e93c375e",
