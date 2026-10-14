@@ -11,48 +11,48 @@
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.1.0/schema.json"
   ],
-  "id": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100",
+  "id": "HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          102.65734876113991,
-          13.911306564908537
+          50.73135027321498,
+          9.824462230203244
         ],
         [
-          102.84553841749238,
-          13.911306564908537
+          50.73135027321498,
+          9.677810547105285
         ],
         [
-          102.84553841749238,
-          14.063287481516916
+          50.92989681518697,
+          9.677810547105285
         ],
         [
-          102.65734876113991,
-          14.063287481516916
+          50.92989681518697,
+          9.824462230203244
         ],
         [
-          102.65734876113991,
-          13.911306564908537
+          50.73135027321498,
+          9.824462230203244
         ]
       ]
     ]
   },
   "bbox": [
-    102.65734876113991,
-    13.911306564908537,
-    102.84553841749238,
-    14.063287481516916
+    50.73135027321498,
+    9.677810547105285,
+    50.92989681518697,
+    9.824462230203244
   ],
   "properties": {
-    "datetime": "2026-02-22T07:30:22Z",
-    "created": "2026-03-18T13:46:57Z",
-    "start_datetime": "2026-02-22T07:30:22Z",
-    "end_datetime": "2026-02-22T07:30:31Z",
+    "datetime": "2026-09-27T11:16:39Z",
+    "created": "2026-09-28T01:17:00Z",
+    "start_datetime": "2026-09-27T11:16:39Z",
+    "end_datetime": "2026-09-27T11:16:48Z",
     "processing:level": "L1",
-    "processing:datetime": "2026-03-18T13:46:57Z",
-    "processing:version": "111",
+    "processing:datetime": "2026-09-28T01:17:00Z",
+    "processing:version": "412",
     "processing:facility": "Satlantis HQ",
     "platform": "HORACIO",
     "instruments": [
@@ -61,19 +61,19 @@
     "product:type": "I90_RAD_L1",
     "product:timeliness": "PT72H",
     "product:timeliness_category": "NTC",
-    "view:sun_elevation": 50.1111010817,
-    "view:sun_azimuth": 234.58431507295018,
-    "view:incidence_angle": 13.91588366001187,
-    "view:azimuth": 293.34126529532443,
-    "gsd": 2.09,
-    "proj:code": "EPSG:32648",
-    "sat:absolute_orbit": 11546,
-    "sat:orbit_state": "descending",
-    "sat:platform_international_designator": "24043A"
+    "view:sun_elevation": 46.316577,
+    "view:sun_azimuth": 257.11752131814467,
+    "view:incidence_angle": 22.3952647083787,
+    "view:azimuth": 280.08687739332504,
+    "gsd": 2.173675,
+    "proj:code": "EPSG:32639",
+    "sat:platform_international_designator": "24043A",
+    "sat:absolute_orbit": 13999,
+    "sat:orbit_state": "descending"
   },
   "assets": {
     "Product": {
-      "href": "s3://CCM-SATLANTIS-DEV/2026/02/22/HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100.tar",
+      "href": "s3://CCM-SATLANTIS-DEV/2026/09/27/HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100.tar",
       "title": "TAR product",
       "type": "application/tar",
       "roles": [
@@ -89,21 +89,21 @@
         "data"
       ],
       "data_type": "uint16",
-      "file:size": 101576148,
-      "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-      "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR01.tif",
-      "gsd": 2.09,
+      "file:size": 63460529,
+      "file:checksum": "12203ef8dc85e3678d86e136edf13342486c8065c8df7160a6a0a47daec721eff390",
+      "file:local_path": "HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100/HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100_VNIR01.tif",
+      "gsd": 2.173675,
       "proj:shape": [
-        8139,
-        9806
+        10065,
+        7497
       ],
       "proj:transform": [
-        2.0903241689998464,
+        2.1645734201291273,
         0.0,
-        246853.6892482386,
+        470525.3155245943,
         0.0,
-        -2.0903241689998464,
-        1555984.9614356717,
+        -2.1645734201291273,
+        1086019.569424014,
         0.0,
         0.0,
         1.0
@@ -111,8 +111,8 @@
       "eo:common_name": "blue",
       "eo:center_wavelength": 0.492,
       "eo:full_width_half_max": 0.066,
-      "raster:scale": 0.006254762379924836,
-      "raster:offset": 4.933484618709143,
+      "raster:scale": 0.299974,
+      "raster:offset": 3.042194,
       "nodata": 65535,
       "bands": [
         {
@@ -128,21 +128,21 @@
         "data"
       ],
       "data_type": "uint16",
-      "file:size": 101576148,
-      "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-      "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR02.tif",
-      "gsd": 2.09,
+      "file:size": 65743341,
+      "file:checksum": "1220bddaaeb881721d4a3da596792a1d6127eb424db99805ded9a0b5f81c3c5cc8f0",
+      "file:local_path": "HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100/HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100_VNIR02.tif",
+      "gsd": 2.173675,
       "proj:shape": [
-        8139,
-        9806
+        10065,
+        7497
       ],
       "proj:transform": [
-        2.0903241689998464,
+        2.1645734201291273,
         0.0,
-        246853.6892482386,
+        470525.3155245943,
         0.0,
-        -2.0903241689998464,
-        1555984.9614356717,
+        -2.1645734201291273,
+        1086019.569424014,
         0.0,
         0.0,
         1.0
@@ -150,8 +150,8 @@
       "eo:common_name": "green",
       "eo:center_wavelength": 0.559,
       "eo:full_width_half_max": 0.036,
-      "raster:scale": 0.006254762379924836,
-      "raster:offset": 4.933484618709143,
+      "raster:scale": 0.423058,
+      "raster:offset": 0.8068,
       "nodata": 65535,
       "bands": [
         {
@@ -167,21 +167,21 @@
         "data"
       ],
       "data_type": "uint16",
-      "file:size": 101576148,
-      "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-      "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR03.tif",
-      "gsd": 2.09,
+      "file:size": 67509720,
+      "file:checksum": "12204823d338120187674ecd29df9745f7299ac5932390f9cb63f5e243bb30de5f08",
+      "file:local_path": "HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100/HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100_VNIR03.tif",
+      "gsd": 2.173675,
       "proj:shape": [
-        8139,
-        9806
+        10065,
+        7497
       ],
       "proj:transform": [
-        2.0903241689998464,
+        2.1645734201291273,
         0.0,
-        246853.6892482386,
+        470525.3155245943,
         0.0,
-        -2.0903241689998464,
-        1555984.9614356717,
+        -2.1645734201291273,
+        1086019.569424014,
         0.0,
         0.0,
         1.0
@@ -189,8 +189,8 @@
       "eo:common_name": "red",
       "eo:center_wavelength": 0.665,
       "eo:full_width_half_max": 0.03,
-      "raster:scale": 0.006254762379924836,
-      "raster:offset": 4.933484618709143,
+      "raster:scale": 0.566711,
+      "raster:offset": 11.744985,
       "nodata": 65535,
       "bands": [
         {
@@ -201,26 +201,26 @@
     },
     "vnir04_833nm": {
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "title": "Radiance at the top of atmosphere at 675 nm",
+      "title": "Radiance at the top of atmosphere at 833 nm",
       "roles": [
         "data"
       ],
       "data_type": "uint16",
-      "file:size": 101576148,
-      "file:checksum": "12204faf97c3674af88ec3650a9427b182aa135896583545829e3c94db502b408ec6",
-      "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR04.tif",
-      "gsd": 2.09,
+      "file:size": 58899453,
+      "file:checksum": "12206f18b5b4637b3a5c3a48a70224eddcd06018723b8f34d133d72c0d273293a9b0",
+      "file:local_path": "HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100/HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100_VNIR04.tif",
+      "gsd": 2.173675,
       "proj:shape": [
-        8139,
-        9806
+        10065,
+        7497
       ],
       "proj:transform": [
-        2.0903241689998464,
+        2.1645734201291273,
         0.0,
-        246853.6892482386,
+        470525.3155245943,
         0.0,
-        -2.0903241689998464,
-        1555984.9614356717,
+        -2.1645734201291273,
+        1086019.569424014,
         0.0,
         0.0,
         1.0
@@ -228,8 +228,8 @@
       "eo:common_name": "nir",
       "eo:center_wavelength": 0.833,
       "eo:full_width_half_max": 0.106,
-      "raster:scale": 0.006254762379924836,
-      "raster:offset": 4.933484618709143,
+      "raster:scale": 0.257732,
+      "raster:offset": 6.141037,
       "nodata": 65535,
       "bands": [
         {
@@ -244,9 +244,9 @@
       "roles": [
         "metadata"
       ],
-      "file:size": 7418,
-      "file:checksum": "122061d50255ed102ee7702bcb9779c09fdef9a8b2b0dcb85cbe20e0aa894c766332",
-      "file:local_path": "HO01_I90_RAD_L1_20260222T073022_20260222T073031_V100/20260222T073022_20260222T073031_0000004780_HORACIO_2A_111_20260318T134657_VNIR.xml"
+      "file:size": 4150,
+      "file:checksum": "12201fb524a24cfade232d70f4f8d6a62c3b115c1f818426f31baca99ebe2ff0158b",
+      "file:local_path": "HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100/HO01_I90_RAD_L1_20260927T111639_20260927T111648_V100_VNIR.xml"
     },
     "thumbnail": {
       "type": "image/png",
@@ -254,12 +254,12 @@
       "roles": [
         "thumbnail"
       ],
-      "file:size": 388299,
-      "file:checksum": "12204eb4f2e076425f532e96a178ed305ecb97c7fa9f0457f327ac673f8cf06c39ad",
+      "file:size": 2247883,
+      "file:checksum": "122024f847e15905357ba38977aeb5176484f52f5f04990c5e6087d5a70d39b4dbf5",
       "file:local_path": "preview.png",
       "proj:shape": [
-        512,
-        442
+        1676,
+        1248
       ],
       "proj:code": null
     }

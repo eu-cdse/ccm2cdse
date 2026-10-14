@@ -1,0 +1,194 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/product/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+  ],
+  "id": "HO01_I90_CH4_L2_20260617T104351_20260617T104354_V100",
+  "bbox": [
+    61.545376180921274,
+    36.330469331380264,
+    61.794204325375844,
+    36.48979464258192
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          61.545376180921274,
+          36.48979464258192
+        ],
+        [
+          61.794204325375844,
+          36.48979464258192
+        ],
+        [
+          61.794204325375844,
+          36.330469331380264
+        ],
+        [
+          61.545376180921274,
+          36.330469331380264
+        ],
+        [
+          61.545376180921274,
+          36.48979464258192
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "datetime": "2026-06-17T10:43:52Z",
+    "description": "Methane Column Density Enhancement Map, expressed in mol m-2",
+    "start_datetime": "2026-06-17T10:43:51Z",
+    "end_datetime": "2026-06-17T10:43:54Z",
+    "eo:cloud_cover": 7.1757767063880555,
+    "gsd": 8.243806133201398,
+    "instruments": [
+      "iSIM90"
+    ],
+    "platform": "HORACIO",
+    "processing:facility": "SATLANTIS",
+    "processing:level": "L2",
+    "processing:lineage": "2026-09-29T17:07:48Z: Product generated from 20260617T104351_20260617T104354_0000005779_HORACIO_2A_410_20260717T160002_SWIR",
+    "processing:version": "150",
+    "processing:datetime": "2026-09-29T17:07:48Z",
+    "product:type": "I90_CH4_L2",
+    "proj:code": "EPSG:32641",
+    "proj:shape": [
+      2181,
+      2736
+    ],
+    "proj:transform": [
+      8.243806133201398,
+      0.0,
+      369435.6148686955,
+      0.0,
+      -8.243806133201398,
+      4039269.339377525,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "view:azimuth": 284.8121106718465,
+    "view:incidence_angle": 22.08835682309584,
+    "view:sun_azimuth": 262.55325031291096,
+    "view:sun_elevation": 51.29156674361836,
+    "created": "2026-09-29T17:07:48Z",
+    "product:timeliness": "PT72H",
+    "product:timeliness_category": "NTC",
+    "sat:platform_international_designator": "24043A",
+    "sat:absolute_orbit": 12470,
+    "sat:orbit_state": "descending"
+  },
+  "collection": "ccm-atmospheric-ch4-hr",
+  "assets": {
+    "Product": {
+      "href": "s3://CCM-SATLANTIS-DEV/2026/06/17/HO01_I90_CH4_L2_20260617T104351_20260617T104354_V100.tar",
+      "title": "TAR product",
+      "type": "application/tar",
+      "roles": [
+        "data",
+        "metadata",
+        "archive"
+      ]
+    },
+    "ch4": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Methane column density enhancement layer COG format",
+      "description": "Methane column density enhancement expressed in mol m-2",
+      "file:checksum": "12201a29fe2aa4d4832dff966656f2637a44bfefc28c2300843df4ca3338859ef034",
+      "file:size": 10444395,
+      "file:local_path": "HO01_I90_CH4_L2_20260617T104351_20260617T104354_V100/20260617T104351_20260617T104354_0000005779_HORACIO_2QCH4_150_20260929T170748_SR.tif",
+      "data_type": "float32",
+      "nodata": -9999.0,
+      "proj:code": "EPSG:32641",
+      "proj:shape": [
+        2181,
+        2736
+      ],
+      "proj:transform": [
+        8.243806133201398,
+        0.0,
+        369435.6148686955,
+        0.0,
+        -8.243806133201398,
+        4039269.339377525,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "nodata": -9999.0,
+          "statistics": {
+            "mean": 0.31573066115379333,
+            "minimum": -69.63507080078125,
+            "maximum": 69.63507080078125,
+            "stddev": 9.004190444946289,
+            "valid_percent": 35.48554300699019
+          },
+          "histogram": {
+            "count": 11,
+            "min": -69.63507080078125,
+            "max": 69.63507080078125,
+            "buckets": [
+              12432,
+              4023,
+              5487,
+              8622,
+              1029917,
+              1000851,
+              18499,
+              16426,
+              13255,
+              7987
+            ]
+          }
+        }
+      ]
+    },
+    "ch4_netcdf": {
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Methane column density enhancement product NetCDF format",
+      "description": "Methane column density enhancement  with auxiliary datasets",
+      "file:checksum": "12205ed0e85ae2eb15f6825252964a119bec1c51ae664fcd008fc7f65dba01691529",
+      "file:size": 64785647,
+      "file:local_path": "HO01_I90_CH4_L2_20260617T104351_20260617T104354_V100/20260617T104351_20260617T104354_0000005779_HORACIO_2CH4_150_20260929T170748_SR.nc",
+      "proj:code": "EPSG:32641",
+      "proj:shape": [
+        2181,
+        2736
+      ]
+    },
+    "thumbnail": {
+      "type": "image/png",
+      "title": "Preview image",
+      "roles": [
+        "thumbnail"
+      ],
+      "file:size": 645730,
+      "file:checksum": "12204ecca21bc2679922aff4e9d417d147aa83092e7f84fd296f77b003285dae4bb3",
+      "file:local_path": "preview.png",
+      "proj:shape": [
+        2736,
+        2181
+      ],
+      "proj:code": null
+    }
+  }
+}
