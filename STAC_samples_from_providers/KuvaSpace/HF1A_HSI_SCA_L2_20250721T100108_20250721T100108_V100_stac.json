@@ -9,7 +9,8 @@
         "https://stac-extensions.github.io/timestamps/v1.1.0/schema.json",
         "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
         "https://stac-extensions.github.io/sat/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/classification/v2.0.0/schema.json"
     ],
     "id": "HF1A_HSI_SCA_L2_20250721T100108_20250721T100108_V100",
     "bbox": [
@@ -281,6 +282,89 @@
             "title": "Thumbnail",
             "proj:shape": [343, 343],
             "proj:code": null
+        },
+        "land_cover": {
+            "data_type": "float32",
+            "file:checksum": "1220ceebb880c4d9d5a473bd3cb2a0828ef4e9b2c0fb6750f72a28de0c0d86282359",
+            "file:local_path": "HF1A_HSI_SCA_L2_20250721T100108_20250721T100108_V100/land_cover.tif",
+            "file:size": 300754,
+            "roles": [
+              "data"
+            ],
+            "title": "Land cover classification",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "bands": [
+              {
+                "name": "land_cover",
+                "nodata": "nan",
+                "classification:classes": [
+                  {
+                    "value": 1,
+                    "name": "Unclassified"
+                  },
+                  {
+                    "value": 10,
+                    "name": "Tree cover",
+                    "color_hint": "237631"
+                  },
+                  {
+                    "value": 20,
+                    "name": "Shrubland",
+                    "color_hint": "FF9900"
+                  },
+                  {
+                    "value": 30,
+                    "name": "Grassland",
+                    "color_hint": "FAF000"
+                  },
+                  {
+                    "value": 40,
+                    "name": "Cropland",
+                    "color_hint": "CA94FF"
+                  },
+                  {
+                    "value": 50,
+                    "name": "Built-up",
+                    "color_hint": "FF4040"
+                  },
+                  {
+                    "value": 60,
+                    "name": "Bare / sparse vegetation",
+                    "color_hint": "DBC785"
+                  },
+                  {
+                    "value": 70,
+                    "name": "Snow and ice",
+                    "color_hint": "C6DCF7"
+                  },
+                  {
+                    "value": 80,
+                    "name": "Permanent water bodies",
+                    "color_hint": "136CDD"
+                  },
+                  {
+                    "value": 90,
+                    "name": "Herbaceous wetland",
+                    "color_hint": "17818A"
+                  },
+                  {
+                    "value": 95,
+                    "name": "Mangroves",
+                    "color_hint": "25C961"
+                  },
+                  {
+                    "value": 100,
+                    "name": "Moss and lichen",
+                    "color_hint": "FDEFC0"
+                  },
+                  {
+                    "value": 255,
+                    "name": "Clouds",
+                    "color_hint": "FDFDFD"
+                  }
+                ]
+              }
+            ]
         }
     }
 }
