@@ -7,7 +7,8 @@
     "https://stac-extensions.github.io/view/v1.1.0/schema.json",
     "https://stac-extensions.github.io/product/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.1.0/schema.json"
   ],
   "id": "F002_IR1_LST_L2_20250315T013323_20250315T013422_V100",
   "geometry": {
@@ -15,26 +16,24 @@
     "coordinates": [
       [
         [
-          [
-            0.926,
-            39.623
-          ],
-          [
-            -1.24,
-            39.313
-          ],
-          [
-            -2.34,
-            42.947
-          ],
-          [
-            -0.059,
-            43.301
-          ],
-          [
-            0.926,
-            39.623
-          ]
+          0.926,
+          39.623
+        ],
+        [
+          -1.24,
+          39.313
+        ],
+        [
+          -2.34,
+          42.947
+        ],
+        [
+           -0.059,
+           43.301
+        ],
+        [
+          0.926,
+          39.623
         ]
       ]
     ]
@@ -54,7 +53,6 @@
     "product:type": "IR1_LST_L2",
     "product:timeliness": "P7D",
     "product:timeliness_category": "NTC",
-    "proj:code": "EPSG:4326",
     "view:azimuth": 248.109,
     "start_datetime": "2025-03-15T01:33:23.369000Z",
     "end_datetime": "2025-03-15T01:34:21.935000Z",
@@ -63,7 +61,7 @@
       "F002-IR1",
       "SAFIRE"
     ],
-    "platform": "F002",
+    "platform": "FOREST-2",
     "providers": [
       {
         "name": "OroraTech",
@@ -74,7 +72,8 @@
         "url": "https://ororatech.com"
       }
     ],
-    "datetime": "2025-03-15T01:33:23.369000Z"
+    "datetime": "2025-03-15T01:33:23.369000Z",
+    "sat:platform_international_designator": "2023-084AQ"
   },
   "assets": {
     "lst": {
@@ -100,12 +99,15 @@
         1365
       ],
       "proj:transform": [
-        -2.335486888885498,
         0.0023883627727627754,
         0.0,
+        -2.335486888885498,
+        0.0,
+        -0.0018013528315350413,
         43.30010223388672,
         0.0,
-        -0.0018013528315350413
+        0.0,
+        1.0
       ],
       "file:checksum": "3c006f6cb23ff42ea33e2d36628c151523e4177525b607d5cbbc0a269986cc55",
       "file:size": 7349349,
@@ -119,16 +121,19 @@
       "title": "Thumbnail",
       "proj:code": "EPSG:4326",
       "proj:shape": [
-        331,
-        539
+        539,
+        331
       ],
       "proj:transform": [
-        -2.335486888885498,
-        0.0023883627727627754,
+        0.0098492906,
         0.0,
+        -2.335486888885498,
+        0.0,
+        -0.0073925649,
         43.30010223388672,
         0.0,
-        -0.0018013528315350413
+        0.0,
+        1.0
       ],
       "file:checksum": "7384cc7c376964513658609a7276c0007e99bc62840d03d61c059329cb5da0cf",
       "file:size": 202346,
