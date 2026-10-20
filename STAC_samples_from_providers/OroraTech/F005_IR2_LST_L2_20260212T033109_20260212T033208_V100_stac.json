@@ -10,7 +10,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
-  "id": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V110",
+  "id": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -123,7 +123,7 @@
       ],
       "file:checksum": "12202ec8db9d913c23659ccb0ae7f4ca4e56f50ffff056b28221c1e645b11e2880ac",
       "file:size": 4546436,
-      "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V110/F005_IR2_LST_L2_20260212T033109_20260212T033208_V110.tif",
+      "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tif",
       "roles": [
         "data"
       ]
@@ -149,14 +149,14 @@
       ],
       "file:checksum": "122041cda2da4afe0aa3e6c5f165c0277dc93e9bc78374771b67d66174002348c84e",
       "file:size": 165262,
-      "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V110/F005_IR2_LST_L2_20260212T033109_20260212T033208_V110.png",
+      "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.png",
       "roles": [
         "thumbnail",
         "overview"
       ]
     },
     "Product": {
-      "href": "s3://CCM-ORORATECH-DEV/ccm-thermal-lst-mr/2026/10/20/F005_IR2_LST_L2_20260212T033109_20260212T033208_V110.tar",
+      "href": "s3://CCM-ORORATECH-DEV/ccm-thermal-lst-mr/2026/10/20/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tar",
       "type": "application/tar",
       "title": "TAR product",
       "roles": [
