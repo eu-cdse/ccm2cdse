@@ -3,10 +3,11 @@
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/product/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
     "https://stac-extensions.github.io/view/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
     "https://stac-extensions.github.io/file/v2.1.0/schema.json"
   ],
   "id": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100",
@@ -58,17 +59,17 @@
   "properties": {
     "description": "OroraTech Level-2 Land Surface Temperature expressed in Kelvin.",
     "eo:cloud_cover": 99.87,
+    "sat:platform_international_designator": "2025-061D",
     "processing:facility": "OroraTech",
     "processing:level": "L2",
     "processing:version": "v0.2.1",
     "product:type": "IR2_LST_L2",
     "product:timeliness": "P7D",
     "product:timeliness_category": "NTC",
-    "proj:code": "EPSG:4326",
     "view:azimuth": 291.488,
+    "view:incidence_angle": 33.707,
     "start_datetime": "2026-02-12T03:31:09.016000Z",
     "end_datetime": "2026-02-12T03:32:08.269000Z",
-    "created": "2026-10-08T11:24:41.218056Z",
     "providers": [
       {
         "name": "OroraTech",
@@ -110,15 +111,18 @@
         2099
       ],
       "proj:transform": [
-        21.601133346557617,
         0.0037541810888797045,
         0.0,
+        21.601133346557617,
+        0.0,
+        -0.0017949682660400867,
         63.42713928222656,
         0.0,
-        -0.0017949682660400867
+        0.0,
+        1.0
       ],
-      "file:checksum": "1220b64bd905301f29ddd4bfd1bf76ddea1d513c3b7341dfdfebd608735e1b242ca9",
-      "file:size": 4550335,
+      "file:checksum": "12202ec8db9d913c23659ccb0ae7f4ca4e56f50ffff056b28221c1e645b11e2880ac",
+      "file:size": 4546436,
       "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tif",
       "roles": [
         "data"
@@ -126,22 +130,25 @@
     },
     "thumbnail": {
       "type": "image/png",
-      "title": "Quicklook",
+      "title": "Thumbnail",
       "proj:code": "EPSG:4326",
       "proj:shape": [
-        487,
-        539
+        539,
+        487
       ],
       "proj:transform": [
-        21.601133346557617,
-        0.0037541810888797045,
+        0.016180751756793635,
         0.0,
+        21.601133346557617,
+        0.0,
+        -0.007712702234042376,
         63.42713928222656,
         0.0,
-        -0.0017949682660400867
+        0.0,
+        1.0
       ],
-      "file:checksum": "12203aeb780b25c0fa1dc39894969610d133a9af8b1e79b95cfa70c59c947e7ca632",
-      "file:size": 165427,
+      "file:checksum": "122041cda2da4afe0aa3e6c5f165c0277dc93e9bc78374771b67d66174002348c84e",
+      "file:size": 165262,
       "file:local_path": "F005_IR2_LST_L2_20260212T033109_20260212T033208_V100/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.png",
       "roles": [
         "thumbnail",
@@ -149,7 +156,7 @@
       ]
     },
     "Product": {
-      "href": "s3://CCM-ORORATECH-DEV/ccm-thermal-lst-mr/2026/10/08/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tar",
+      "href": "s3://CCM-ORORATECH-DEV/ccm-thermal-lst-mr/2026/10/20/F005_IR2_LST_L2_20260212T033109_20260212T033208_V100.tar",
       "type": "application/tar",
       "title": "TAR product",
       "roles": [
