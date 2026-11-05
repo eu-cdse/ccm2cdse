@@ -419,7 +419,7 @@
      "roles": ["thumbnail", "overview"],
      "title": "thumbnail",
      "proj:code": "EPSG:32633",
-     "proj:shape": [228, 256],
+     "proj:shape": [256, 228],
      "proj:transform": [30, 0, 653820, 0, -30, 5188500, 0, 0, 1]
    },
    "vnir02_qa": {
