@@ -87,9 +87,7 @@
    "gsd": 10,
    "product:type": "TIR_RPR_L2",
    "instruments": ["tir", "vnir"],
-   "processing:facility": "Constellr",
    "processing:level": "L2",
-   "product:timeliness": "PT24H",
    "product:timeliness_category": "RPR",
    "processing:version": "v0.18.40",
    "processing:software": {
