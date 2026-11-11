@@ -133,7 +133,7 @@
         "processing:facility": "Kuva Space ground segment",
         "processing:level": "L1",
         "product:type": "HSI_SCA_L1",
-        "product:timelines": "PT2H",
+        "product:timeliness": "PT2H",
         "proj:code": "EPSG:32633",
         "proj:shape": [
             1895,
