@@ -110,38 +110,38 @@
           "title": "Quicklook",
           "data_type": "uint8",
           "proj:code": null
-        },           
+        },
+        "water_leaving_reflectance": {
+            "description": "Water reflectance measurements",
+            "file:checksum": "122018453d904f381f0bf424ccbad7997f3f4a95607ea58d97797ac1dc5719c6d101",
+            "file:local_path": "in_situ/water_leaving_reflectance.csv",
+            "file:size": 396960,
+            "roles": [
+                "data"
+            ],
+            "title": "water_leaving_reflectance",
+            "type": "text/csv"
+        },
+        "readme": {
+            "description": "Documentation on data collection process and format",
+            "file:checksum": "1220e080a86141e4c187f3685aca1ee957b185374db8dc767e99ec20f199d8b01c77",
+            "file:local_path": "in_situ/README.docx",
+            "file:size": 8640,
+            "roles": [
+                "metadata"
+            ],
+            "title": "README",
+            "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
         "water_quality": {
-            "description": "In-situ data collected from a station or at a specific location",
-            "file:checksum": "122016fe78333c0bb731b18e912a4634f91c4cd32a9832f1fe776e0b0f1d6738a3d3",
-            "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/syke_waterquality.csv",
-            "file:size": 671,
+            "description": "Water samples collected by The Finnish Environment Institute (SYKE)",
+            "file:checksum": "122096f934893c918e8780e5bdd59341b2aa69611b8dd3601173987cb9e3b114bb69",
+            "file:local_path": "in_situ/water_quality.csv",
+            "file:size": 858,
             "roles": [
                 "data"
             ],
-            "title": "syke_waterquality",
-            "type": "text/csv"
-        },
-        "ena\u0308ja\u0308rvi_11": {
-            "description": "In-situ data collected from a station or at a specific location",
-            "file:checksum": "122033a1830fc5193782f91403eb7f72d410f3c27ad11ac5f3fa85814e2295410e49",
-            "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/Ena\u0308ja\u0308rvi_11.csv",
-            "file:size": 950,
-            "roles": [
-                "data"
-            ],
-            "title": "Ena\u0308ja\u0308rvi_11",
-            "type": "text/csv"
-        },
-        "ena\u0308ja\u0308rvi_rompsinma\u0308k_5": {
-            "description": "In-situ data collected from a station or at a specific location",
-            "file:checksum": "1220a401e59aea05e0e179efecabc4a8f203740ed872b0fa380212bbdb75a23f70dc",
-            "file:local_path": "HM62_HSI_SCA_L2_20250818T082610_20250818T082610_V100/Ena\u0308ja\u0308rvi_Rompsinma\u0308k_5.csv",
-            "file:size": 1207,
-            "roles": [
-                "data"
-            ],
-            "title": "Ena\u0308ja\u0308rvi_Rompsinma\u0308k_5",
+            "title": "water_quality",
             "type": "text/csv"
         },
         "b1_411nm": {
