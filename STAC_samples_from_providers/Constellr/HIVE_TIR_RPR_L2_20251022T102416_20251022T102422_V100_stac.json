@@ -81,7 +81,7 @@
 "properties": {
    "start_datetime": "2025-10-22T10:24:16Z",
    "datetime": "2025-10-22T10:24:16Z",
-   "end_datetime": "2025-10-22T10:24:16Z",
+   "end_datetime": "2025-10-22T10:24:22Z",
    "platform": "sba01",
    "sat:platform_international_designator": "2025-009BQ",
    "gsd": 10,
@@ -103,7 +103,7 @@
         "url": "https://www.constellr.com"
       }
     ],
-   "order:status": "completed",
+   "order:status": "succeeded",
    "order:id": "73379f68-dfcb-457c-ba75-734a2102c7e9",
    "eo:cloud_cover": 1.95,
    "view:azimuth": 102.65114,
@@ -419,7 +419,7 @@
      "roles": ["thumbnail", "overview"],
      "title": "thumbnail",
      "proj:code": "EPSG:32633",
-     "proj:shape": [228, 256],
+     "proj:shape": [256, 228],
      "proj:transform": [30, 0, 653820, 0, -30, 5188500, 0, 0, 1]
    },
    "vnir02_qa": {
